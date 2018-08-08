@@ -3559,9 +3559,7 @@ design rules under a new name.</description>
 <element name="PIC16" library="ic-package" package="DIL20" value="pic16f689" x="33.02" y="39.37"/>
 <element name="C10" library="resistor" package="C1206" value="0.1uF" x="34.544" y="22.352"/>
 <element name="C11" library="resistor" package="C1206" value="0.01uF" x="34.544" y="16.002"/>
-<element name="R5" library="rcl" package="0309/12" value="1k" x="105.918" y="-4.064" rot="R270"/>
 <element name="T1" library="transistor" package="TO92" value="PN100" x="105.918" y="6.35" rot="R270"/>
-<element name="R6" library="rcl" package="0309/12" value="1k" x="110.236" y="12.954" rot="R90"/>
 <element name="J3" library="con-amp" package="520258-3" value="Prog. Port" x="56.896" y="38.608" rot="R180"/>
 <element name="R7" library="rcl" package="M1206" value="50k" x="27.94" y="26.924"/>
 <element name="C12" library="resistor" package="C1206" value="0.01uF" x="81.788" y="41.2496"/>
@@ -3572,6 +3570,8 @@ design rules under a new name.</description>
 <element name="C17" library="resistor" package="C1206" value="0.01uF" x="93.5355" y="39.7891" rot="R180"/>
 <element name="R4" library="rcl" package="0309/12" value="1k" x="23.368" y="-6.604"/>
 <element name="R8" library="rcl" package="0309/12" value="1k" x="23.876" y="-2.794"/>
+<element name="R9" library="rcl" package="0309/12" value="1k" x="-2.8956" y="-53.6448"/>
+<element name="R10" library="rcl" package="0309/12" value="1k" x="-2.8956" y="-58.9788"/>
 </elements>
 <signals>
 <signal name="OSC1">
@@ -3828,14 +3828,14 @@ design rules under a new name.</description>
 <contactref element="C8" pad="2"/>
 <contactref element="C9" pad="2"/>
 <contactref element="U1" pad="2"/>
-<contactref element="T1" pad="3"/>
+<contactref element="R10" pad="1"/>
 <wire x1="134.874" y1="17.254" x2="149.586" y2="34.29" width="0" layer="19" extent="1-1"/>
 <wire x1="134.374" y1="17.254" x2="134.874" y2="17.254" width="0" layer="19" extent="1-1"/>
 <wire x1="132.08" y1="17.904" x2="134.374" y2="17.254" width="0" layer="19" extent="1-1"/>
 <wire x1="123.444" y1="9.634" x2="132.08" y2="17.904" width="0" layer="19" extent="1-1"/>
 <wire x1="122.944" y1="9.634" x2="123.444" y2="9.634" width="0" layer="19" extent="1-1"/>
 <wire x1="120.65" y1="10.284" x2="122.944" y2="9.634" width="0" layer="19" extent="1-1"/>
-<wire x1="105.918" y1="7.62" x2="120.65" y2="10.284" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.2456" y1="-58.9788" x2="120.65" y2="10.284" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U1" pad="8"/>
@@ -3843,12 +3843,12 @@ design rules under a new name.</description>
 <contactref element="J2" pad="C4"/>
 <contactref element="C8" pad="1"/>
 <contactref element="C9" pad="1"/>
-<contactref element="R6" pad="2"/>
+<contactref element="T1" pad="2"/>
 <wire x1="134.874" y1="21.354" x2="149.586" y2="31.75" width="0" layer="19" extent="1-1"/>
 <wire x1="132.08" y1="20.704" x2="134.874" y2="21.354" width="0" layer="19" extent="1-1"/>
 <wire x1="123.444" y1="13.734" x2="132.08" y2="20.704" width="0" layer="19" extent="1-1"/>
 <wire x1="120.65" y1="13.084" x2="123.444" y2="13.734" width="0" layer="19" extent="1-1"/>
-<wire x1="110.236" y1="19.304" x2="120.65" y2="13.084" width="0" layer="19" extent="1-1"/>
+<wire x1="107.823" y1="6.35" x2="120.65" y2="13.084" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="U2RX">
 <contactref element="IC1" pad="49"/>
@@ -4173,22 +4173,22 @@ design rules under a new name.</description>
 <contactref element="X2" pad="14"/>
 <wire x1="8.889765625" y1="2.27513125" x2="81.4888" y2="28.454" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$1">
-<contactref element="T1" pad="1"/>
-<contactref element="R5" pad="1"/>
-<wire x1="105.918" y1="2.286" x2="105.918" y2="5.08" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="CONDUCTIVITY_ENABLE_5V">
-<contactref element="T1" pad="2"/>
-<contactref element="R6" pad="1"/>
 <contactref element="J2" pad="C14"/>
-<wire x1="110.236" y1="6.604" x2="149.586" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="107.823" y1="6.35" x2="110.236" y2="6.604" width="0" layer="19" extent="1-1"/>
+<contactref element="R9" pad="1"/>
+<contactref element="R10" pad="2"/>
+<wire x1="3.4544" y1="-58.9788" x2="149.586" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.2456" y1="-53.6448" x2="3.4544" y2="-58.9788" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CONDUCTIVITY_ENABLE_3V">
-<contactref element="R5" pad="2"/>
 <contactref element="IC1" pad="8"/>
-<wire x1="94.8888" y1="23.654" x2="105.918" y2="-10.414" width="0" layer="19" extent="1-1"/>
+<contactref element="T1" pad="1"/>
+<wire x1="105.918" y1="5.08" x2="94.8888" y2="23.654" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="R9" pad="2"/>
+<contactref element="T1" pad="3"/>
+<wire x1="3.4544" y1="-53.6448" x2="105.918" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
