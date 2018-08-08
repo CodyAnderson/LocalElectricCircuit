@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12722,15 +12722,8 @@ D = Direct mounting &lt;p&gt;
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="8"/>
+<wire x1="127" y1="-7.62" x2="130.81" y2="-7.62" width="0.1524" layer="91"/>
 <label x="114.3" y="-7.62" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="RG3"/>
-<wire x1="124.46" y1="43.18" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="43.18" x2="134.62" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="15.24" x2="121.92" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="15.24" x2="121.92" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="5.08" x2="106.68" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="5.08" x2="106.68" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="-7.62" x2="130.81" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BALLS2" class="0">
@@ -12844,23 +12837,28 @@ D = Direct mounting &lt;p&gt;
 <label x="-10.16" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="I2C_SCL" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="4"/>
+<wire x1="127" y1="-10.16" x2="130.81" y2="-10.16" width="0.1524" layer="91"/>
+<label x="127" y="-9.525" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
 <pinref part="IC1" gate="G$1" pin="RG2"/>
-<wire x1="124.46" y1="45.72" x2="137.16" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="45.72" x2="137.16" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="17.78" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="17.78" x2="124.46" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="7.62" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="7.62" x2="109.22" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="-10.16" x2="130.81" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="45.72" x2="134.62" y2="45.72" width="0.1524" layer="91"/>
+<label x="134.62" y="45.085" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="I2C_SDA" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="5"/>
-<wire x1="130.81" y1="-15.24" x2="127" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="127" y1="-15.24" x2="130.81" y2="-15.24" width="0.1524" layer="91"/>
+<label x="127" y="-14.605" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="RG3"/>
+<wire x1="124.46" y1="43.18" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
+<label x="134.62" y="42.545" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
