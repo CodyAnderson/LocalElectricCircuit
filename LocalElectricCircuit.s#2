@@ -11529,9 +11529,7 @@ D = Direct mounting &lt;p&gt;
 <part name="PIC16" library="ic-package" deviceset="DIL20" device="" value="pic16f689"/>
 <part name="C10" library="resistor" deviceset="C-US" device="C1206" value="0.1uF"/>
 <part name="C11" library="resistor" deviceset="C-US" device="C1206" value="0.01uF"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
 <part name="T1" library="transistor" deviceset="2N3704" device="" value="PN100"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
 <part name="J3" library="con-amp" deviceset="520258-3" device="" value="Prog. Port"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="M1206" value="50k"/>
 <part name="C12" library="resistor" deviceset="C-US" device="C1206" value="0.01uF"/>
@@ -11542,6 +11540,8 @@ D = Direct mounting &lt;p&gt;
 <part name="C17" library="resistor" deviceset="C-US" device="C1206" value="0.01uF"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
+<part name="R9" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
+<part name="R10" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -11584,9 +11584,7 @@ D = Direct mounting &lt;p&gt;
 <instance part="PIC16" gate="G$1" x="233.68" y="7.62"/>
 <instance part="C10" gate="G$1" x="231.14" y="25.4" rot="R90"/>
 <instance part="C11" gate="G$1" x="231.14" y="33.02" rot="R90"/>
-<instance part="R5" gate="G$1" x="259.08" y="-60.96" rot="R180"/>
-<instance part="T1" gate="G$1" x="266.7" y="-60.96"/>
-<instance part="R6" gate="G$1" x="269.24" y="-50.8" rot="R90"/>
+<instance part="T1" gate="G$1" x="208.28" y="-30.48"/>
 <instance part="J3" gate="G$1" x="292.1" y="5.08"/>
 <instance part="R7" gate="G$1" x="281.94" y="12.7" rot="R90"/>
 <instance part="C12" gate="G$1" x="-20.32" y="210.82"/>
@@ -11597,6 +11595,8 @@ D = Direct mounting &lt;p&gt;
 <instance part="C17" gate="G$1" x="121.92" y="210.82"/>
 <instance part="R4" gate="G$1" x="147.32" y="2.54" rot="R180"/>
 <instance part="R8" gate="G$1" x="139.7" y="-2.54" rot="R180"/>
+<instance part="R9" gate="G$1" x="210.82" y="-43.18" rot="R90"/>
+<instance part="R10" gate="G$1" x="210.82" y="-58.42" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -12070,9 +12070,9 @@ D = Direct mounting &lt;p&gt;
 <label x="-55.88" y="155.575" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="E"/>
-<wire x1="269.24" y1="-66.04" x2="269.24" y2="-68.58" width="0.1524" layer="91"/>
-<label x="268.605" y="-68.58" size="1.778" layer="95" rot="R270"/>
+<label x="210.185" y="-66.04" size="1.778" layer="95" rot="R270"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="-66.04" x2="210.82" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -12104,9 +12104,9 @@ D = Direct mounting &lt;p&gt;
 <label x="-55.88" y="147.955" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="269.24" y1="-45.72" x2="269.24" y2="-43.18" width="0.1524" layer="91"/>
-<label x="269.875" y="-43.18" size="1.778" layer="95" rot="R90"/>
+<label x="211.455" y="-22.86" size="1.778" layer="95" rot="R90"/>
+<pinref part="T1" gate="G$1" pin="C"/>
+<wire x1="210.82" y1="-22.86" x2="210.82" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="U2RX" class="0">
@@ -12867,19 +12867,15 @@ D = Direct mounting &lt;p&gt;
 <label x="134.62" y="42.545" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="T1" gate="G$1" pin="B"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="CONDUCTIVITY_ENABLE_5V" class="0">
 <segment>
-<pinref part="T1" gate="G$1" pin="C"/>
-<wire x1="269.24" y1="-55.88" x2="281.94" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<junction x="269.24" y="-55.88"/>
-<label x="281.94" y="-56.515" size="1.778" layer="95"/>
+<label x="213.36" y="-51.435" size="1.778" layer="95"/>
+<wire x1="210.82" y1="-50.8" x2="213.36" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="-48.26" x2="210.82" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="210.82" y="-50.8"/>
+<wire x1="210.82" y1="-50.8" x2="210.82" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="C14"/>
@@ -12889,14 +12885,21 @@ D = Direct mounting &lt;p&gt;
 </net>
 <net name="CONDUCTIVITY_ENABLE_3V" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="254" y1="-60.96" x2="251.46" y2="-60.96" width="0.1524" layer="91"/>
-<label x="251.46" y="-60.325" size="1.778" layer="95" rot="R180"/>
+<label x="203.2" y="-29.845" size="1.778" layer="95" rot="R180"/>
+<pinref part="T1" gate="G$1" pin="B"/>
+<wire x1="203.2" y1="-30.48" x2="205.74" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="RC3"/>
 <wire x1="17.78" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
 <label x="12.7" y="74.295" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="T1" gate="G$1" pin="E"/>
+<wire x1="210.82" y1="-38.1" x2="210.82" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
