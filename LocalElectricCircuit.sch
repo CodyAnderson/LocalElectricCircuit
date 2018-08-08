@@ -12725,6 +12725,7 @@ D = Direct mounting &lt;p&gt;
 <segment>
 <pinref part="IC1" gate="G$1" pin="RG2"/>
 <wire x1="124.46" y1="45.72" x2="152.4" y2="45.72" width="0.1524" layer="91"/>
+<label x="152.4" y="45.085" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
@@ -12736,6 +12737,7 @@ D = Direct mounting &lt;p&gt;
 <segment>
 <pinref part="IC1" gate="G$1" pin="RG3"/>
 <wire x1="124.46" y1="43.18" x2="152.4" y2="43.18" width="0.1524" layer="91"/>
+<label x="152.4" y="42.545" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
