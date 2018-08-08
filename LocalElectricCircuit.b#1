@@ -3846,42 +3846,60 @@ design rules under a new name.</description>
 </signal>
 <signal name="TEMP_3">
 <contactref element="J2" pad="A3"/>
+<contactref element="IC1" pad="22"/>
+<wire x1="6.14" y1="-82.9" x2="154.666" y2="34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND_TEMP">
 <contactref element="J2" pad="B3"/>
 </signal>
 <signal name="TEMP_2">
 <contactref element="J2" pad="A4"/>
+<contactref element="IC1" pad="24"/>
+<wire x1="6.94" y1="-82.9" x2="154.666" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TEMP_1">
 <contactref element="J2" pad="B4"/>
+<contactref element="IC1" pad="25"/>
+<wire x1="7.34" y1="-82.9" x2="152.126" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND_I_1">
 <contactref element="J2" pad="A5"/>
 </signal>
 <signal name="I_1_L">
 <contactref element="J2" pad="B5"/>
+<contactref element="IC1" pad="21"/>
+<wire x1="5.74" y1="-82.9" x2="152.126" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_1_H">
 <contactref element="J2" pad="C5"/>
+<contactref element="IC1" pad="20"/>
+<wire x1="5.34" y1="-82.9" x2="149.586" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND_I_2">
 <contactref element="J2" pad="A6"/>
 </signal>
 <signal name="I_2_L">
 <contactref element="J2" pad="B6"/>
+<contactref element="IC1" pad="32"/>
+<wire x1="9.24" y1="-78.6" x2="152.126" y2="26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_2_H">
 <contactref element="J2" pad="C6"/>
+<contactref element="IC1" pad="33"/>
+<wire x1="9.24" y1="-78.2" x2="149.586" y2="26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND_I_3">
 <contactref element="J2" pad="A7"/>
 </signal>
 <signal name="I_3_L">
 <contactref element="J2" pad="B7"/>
+<contactref element="IC1" pad="34"/>
+<wire x1="9.24" y1="-77.8" x2="152.126" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_3_H">
 <contactref element="J2" pad="C7"/>
+<contactref element="IC1" pad="35"/>
+<wire x1="9.24" y1="-77.4" x2="149.586" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VERT_UP">
 <contactref element="U1" pad="4"/>
@@ -4002,6 +4020,40 @@ design rules under a new name.</description>
 </signal>
 <signal name="PIC12_TX">
 <contactref element="X1" pad="12"/>
+</signal>
+<signal name="EXT_TEMP">
+<contactref element="IC1" pad="41"/>
+<contactref element="X2" pad="7"/>
+<wire x1="11.429765625" y1="-3.43986875" x2="9.24" y2="-75" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RB_TEMP">
+<contactref element="IC1" pad="42"/>
+<contactref element="X2" pad="8"/>
+<wire x1="11.429765625" y1="-1.15386875" x2="9.24" y2="-74.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="BALLS2">
+<contactref element="IC1" pad="76"/>
+</signal>
+<signal name="BALLA1">
+<contactref element="IC1" pad="77"/>
+</signal>
+<signal name="BALLA2">
+<contactref element="IC1" pad="78"/>
+</signal>
+<signal name="BALLA3">
+<contactref element="IC1" pad="81"/>
+</signal>
+<signal name="BALLA4">
+<contactref element="IC1" pad="82"/>
+</signal>
+<signal name="BALLC1">
+<contactref element="IC1" pad="83"/>
+</signal>
+<signal name="BALLC2">
+<contactref element="IC1" pad="84"/>
+</signal>
+<signal name="BALLS1">
+<contactref element="IC1" pad="72"/>
 </signal>
 </signals>
 </board>
