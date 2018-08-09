@@ -12175,12 +12175,22 @@ D = Direct mounting &lt;p&gt;
 <wire x1="25.4" y1="127" x2="15.24" y2="127" width="0.1524" layer="91"/>
 <label x="15.24" y="127.635" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="RB6"/>
+<wire x1="40.64" y1="7.62" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
+<label x="40.64" y="-15.24" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="PGED2" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="25.4" y1="129.54" x2="15.24" y2="129.54" width="0.1524" layer="91"/>
 <label x="15.24" y="130.175" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="RB7"/>
+<wire x1="43.18" y1="7.62" x2="43.18" y2="-7.62" width="0.1524" layer="91"/>
+<label x="43.18" y="-15.24" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="+3V3_PROG" class="0">
@@ -12589,6 +12599,12 @@ D = Direct mounting &lt;p&gt;
 <wire x1="226.06" y1="-5.08" x2="223.52" y2="-5.08" width="0.1524" layer="91"/>
 <label x="213.36" y="-5.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="12"/>
+<wire x1="146.05" y1="-34.29" x2="146.05" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="146.05" y1="-35.56" x2="149.86" y2="-35.56" width="0.1524" layer="91"/>
+<label x="149.86" y="-35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PIC16_PGD" class="0">
 <segment>
@@ -12674,6 +12690,12 @@ D = Direct mounting &lt;p&gt;
 <wire x1="241.3" y1="-2.54" x2="243.84" y2="-2.54" width="0.1524" layer="91"/>
 <label x="246.38" y="-2.54" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="11"/>
+<wire x1="146.05" y1="-29.21" x2="146.05" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="146.05" y1="-30.48" x2="149.86" y2="-30.48" width="0.1524" layer="91"/>
+<label x="149.86" y="-30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$20" class="0">
 <segment>
@@ -12702,22 +12724,6 @@ D = Direct mounting &lt;p&gt;
 <junction x="281.94" y="7.62"/>
 <label x="279.4" y="8.255" size="1.778" layer="95" rot="R180"/>
 <wire x1="279.4" y1="7.62" x2="281.94" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PIC12_RX" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="11"/>
-<wire x1="146.05" y1="-29.21" x2="146.05" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="146.05" y1="-30.48" x2="149.86" y2="-30.48" width="0.1524" layer="91"/>
-<label x="149.86" y="-30.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PIC12_TX" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="12"/>
-<wire x1="146.05" y1="-34.29" x2="146.05" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="146.05" y1="-35.56" x2="149.86" y2="-35.56" width="0.1524" layer="91"/>
-<label x="149.86" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXT_TEMP" class="0">
