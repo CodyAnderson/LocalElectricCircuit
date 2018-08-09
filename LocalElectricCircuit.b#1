@@ -3648,6 +3648,7 @@ design rules under a new name.</description>
 <wire x1="87.3888" y1="15.5448" x2="89.6112" y2="15.5448" width="0.1524" layer="1"/>
 <wire x1="89.6112" y1="15.5448" x2="89.6112" y2="8.9154" width="0.1524" layer="1"/>
 <contactref element="PIC32_POWER_EN" pad="2"/>
+<contactref element="PIC16_POWER_EN" pad="2"/>
 <wire x1="149.586" y1="39.37" x2="152.126" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="89.6112" y1="15.5448" x2="149.586" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="-18.542" x2="89.6112" y2="8.9154" width="0" layer="19" extent="1-1"/>
@@ -3655,7 +3656,8 @@ design rules under a new name.</description>
 <wire x1="11.429765625" y1="1.13213125" x2="11.429765625" y2="-1.15386875" width="0" layer="19" extent="1-1"/>
 <wire x1="8.889765625" y1="4.56113125" x2="11.429765625" y2="1.13213125" width="0" layer="19" extent="1-1"/>
 <wire x1="8.89" y1="31.485" x2="8.889765625" y2="4.56113125" width="0" layer="19" extent="1-1"/>
-<wire x1="-5.8928" y1="-106.3752" x2="26.67" y2="-18.542" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.8928" y1="-100.7364" x2="26.67" y2="-18.542" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.8928" y1="-106.3752" x2="-5.8928" y2="-100.7364" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND_3V3">
 <contactref element="IC1" pad="75"/>
@@ -4091,10 +4093,12 @@ design rules under a new name.</description>
 <contactref element="C11" pad="1"/>
 <contactref element="J3" pad="2"/>
 <contactref element="R7" pad="1"/>
-<wire x1="33.144" y1="22.352" x2="58.801" y2="33.147" width="0" layer="19" extent="1-1"/>
-<wire x1="33.144" y1="16.002" x2="33.144" y2="22.352" width="0" layer="19" extent="1-1"/>
+<contactref element="PIC16_POWER_EN" pad="1"/>
+<wire x1="33.144" y1="16.002" x2="-8.4328" y2="-100.7364" width="0" layer="19" extent="1-1"/>
+<wire x1="33.144" y1="22.352" x2="33.144" y2="16.002" width="0" layer="19" extent="1-1"/>
 <wire x1="26.54" y1="26.924" x2="33.144" y2="22.352" width="0" layer="19" extent="1-1"/>
 <wire x1="21.59" y1="35.56" x2="26.54" y2="26.924" width="0" layer="19" extent="1-1"/>
+<wire x1="58.801" y1="33.147" x2="33.144" y2="22.352" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EXT_TEMP">
 <contactref element="IC1" pad="41"/>
