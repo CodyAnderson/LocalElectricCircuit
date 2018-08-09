@@ -1,2 +1,6 @@
+FIXED:
+PIC32 programming pins not connected
+
+MAYBE FIXED MAYBE NOT?:
 3V3 on PIC32 goes nowhere
-Something about PIC16 programmer power is boned
+Something about PIC16 programmer power is boned?
