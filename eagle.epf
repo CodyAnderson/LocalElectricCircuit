@@ -351,6 +351,7 @@ UsedLibrary="C:/Users/GEC2/Downloads/PIC_BoardLibrarymicrochip.lbr"
 UsedLibrary="C:/Users/GEC2/Downloads/SparkFun-Jumpers.lbr"
 UsedLibrary="C:/Users/GEC2/Downloads/ADS1118.lbr"
 UsedLibrary="C:/Users/GEC2/Desktop/EagleLibraries/PIC_BoardLibrarymicrochip.lbr"
+UsedLibrary="C:/EAGLE-7.6.0/lbr/Logos.lbr"
 
 [Win_1]
 Type="Schematic Editor"
@@ -406,6 +407,6 @@ State=1
 Number=0
 
 [Desktop]
-Screen="1920 1080"
+Screen="3840 1080"
 Window="Win_1"
 Window="Win_2"

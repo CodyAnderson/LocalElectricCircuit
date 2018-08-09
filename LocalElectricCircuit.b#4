@@ -3552,7 +3552,10 @@ design rules under a new name.</description>
 <elements>
 <element name="IC1" library="PIC_BoardLibrarymicrochip" package="TQFP100" value="PIC32MX360F512L" x="90.4" y="1.6" rot="R90"/>
 <element name="C1" library="resistor" package="C1206" value="0.1uF" x="90.6" y="-16.6" rot="MR0"/>
-<element name="C3" library="resistor" package="C1206" value="0.1uF" x="94.6" y="13.2" rot="MR0"/>
+<element name="C3" library="resistor" package="C1206" value="0.1uF" x="94.6" y="13.2" smashed="yes" rot="MR0">
+<attribute name="NAME" x="99.07" y="13.27" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="99.07" y="11.86" size="1.27" layer="28" rot="MR0"/>
+</element>
 <element name="SV1" library="con-lstb" package="MA03-1" value="" x="76.9938" y="12.6772" rot="R270">
 <attribute name="MF" value="" x="64.2938" y="97.7672" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="64.2938" y="97.7672" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3563,7 +3566,10 @@ design rules under a new name.</description>
 <element name="C5" library="resistor" package="C1206" value="0.1uF" x="89.4" y="13.2" rot="MR180"/>
 <element name="C4" library="resistor" package="C1206" value="0.1uF" x="84.2" y="13.2" rot="MR180"/>
 <element name="C6" library="resistor" package="C1206" value="0.1uF" x="77.5668" y="0.9492" rot="MR270"/>
-<element name="R2" library="rcl" package="M1206" value="10" x="94.6" y="16" rot="MR180"/>
+<element name="R2" library="rcl" package="M1206" value="10" x="94.6" y="16" smashed="yes" rot="MR180">
+<attribute name="NAME" x="97.33" y="18.33" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="97.33" y="16.54" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="R1" library="rcl" package="M1206" value="1M" x="73.6156" y="12.5632" rot="R90"/>
 <element name="U1" library="ADS1118" package="MSOP10" value="ADS1118" x="138.074" y="16.904">
 <attribute name="PROD_ID" value="" x="138.074" y="18.174" size="1.778" layer="27" display="off"/>
@@ -3591,8 +3597,14 @@ design rules under a new name.</description>
 <element name="C8" library="resistor" package="C1206" value="0.1uF" x="133.05" y="-11.916" rot="R270"/>
 <element name="C9" library="resistor" package="C1206" value="0.1uF" x="132.88" y="16.904" rot="R270"/>
 <element name="PIC16" library="ic-package" package="DIL20" value="pic16f689" x="42.22" y="29.77"/>
-<element name="C10" library="resistor" package="C1206" value="0.1uF" x="32.144" y="20.752"/>
-<element name="C11" library="resistor" package="C1206" value="0.01uF" x="32.144" y="17.602"/>
+<element name="C10" library="resistor" package="C1206" value="0.1uF" x="32.144" y="20.752" smashed="yes">
+<attribute name="NAME" x="34.874" y="22.022" size="1.27" layer="25"/>
+<attribute name="VALUE" x="35.274" y="20.212" size="1.27" layer="27"/>
+</element>
+<element name="C11" library="resistor" package="C1206" value="0.01uF" x="32.144" y="17.602" smashed="yes">
+<attribute name="NAME" x="35.274" y="18.472" size="1.27" layer="25"/>
+<attribute name="VALUE" x="35.274" y="15.062" size="1.27" layer="27"/>
+</element>
 <element name="T1" library="transistor" package="TO92" value="PN100" x="113.95" y="-10.718" rot="R180"/>
 <element name="J3" library="con-amp" package="520258-3" value="Prog. Port" x="66.096" y="29.008" rot="R180"/>
 <element name="R7" library="rcl" package="M1206" value="50k" x="72.924" y="22.46" rot="R270"/>
@@ -3755,9 +3767,10 @@ design rules under a new name.</description>
 <wire x1="82.9683375" y1="2" x2="82.68096875" y2="2.11903125" width="0.2032" layer="1" curve="-45"/>
 <wire x1="82.68096875" y1="2.11903125" x2="82" y2="2.8" width="0.2032" layer="1"/>
 <wire x1="82" y1="2.8" x2="80.2004" y2="2.8" width="0.2032" layer="16"/>
-<wire x1="30.8" y1="12" x2="30.8636" y2="11.8928" width="0" layer="19" extent="16-16"/>
-<wire x1="97.1" y1="-2.8" x2="97.1" y2="2.8" width="0" layer="19" extent="1-1"/>
 <wire x1="77.6176" y1="2.4" x2="77.6" y2="2.4" width="0.4064" layer="16"/>
+<wire x1="30.8" y1="12" x2="30.8636" y2="12" width="0.4064" layer="16"/>
+<wire x1="30.8636" y1="12" x2="30.8636" y2="11.8928" width="0.4064" layer="16"/>
+<wire x1="97.1" y1="2.8" x2="97.1" y2="-2.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND_3V3" class="1">
 <contactref element="IC1" pad="75"/>
@@ -3881,11 +3894,11 @@ design rules under a new name.</description>
 <wire x1="31.6" y1="-15.6" x2="31.6" y2="-21.6" width="0.4064" layer="1"/>
 <via x="58" y="-10" extent="1-16" drill="0.3302"/>
 <wire x1="58.074415625" y1="-13.306971875" x2="58" y2="-10" width="0.4064" layer="1"/>
-<via x="41.6" y="-4.4" extent="1-16" drill="0.3302"/>
+<via x="41.6" y="-4.8" extent="1-16" drill="0.3302"/>
 <via x="42" y="9.6" extent="1-16" drill="0.3302"/>
 <wire x1="42" y1="9.6" x2="41.6" y2="-4.8" width="0.4064" layer="1"/>
 <via x="38" y="17.6" extent="1-16" drill="0.3302"/>
-<wire x1="33.6" y1="17.6" x2="38" y2="17.6" width="0.4064" layer="1"/>
+<wire x1="33.544" y1="17.6" x2="38" y2="17.6" width="0.4064" layer="1"/>
 <via x="67.6" y="18.4" extent="1-16" drill="0.3302"/>
 <wire x1="66.8" y1="21.2" x2="67.6" y2="18.4" width="0.4064" layer="1"/>
 <via x="80.4" y="16.8" extent="1-16" drill="0.3302"/>
@@ -3924,11 +3937,11 @@ design rules under a new name.</description>
 <wire x1="91.4" y1="4.8683375" x2="91.4" y2="5" width="0.2032" layer="1"/>
 <wire x1="58.074415625" y1="-13.306971875" x2="58.07355" y2="-13.472615625" width="0.4064" layer="1"/>
 <wire x1="58.07355" y1="-13.472615625" x2="58.075" y2="-13.477" width="0.4064" layer="1"/>
-<wire x1="92" y1="4.4" x2="93.5" y2="2.8" width="0" layer="19" extent="16-16"/>
-<wire x1="66.731" y1="21.007" x2="66.8" y2="21.2" width="0" layer="19" extent="1-1"/>
-<wire x1="41.6" y1="-4.8" x2="41.6" y2="-4.4" width="0" layer="19" extent="1-1"/>
-<wire x1="33.6042" y1="17.6022" x2="33.6" y2="17.6" width="0" layer="19" extent="1-1"/>
-<wire x1="9.289765625" y1="-6.89686875" x2="11.829765625" y2="-10.32586875" width="0" layer="19" extent="1-1"/>
+<wire x1="33.544" y1="17.6" x2="33.544" y2="17.602" width="0.4064" layer="1"/>
+<wire x1="66.8" y1="21.2" x2="66.731" y2="21.2" width="0.4064" layer="1"/>
+<wire x1="66.731" y1="21.2" x2="66.731" y2="21.007" width="0.4064" layer="1"/>
+<wire x1="11.829765625" y1="-10.32586875" x2="9.289765625" y2="-6.89686875" width="0" layer="19" extent="1-1"/>
+<wire x1="93.5" y1="2.8" x2="92" y2="4.4" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+3V3_PIC_ANALOG">
 <contactref element="C3" pad="1"/>

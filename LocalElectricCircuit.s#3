@@ -11591,7 +11591,11 @@ D = Direct mounting &lt;p&gt;
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.2032" drill="0.3302">
+<clearance class="0" value="0.1524"/>
+</class>
+<class number="1" name="power" width="0.4064" drill="0.6096">
+<clearance class="1" value="0.3048"/>
 </class>
 </classes>
 <parts>
@@ -11743,7 +11747,7 @@ D = Direct mounting &lt;p&gt;
 <label x="152.4" y="62.865" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="1">
 <segment>
 <pinref part="U$1" gate="G$1" pin="3.3V"/>
 <wire x1="154.94" y1="170.18" x2="152.4" y2="170.18" width="0.1524" layer="91"/>
@@ -11871,8 +11875,13 @@ D = Direct mounting &lt;p&gt;
 <wire x1="99.06" y1="170.18" x2="93.98" y2="170.18" width="0.1524" layer="91"/>
 <label x="93.98" y="170.18" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VREG"/>
+<wire x1="76.2" y1="114.3" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
+<label x="76.835" y="116.84" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
-<net name="GND_3V3" class="0">
+<net name="GND_3V3" class="1">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VSS@1"/>
 <wire x1="124.46" y1="91.44" x2="127" y2="91.44" width="0.1524" layer="91"/>
@@ -12163,7 +12172,7 @@ D = Direct mounting &lt;p&gt;
 <label x="147.32" y="-17.145" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="GND_5V" class="0">
+<net name="GND_5V" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="210.82" y1="109.22" x2="208.28" y2="109.22" width="0.1524" layer="91"/>
@@ -12201,7 +12210,7 @@ D = Direct mounting &lt;p&gt;
 <wire x1="210.82" y1="-66.04" x2="210.82" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="VDD"/>
 <wire x1="236.22" y1="109.22" x2="256.54" y2="109.22" width="0.1524" layer="91"/>
@@ -12560,7 +12569,7 @@ D = Direct mounting &lt;p&gt;
 <label x="63.5" y="-15.24" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="AIN3"/>
 <wire x1="236.22" y1="104.14" x2="259.08" y2="104.14" width="0.1524" layer="91"/>
@@ -12801,7 +12810,7 @@ D = Direct mounting &lt;p&gt;
 <wire x1="241.3" y1="-5.08" x2="243.84" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PIC16_3V3" class="0">
+<net name="PIC16_3V3" class="1">
 <segment>
 <pinref part="PIC16" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="17.78" x2="223.52" y2="17.78" width="0.1524" layer="91"/>
@@ -13063,13 +13072,6 @@ D = Direct mounting &lt;p&gt;
 <pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="U2" gate="G$1" pin="SCLK"/>
 <wire x1="208.28" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PIC_3V3" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="VREG"/>
-<wire x1="76.2" y1="114.3" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
-<label x="76.835" y="116.84" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$10" class="0">
