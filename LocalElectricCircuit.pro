@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/Users/Cody/Documents/eagle/LocalElectricCircuit/LocalElectricCircuit.brd
 
-Start at      : 22:13:41 (8/8/2018)
-End at        : 22:26:06 (8/8/2018)
-Elapsed time  : 17752d 05:16
+Start at      : 22:56:13 (8/8/2018)
+End at        : 22:56:55 (8/8/2018)
+Elapsed time  : 00:00:40
 
-Signals       :    89   RoutingGrid: 4.92126 mil  Layers: 2
-Connections   :   164   predefined:  73 ( 17 Vias )
+Signals       :    89   RoutingGrid: 6.25 mil  Layers: 2
+Connections   :   164   predefined:  114 ( 45 Vias )
 
-Router memory :   4657312
+Router memory :   2899072
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  17752d 05:15  00:00:18  00:00:19  00:00:19  00:00:21
-Number of Ripups  :         1         0         0         0         0
-max. Level        :         1         0         0         0         0
-max. Total        :         1         0         0         0         0
+Time per pass     :  00:00:13  00:00:07  00:00:06  00:00:06  00:00:08
+Number of Ripups  :        11         0         0         0         0
+max. Level        :         3         0         0         0         0
+max. Total        :         4         0         0         0         0
 
-Routed            :        46        46        46        46        46
-Vias              :        75        28        29        27        28
-Resolution        :    72.6 %    72.6 %    72.6 %    72.6 %    72.6 %
+Routed            :        29        29        29        29        29
+Vias              :        97        50        46        41        43
+Resolution        :    87.2 %    87.2 %    87.2 %    87.2 %    87.2 %
 
-Final             : 69.5% finished. Polygons may have fallen apart.
+Final             : 79.3% finished. Polygons may have fallen apart.
