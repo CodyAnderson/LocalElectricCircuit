@@ -12175,12 +12175,22 @@ D = Direct mounting &lt;p&gt;
 <wire x1="25.4" y1="127" x2="15.24" y2="127" width="0.1524" layer="91"/>
 <label x="15.24" y="127.635" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="RB6"/>
+<wire x1="40.64" y1="7.62" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
+<label x="40.64" y="-15.24" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="PGED2" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="25.4" y1="129.54" x2="15.24" y2="129.54" width="0.1524" layer="91"/>
 <label x="15.24" y="130.175" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="RB7"/>
+<wire x1="43.18" y1="7.62" x2="43.18" y2="-7.62" width="0.1524" layer="91"/>
+<label x="43.18" y="-15.24" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="+3V3_PROG" class="0">
