@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.1">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.000123031496" altunitdist="mil" altunit="mil"/>
@@ -3236,11 +3235,11 @@ D = Direct mounting &lt;p&gt;
 </package>
 </packages>
 </library>
-<library name="ic-package" urn="urn:adsk.eagle:library:239">
+<library name="ic-package">
 <description>&lt;b&gt;IC Packages an Sockets&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="DIL20" urn="urn:adsk.eagle:footprint:14349/1" library_version="1">
+<package name="DIL20">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="12.7" y1="2.921" x2="-12.7" y2="2.921" width="0.1524" layer="21"/>
 <wire x1="-12.7" y1="-2.921" x2="12.7" y2="-2.921" width="0.1524" layer="21"/>
@@ -3272,20 +3271,12 @@ D = Direct mounting &lt;p&gt;
 <text x="-9.779" y="-0.381" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="DIL20" urn="urn:adsk.eagle:package:14436/1" type="box" library_version="1">
-<description>Dual In Line Package</description>
-<packageinstances>
-<packageinstance name="DIL20"/>
-</packageinstances>
-</package3d>
-</packages3d>
 </library>
-<library name="pinhead" urn="urn:adsk.eagle:library:325">
+<library name="pinhead">
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="1X06" urn="urn:adsk.eagle:footprint:22361/1" library_version="3">
+<package name="1X06">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
@@ -3346,14 +3337,6 @@ D = Direct mounting &lt;p&gt;
 <rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="1X06" urn="urn:adsk.eagle:package:22472/2" type="model" library_version="3">
-<description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="1X06"/>
-</packageinstances>
-</package3d>
-</packages3d>
 </library>
 </libraries>
 <attributes>
@@ -3440,11 +3423,10 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
-<param name="checkStop" value="0"/>
-<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -3585,8 +3567,8 @@ design rules under a new name.</description>
 </element>
 <element name="C8" library="resistor" package="C1206" value="0.1uF" x="-59.69" y="-209.296"/>
 <element name="C9" library="resistor" package="C1206" value="0.1uF" x="-59.69" y="-215.392"/>
-<element name="PIC16" library="ic-package" library_urn="urn:adsk.eagle:library:239" package="DIL20" package3d_urn="urn:adsk.eagle:package:14436/1" value="pic16f689" x="-43.942" y="-228.854"/>
-<element name="PIC16_ICSP" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" package3d_urn="urn:adsk.eagle:package:22472/2" value="" x="-48.006" y="-246.888"/>
+<element name="PIC16" library="ic-package" package="DIL20" value="pic16f689" x="-43.942" y="-228.854"/>
+<element name="PIC16_ICSP" library="pinhead" package="1X06" value="" x="-48.006" y="-246.888"/>
 <element name="C10" library="resistor" package="C1206" value="0.1uF" x="-59.69" y="-257.81"/>
 <element name="C11" library="resistor" package="C1206" value="0.01uF" x="-59.69" y="-264.16"/>
 <element name="R4" library="rcl" package="M1206" value="50k" x="-59.69" y="-270.764"/>
@@ -3837,9 +3819,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="CHARGE_PROBE_0">
 <contactref element="J2" pad="A14"/>
+<contactref element="IC1" pad="6"/>
+<wire x1="-0.26" y1="-82.9" x2="154.666" y2="6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CHARGE_PROBE_1">
 <contactref element="J2" pad="B14"/>
+<contactref element="IC1" pad="7"/>
+<wire x1="0.14" y1="-82.9" x2="152.126" y2="6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="COND_ENABLE">
 <contactref element="J2" pad="C14"/>
@@ -4029,7 +4015,9 @@ design rules under a new name.</description>
 <signal name="RB_TEMP">
 <contactref element="IC1" pad="42"/>
 <contactref element="X2" pad="8"/>
-<wire x1="11.429765625" y1="-1.15386875" x2="9.24" y2="-74.6" width="0" layer="19" extent="1-1"/>
+<contactref element="IC1" pad="56"/>
+<wire x1="5.34" y1="-69.5" x2="9.24" y2="-74.6" width="0" layer="19" extent="1-1"/>
+<wire x1="11.429765625" y1="-1.15386875" x2="5.34" y2="-69.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BALLS2">
 <contactref element="IC1" pad="76"/>
@@ -4071,24 +4059,18 @@ design rules under a new name.</description>
 <contactref element="X1" pad="1"/>
 <wire x1="13.97" y1="26.913" x2="-1.06" y2="-69.5" width="0" layer="19" extent="1-1"/>
 </signal>
+<signal name="COND_ENABLE_PIC">
+<contactref element="IC1" pad="8"/>
+</signal>
+<signal name="N$1">
+<contactref element="X2" pad="4"/>
+<contactref element="IC1" pad="57"/>
+<wire x1="13.969765625" y1="2.27513125" x2="4.94" y2="-69.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="X2" pad="5"/>
+</signal>
 </signals>
 </board>
 </drawing>
-<compatibility>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>

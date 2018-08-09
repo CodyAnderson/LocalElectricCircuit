@@ -3881,9 +3881,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="PGEC2">
 <contactref element="J1" pad="5"/>
+<contactref element="IC1" pad="26"/>
+<wire x1="43.815" y1="-31.877" x2="92.9888" y2="32.354" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PGED2">
 <contactref element="J1" pad="4"/>
+<contactref element="IC1" pad="27"/>
+<wire x1="42.545" y1="-34.417" x2="92.5888" y2="32.354" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3_PROG">
 <contactref element="J1" pad="2"/>
@@ -4058,6 +4062,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="PIC16_TX">
 <contactref element="PIC16" pad="10"/>
+<contactref element="X1" pad="12"/>
+<wire x1="8.89" y1="29.199" x2="44.45" y2="35.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PIC16_PGD">
 <contactref element="PIC16" pad="19"/>
@@ -4094,6 +4100,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="PIC16_RX">
 <contactref element="PIC16" pad="12"/>
+<contactref element="X1" pad="11"/>
+<wire x1="8.89" y1="26.913" x2="41.91" y2="43.18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="PIC16" pad="11"/>
@@ -4108,12 +4116,6 @@ design rules under a new name.</description>
 <wire x1="33.144" y1="16.002" x2="33.144" y2="22.352" width="0" layer="19" extent="1-1"/>
 <wire x1="26.54" y1="26.924" x2="33.144" y2="22.352" width="0" layer="19" extent="1-1"/>
 <wire x1="21.59" y1="35.56" x2="26.54" y2="26.924" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PIC12_RX">
-<contactref element="X1" pad="11"/>
-</signal>
-<signal name="PIC12_TX">
-<contactref element="X1" pad="12"/>
 </signal>
 <signal name="EXT_TEMP">
 <contactref element="IC1" pad="41"/>
