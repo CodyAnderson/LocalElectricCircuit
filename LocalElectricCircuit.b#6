@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="15.7480315" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
+<grid distance="0.4" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3550,53 +3550,97 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="IC1" library="PIC_BoardLibrarymicrochip" package="TQFP100" value="PIC32MX360F512L" x="90.4" y="1.6" rot="R90"/>
-<element name="C1" library="resistor" package="C1206" value="0.1uF" x="90.6" y="-16.6" rot="MR0"/>
-<element name="C3" library="resistor" package="C1206" value="0.1uF" x="94.6" y="13.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="99.07" y="13.27" size="1.27" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="99.07" y="11.86" size="1.27" layer="28" rot="MR0"/>
+<element name="IC1" library="PIC_BoardLibrarymicrochip" package="TQFP100" value="PIC32MX360F512L" x="90.4" y="1.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="97.737" y="-7.423" size="1.778" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="119.48" y="9.44" size="1.778" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="SV1" library="con-lstb" package="MA03-1" value="" x="76.9938" y="12.6772" rot="R270">
+<element name="C1" library="resistor" package="C1206" value="0.1uF" x="90.6" y="-16.6" smashed="yes" rot="MR0">
+<attribute name="NAME" x="96.27" y="-17.33" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="87.87" y="-17.14" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="C3" library="resistor" package="C1206" value="0.1uF" x="94.6" y="13.2" smashed="yes" rot="MR0">
+<attribute name="NAME" x="99.07" y="12.87" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="101.47" y="23.86" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="SV1" library="con-lstb" package="MA03-1" value="" x="76.9938" y="12.6772" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="64.2938" y="97.7672" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="64.2938" y="97.7672" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="64.2938" y="97.7672" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="64.2938" y="97.7672" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="79.0448" y="16.0872" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="74.0728" y="16.4872" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C2" library="resistor" package="C1206" value="0.1uF" x="102.2" y="2.6" rot="MR270"/>
-<element name="C5" library="resistor" package="C1206" value="0.1uF" x="89.4" y="13.2" rot="MR180"/>
-<element name="C4" library="resistor" package="C1206" value="0.1uF" x="84.2" y="13.2" rot="MR180"/>
-<element name="C6" library="resistor" package="C1206" value="0.1uF" x="77.5668" y="0.9492" rot="MR270"/>
+<element name="C2" library="resistor" package="C1206" value="0.1uF" x="102.2" y="2.6" smashed="yes" rot="MR270">
+<attribute name="NAME" x="106.53" y="6.27" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="106.54" y="2.77" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C5" library="resistor" package="C1206" value="0.1uF" x="89.4" y="13.2" smashed="yes" rot="MR180">
+<attribute name="NAME" x="86.93" y="18.73" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="102.93" y="24.94" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C4" library="resistor" package="C1206" value="0.1uF" x="84.2" y="13.2" smashed="yes" rot="MR180">
+<attribute name="NAME" x="81.33" y="15.93" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="97.33" y="12.54" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C6" library="resistor" package="C1206" value="0.1uF" x="77.5668" y="0.9492" smashed="yes" rot="MR270">
+<attribute name="NAME" x="75.3808" y="4.6968" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="71.7808" y="1.3068" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="R2" library="rcl" package="M1206" value="10" x="94.6" y="16" smashed="yes" rot="MR180">
-<attribute name="NAME" x="97.33" y="18.33" size="1.27" layer="26" rot="MR180"/>
-<attribute name="VALUE" x="97.33" y="16.54" size="1.27" layer="28" rot="MR180"/>
+<attribute name="NAME" x="97.33" y="17.13" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="97.33" y="15.74" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R1" library="rcl" package="M1206" value="1M" x="73.6156" y="12.5632" rot="R90"/>
-<element name="U1" library="ADS1118" package="MSOP10" value="ADS1118" x="138.074" y="16.904">
+<element name="R1" library="rcl" package="M1206" value="1M" x="73.6156" y="12.5632" smashed="yes" rot="R90">
+<attribute name="NAME" x="72.3456" y="11.2932" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="72.1556" y="14.0932" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="U1" library="ADS1118" package="MSOP10" value="ADS1118" x="138.074" y="16.904" smashed="yes">
 <attribute name="PROD_ID" value="" x="138.074" y="18.174" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="136.1" y="15.8" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="141.017" y="17.292" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="U2" library="ADS1118" package="MSOP10" value="ADS1118" x="138.244" y="-11.916">
 <attribute name="PROD_ID" value="" x="138.244" y="-11.916" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$1" library="SparkfunVenusGPSBreakout" package="SPARKFUN_BOARD" value="SPARKFUN_VENUS_GPS_BREAKOUT" x="19.12" y="-33.762" rot="R90"/>
-<element name="C7" library="resistor" package="C1206" value="0.1uF" x="89.2" y="-10.7" rot="MR270"/>
+<element name="C7" library="resistor" package="C1206" value="0.1uF" x="89.2" y="-10.7" smashed="yes" rot="MR270">
+<attribute name="NAME" x="91.03" y="-8.07" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="83.43" y="-7.86" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="J1" library="con-amp" package="520258-3" value="Prog. Port" x="58.71" y="-21.478"/>
-<element name="R3" library="rcl" package="M1206" value="50k" x="52.848" y="-14.738" rot="R90"/>
+<element name="R3" library="rcl" package="M1206" value="50k" x="52.848" y="-14.738" smashed="yes" rot="R90">
+<attribute name="NAME" x="51.578" y="-16.008" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="51.533634375" y="-13.307121875" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="J2" library="19inch_VG96KB" package="VG96KB" value="" x="0" y="0"/>
-<element name="X1" library="con-subd" package="HDF15H" value="" x="11.63" y="28.242" rot="R270">
+<element name="X1" library="con-subd" package="HDF15H" value="" x="11.63" y="28.242" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="11.63" y="28.242" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="11.63" y="28.242" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="11.63" y="28.242" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="11.63" y="28.242" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="15.91" y="33.132" size="1.778" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="16.71" y="28.242" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="X2" library="con-subd" package="HDF15H" value="" x="11.829765625" y="-4.85386875" rot="R270">
+<element name="X2" library="con-subd" package="HDF15H" value="" x="11.829765625" y="-4.85386875" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="11.829765625" y="-4.85386875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="11.829765625" y="-4.85386875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="11.829765625" y="-4.85386875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="11.829765625" y="-4.85386875" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="16.509765625" y="0.43613125" size="1.778" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="16.909765625" y="-4.85386875" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C8" library="resistor" package="C1206" value="0.1uF" x="133.05" y="-11.916" rot="R270"/>
-<element name="C9" library="resistor" package="C1206" value="0.1uF" x="132.88" y="16.904" rot="R270"/>
-<element name="PIC16" library="ic-package" package="DIL20" value="pic16f689" x="42.22" y="29.77"/>
+<element name="C8" library="resistor" package="C1206" value="0.1uF" x="133.05" y="-11.916" smashed="yes" rot="R270">
+<attribute name="NAME" x="128.72" y="-11.446" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="130.51" y="-11.446" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C9" library="resistor" package="C1206" value="0.1uF" x="132.88" y="16.904" smashed="yes" rot="R270">
+<attribute name="NAME" x="128.55" y="18.174" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="130.34" y="18.174" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="PIC16" library="ic-package" package="DIL20" value="pic16f689" x="42.22" y="29.77" smashed="yes">
+<attribute name="NAME" x="29.139" y="26.722" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="32.441" y="29.389" size="1.27" layer="27"/>
+</element>
 <element name="C10" library="resistor" package="C1206" value="0.1uF" x="32.144" y="20.752" smashed="yes">
 <attribute name="NAME" x="34.874" y="22.022" size="1.27" layer="25"/>
 <attribute name="VALUE" x="35.274" y="20.212" size="1.27" layer="27"/>
@@ -3607,26 +3651,77 @@ design rules under a new name.</description>
 </element>
 <element name="T1" library="transistor" package="TO92" value="PN100" x="113.95" y="-10.718" rot="R180"/>
 <element name="J3" library="con-amp" package="520258-3" value="Prog. Port" x="66.096" y="29.008" rot="R180"/>
-<element name="R7" library="rcl" package="M1206" value="50k" x="72.924" y="22.46" rot="R270"/>
-<element name="C12" library="resistor" package="C1206" value="0.01uF" x="84.2" y="11.1" rot="MR180"/>
-<element name="C13" library="resistor" package="C1206" value="0.01uF" x="100" y="2.6" rot="MR270"/>
-<element name="C14" library="resistor" package="C1206" value="0.01uF" x="89.4" y="11.1" rot="MR180"/>
-<element name="C15" library="resistor" package="C1206" value="0.01uF" x="90.6" y="-14.4" rot="MR0"/>
-<element name="C16" library="resistor" package="C1206" value="0.01uF" x="79.8004" y="1" rot="MR270"/>
-<element name="C17" library="resistor" package="C1206" value="0.01uF" x="94.6" y="11.1" rot="MR0"/>
-<element name="R4" library="rcl" package="0309/12" value="1k" x="23.368" y="-9.604"/>
-<element name="R8" library="rcl" package="0309/12" value="1k" x="23.876" y="-4.794"/>
-<element name="R9" library="rcl" package="0309/12" value="1k" x="118.3552" y="-3.9044" rot="R270"/>
-<element name="R10" library="rcl" package="0309/12" value="1k" x="122.1788" y="-3.6956" rot="R90"/>
-<element name="R5" library="rcl" package="M1206" value="50" x="134.2492" y="24.5724" rot="R270"/>
-<element name="R6" library="rcl" package="M1206" value="50" x="137.5532" y="24.5724" rot="R270"/>
+<element name="R7" library="rcl" package="M1206" value="50k" x="72.924" y="22.46" smashed="yes" rot="R270">
+<attribute name="NAME" x="74.594" y="24.53" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="76.384" y="24.53" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C12" library="resistor" package="C1206" value="0.01uF" x="84.2" y="11.1" smashed="yes" rot="MR180">
+<attribute name="NAME" x="80.73" y="9.83" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="90.36" y="14.93" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="C13" library="resistor" package="C1206" value="0.01uF" x="100" y="2.6" smashed="yes" rot="MR270">
+<attribute name="NAME" x="104.73" y="6.27" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="104.74" y="2.77" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C14" library="resistor" package="C1206" value="0.01uF" x="89.4" y="11.1" smashed="yes" rot="MR180">
+<attribute name="NAME" x="86.93" y="17.03" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="90.93" y="25.64" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C15" library="resistor" package="C1206" value="0.01uF" x="90.6" y="-14.4" smashed="yes" rot="MR0">
+<attribute name="NAME" x="96.27" y="-15.13" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="87.87" y="-14.94" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="C16" library="resistor" package="C1206" value="0.01uF" x="79.8004" y="1" smashed="yes" rot="MR270">
+<attribute name="NAME" x="78.93" y="4.9304" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="80.7404" y="-2.13" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C17" library="resistor" package="C1206" value="0.01uF" x="94.6" y="11.1" smashed="yes" rot="MR0">
+<attribute name="NAME" x="98.67" y="8.37" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="96.27" y="22.16" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R4" library="rcl" package="0309/12" value="1k" x="23.368" y="-9.604" smashed="yes">
+<attribute name="NAME" x="19.777" y="-7.899" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="25.993" y="-7.7898" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R8" library="rcl" package="0309/12" value="1k" x="23.876" y="-4.794" smashed="yes">
+<attribute name="NAME" x="19.685" y="-2.889" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="26.701" y="-2.8798" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R9" library="rcl" package="0309/12" value="1k" x="118.3552" y="-3.9044" smashed="yes" rot="R270">
+<attribute name="NAME" x="115.2602" y="-5.7134" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="115.2694" y="-3.5294" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R10" library="rcl" package="0309/12" value="1k" x="122.1788" y="-3.6956" smashed="yes" rot="R90">
+<attribute name="NAME" x="125.4738" y="-7.8866" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="125.0646" y="-3.9706" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R5" library="rcl" package="M1206" value="50" x="134.2492" y="24.5724" smashed="yes" rot="R270">
+<attribute name="NAME" x="129.9192" y="25.8424" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="131.7092" y="25.8424" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R6" library="rcl" package="M1206" value="50" x="137.5532" y="24.5724" smashed="yes" rot="R270">
+<attribute name="NAME" x="139.2232" y="26.6424" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="141.0132" y="26.6424" size="1.27" layer="27" rot="R270"/>
+</element>
 <element name="R11" library="rcl" package="M1206" value="50" x="137.0428" y="9.2276" rot="R90"/>
-<element name="R12" library="rcl" package="M1206" value="50" x="134.9612" y="-3.4276" rot="R270"/>
-<element name="R13" library="rcl" package="M1206" value="50" x="138.0652" y="-3.4276" rot="R270"/>
+<element name="R12" library="rcl" package="M1206" value="50" x="134.9612" y="-3.4276" smashed="yes" rot="R270">
+<attribute name="NAME" x="132.2312" y="-0.9576" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="130.4212" y="-0.9576" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R13" library="rcl" package="M1206" value="50" x="138.0652" y="-3.4276" smashed="yes" rot="R270">
+<attribute name="NAME" x="139.7352" y="-1.3576" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="141.5252" y="-0.9576" size="1.27" layer="27" rot="R270"/>
+</element>
 <element name="R14" library="rcl" package="M1206" value="50" x="137.1692" y="-21.0276" rot="R270"/>
 <element name="PIC16_POWER_EN" library="pinhead" package="1X02" value="" x="30.8636" y="13.1628" rot="R270"/>
-<element name="PIC32_POWER_EN" library="pinhead" package="1X02" value="" x="102.0372" y="15.6248"/>
-<element name="R15" library="rcl" package="0309/12" value="1k" x="106" y="-6.8" rot="R180"/>
+<element name="PIC32_POWER_EN" library="pinhead" package="1X02" value="" x="102.4372" y="15.6248" smashed="yes">
+<attribute name="NAME" x="102.621" y="17.4536" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="99.8972" y="12.4498" size="1.27" layer="27"/>
+</element>
+<element name="R15" library="rcl" package="0309/12" value="1k" x="106" y="-6.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="108.591" y="-3.905" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="103.575" y="-8.9142" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="OSC1">
