@@ -3720,9 +3720,9 @@ design rules under a new name.</description>
 </element>
 <element name="R14" library="rcl" package="M1206" value="50" x="137.1692" y="-21.0276" rot="R270"/>
 <element name="PIC16_POWER_EN" library="pinhead" package="1X02" value="" x="30.8636" y="13.1628" rot="R270"/>
-<element name="R15" library="rcl" package="0309/12" value="1k" x="106" y="-6.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="108.591" y="-3.905" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="103.575" y="-8.9142" size="1.27" layer="27" ratio="10" rot="R180"/>
+<element name="R15" library="rcl" package="0309/12" value="1k" x="109.4812" y="-4.0444" smashed="yes" rot="R90">
+<attribute name="NAME" x="112.3762" y="-6.6354" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="107.367" y="-1.6194" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -4264,7 +4264,7 @@ design rules under a new name.</description>
 <signal name="CONDUCTIVITY_ENABLE_3V">
 <contactref element="IC1" pad="8"/>
 <contactref element="R15" pad="2"/>
-<wire x1="99.65" y1="-6.8" x2="80.0312" y2="16.6688" width="0" layer="19" extent="1-1"/>
+<wire x1="109.4812" y1="2.3056" x2="80.0312" y2="16.6688" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R9" pad="2"/>
@@ -4304,7 +4304,7 @@ design rules under a new name.</description>
 <signal name="N$10">
 <contactref element="R15" pad="1"/>
 <contactref element="T1" pad="1"/>
-<wire x1="112.68" y1="-10.718" x2="112.35" y2="-6.8" width="0" layer="19" extent="1-1"/>
+<wire x1="112.68" y1="-10.718" x2="109.4812" y2="-10.3944" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
