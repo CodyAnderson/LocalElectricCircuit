@@ -11594,8 +11594,8 @@ D = Direct mounting &lt;p&gt;
 <class number="0" name="default" width="0.2032" drill="0.3302">
 <clearance class="0" value="0.1524"/>
 </class>
-<class number="1" name="power" width="0.4064" drill="0.6096">
-<clearance class="1" value="0.3048"/>
+<class number="1" name="power" width="0.4064" drill="0.3302">
+<clearance class="1" value="0.1524"/>
 </class>
 </classes>
 <parts>
@@ -11861,6 +11861,17 @@ D = Direct mounting &lt;p&gt;
 <pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="213.36" x2="91.44" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="215.9" x2="101.6" y2="215.9" width="0.1524" layer="91"/>
+<junction x="45.72" y="223.52"/>
+<junction x="101.6" y="223.52"/>
+<junction x="101.6" y="215.9"/>
+<junction x="73.66" y="215.9"/>
+<junction x="73.66" y="223.52"/>
+<junction x="-10.16" y="215.9"/>
+<junction x="17.78" y="215.9"/>
+<junction x="-10.16" y="223.52"/>
+<junction x="45.72" y="215.9"/>
+<junction x="53.34" y="223.52"/>
+<junction x="17.78" y="223.52"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -11988,6 +11999,17 @@ D = Direct mounting &lt;p&gt;
 <pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="205.74" x2="121.92" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="203.2" x2="132.08" y2="203.2" width="0.1524" layer="91"/>
+<junction x="101.6" y="203.2"/>
+<junction x="73.66" y="203.2"/>
+<junction x="73.66" y="190.5"/>
+<junction x="45.72" y="190.5"/>
+<junction x="17.78" y="190.5"/>
+<junction x="-10.16" y="203.2"/>
+<junction x="17.78" y="203.2"/>
+<junction x="45.72" y="203.2"/>
+<junction x="132.08" y="203.2"/>
+<junction x="101.6" y="190.5"/>
+<junction x="53.34" y="190.5"/>
 </segment>
 <segment>
 <pinref part="PIC16" gate="G$1" pin="20"/>
@@ -12053,6 +12075,8 @@ D = Direct mounting &lt;p&gt;
 <pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="213.36" x2="121.92" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="215.9" x2="132.08" y2="215.9" width="0.1524" layer="91"/>
+<junction x="132.08" y="223.52"/>
+<junction x="132.08" y="215.9"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="AVDD"/>
@@ -12852,6 +12876,7 @@ D = Direct mounting &lt;p&gt;
 <wire x1="147.32" y1="12.7" x2="162.56" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="-2.54" x2="147.32" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="147.32" y="-2.54"/>
 </segment>
 </net>
 <net name="RB_TEMP" class="0">
@@ -13083,6 +13108,39 @@ D = Direct mounting &lt;p&gt;
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,50.8,7.62,IC1,AVDD,+3V3_PIC_ANALOG,,,"/>
+<approved hash="104,1,53.34,7.62,IC1,AVSS,GND_3V3,,,"/>
+<approved hash="104,1,17.78,88.9,IC1,VDD,+3V3,,,"/>
+<approved hash="104,1,17.78,53.34,IC1,VDD,+3V3,,,"/>
+<approved hash="104,1,68.58,7.62,IC1,VDD,+3V3,,,"/>
+<approved hash="104,1,91.44,7.62,IC1,VDD,+3V3,,,"/>
+<approved hash="104,1,124.46,58.42,IC1,VDD,+3V3,,,"/>
+<approved hash="104,1,78.74,114.3,IC1,VDDCORE,VCAP/VCORE,,,"/>
+<approved hash="104,1,124.46,91.44,IC1,VSS,GND_3V3,,,"/>
+<approved hash="104,1,17.78,55.88,IC1,VSS,GND_3V3,,,"/>
+<approved hash="104,1,66.04,7.62,IC1,VSS,GND_3V3,,,"/>
+<approved hash="104,1,88.9,7.62,IC1,VSS,GND_3V3,,,"/>
+<approved hash="104,1,124.46,66.04,IC1,VSS,GND_3V3,,,"/>
+<approved hash="106,1,17.78,35.56,!SS1,,,,,"/>
+<approved hash="106,1,17.78,58.42,!SS2,,,,,"/>
+<approved hash="106,1,-45.72,121.92,+5V_DIFF,,,,,"/>
+<approved hash="106,1,-45.72,114.3,+7V_DIFF,,,,,"/>
+<approved hash="106,1,-45.72,116.84,-5V_DIFF,,,,,"/>
+<approved hash="106,1,-45.72,109.22,-7V_DIFF,,,,,"/>
+<approved hash="106,1,-45.72,119.38,GND_5V_DIFF,,,,,"/>
+<approved hash="106,1,-45.72,111.76,GND_7V_DIFF,,,,,"/>
+<approved hash="106,1,226.06,15.24,N$2,,,,,"/>
+<approved hash="106,1,226.06,12.7,N$3,,,,,"/>
+<approved hash="106,1,241.3,0,N$18,,,,,"/>
+<approved hash="106,1,241.3,-5.08,N$20,,,,,"/>
+<approved hash="113,1,134.662,122.995,SV1,,,,,"/>
+<approved hash="113,1,-39.9627,56.0747,J2,,,,,"/>
+<approved hash="113,1,138.43,-39.2119,X1,,,,,"/>
+<approved hash="113,1,160.02,-7.46188,X2,,,,,"/>
+<approved hash="113,1,293.747,33.1512,PIC16_POWER_EN,,,,,"/>
+<approved hash="113,1,105.787,170.311,PIC32_POWER_EN,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
