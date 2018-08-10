@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11578,18 +11578,6 @@ D = Direct mounting &lt;p&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="297.18" y="121.92" size="3.556" layer="91" align="top-left">ToDo:
-   -Figure out PIC pins for I2C
-   -Figure out PIC pins for selector of conductivity (3 GPIO)
-   -Pull up for 3V logic for conductivity
-   -Figure out 11 analog pins for the PIC (Avaliable are: AN0,AN1,AN3-AN5,AN8-AN15)
-      -Figure out PIC pins for 2 thermistor inputs 
-      -Figure out PIC pins for 3 eurocard temp inputs
-      -Figure out PIC pins for 6 power supervision inputs
-   -Figure out PIC pins for ballast (8 GPIO)
-   -Figure out what the oscillator is
-   -Make a PIC programming circuit
-</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="71.12" y="60.96"/>
@@ -13036,10 +13024,4 @@ D = Direct mounting &lt;p&gt;
 </errors>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>

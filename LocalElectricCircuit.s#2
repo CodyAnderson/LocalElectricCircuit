@@ -11783,6 +11783,9 @@ D = Direct mounting &lt;p&gt;
 <label x="147.32" y="-14.605" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
+<wire x1="99.06" y1="167.64" x2="93.98" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="PIC16_POWER_EN" gate="G$1" pin="2"/>
 <wire x1="287.02" y1="30.48" x2="281.94" y2="30.48" width="0.1524" layer="91"/>
 <label x="281.94" y="30.48" size="1.778" layer="95" rot="R180"/>
@@ -13127,7 +13130,6 @@ D = Direct mounting &lt;p&gt;
 <approved hash="113,1,138.43,-39.2119,X1,,,,,"/>
 <approved hash="113,1,160.02,-7.46188,X2,,,,,"/>
 <approved hash="113,1,293.747,33.1512,PIC16_POWER_EN,,,,,"/>
-<approved hash="113,1,105.787,170.311,PIC32_POWER_EN,,,,,"/>
 </errors>
 </schematic>
 </drawing>
