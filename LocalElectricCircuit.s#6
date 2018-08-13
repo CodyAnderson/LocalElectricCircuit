@@ -11643,7 +11643,6 @@ D = Direct mounting &lt;p&gt;
 <part name="R13" library="rcl" deviceset="R-US_" device="M1206" value="50"/>
 <part name="R14" library="rcl" deviceset="R-US_" device="M1206" value="50"/>
 <part name="PIC16_POWER_EN" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="PIC32_POWER_EN" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="R15" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
 </parts>
 <sheets>
@@ -11707,7 +11706,6 @@ D = Direct mounting &lt;p&gt;
 <instance part="R13" gate="G$1" x="243.84" y="76.2" rot="R180"/>
 <instance part="R14" gate="G$1" x="203.2" y="81.28" rot="R180"/>
 <instance part="PIC16_POWER_EN" gate="G$1" x="289.56" y="30.48"/>
-<instance part="PIC32_POWER_EN" gate="G$1" x="101.6" y="167.64"/>
 <instance part="R15" gate="G$1" x="200.66" y="-30.48" rot="R180"/>
 </instances>
 <busses>
@@ -11783,11 +11781,6 @@ D = Direct mounting &lt;p&gt;
 <pinref part="X2" gate="G$1" pin="9"/>
 <wire x1="152.4" y1="-15.24" x2="147.32" y2="-15.24" width="0.1524" layer="91"/>
 <label x="147.32" y="-14.605" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="PIC32_POWER_EN" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="167.64" x2="93.98" y2="167.64" width="0.1524" layer="91"/>
-<label x="93.98" y="167.64" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="PIC16_POWER_EN" gate="G$1" pin="2"/>
@@ -11880,11 +11873,6 @@ D = Direct mounting &lt;p&gt;
 <wire x1="17.78" y1="134.62" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
 <junction x="17.78" y="134.62"/>
 <label x="15.24" y="135.255" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="PIC32_POWER_EN" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="170.18" x2="93.98" y2="170.18" width="0.1524" layer="91"/>
-<label x="93.98" y="170.18" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VREG"/>
