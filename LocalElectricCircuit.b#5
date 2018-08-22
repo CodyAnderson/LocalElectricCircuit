@@ -3795,6 +3795,7 @@ design rules under a new name.</description>
 <element name="U$18" library="Logos" package="BALLOON" value="" x="11.808228125" y="42.925296875"/>
 <element name="U$19" library="Logos" package="BALLOON" value="" x="16.453734375" y="40.580246875"/>
 <element name="U$20" library="Logos" package="BALLOON" value="" x="12.183471875" y="40.03689375"/>
+<element name="U$21" library="Logos" package="BALLOON" value="" x="151.470475" y="44.423"/>
 </elements>
 <signals>
 <signal name="OSC1">
