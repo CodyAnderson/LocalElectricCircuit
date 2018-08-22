@@ -14384,8 +14384,6 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="C15" library="resistor" deviceset="C-US" device="C1206" value="0.01uF"/>
 <part name="C16" library="resistor" deviceset="C-US" device="C1206" value="0.01uF"/>
 <part name="C17" library="resistor" deviceset="C-US" device="C1206" value="0.01uF"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
-<part name="R8" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="M1206" value="50"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="M1206" value="50"/>
 <part name="R11" library="rcl" deviceset="R-US_" device="M1206" value="50"/>
@@ -14441,8 +14439,6 @@ or will meet your specific requirements.&lt;p&gt;
 <instance part="C15" gate="G$1" x="63.5" y="210.82"/>
 <instance part="C16" gate="G$1" x="91.44" y="210.82"/>
 <instance part="C17" gate="G$1" x="121.92" y="210.82"/>
-<instance part="R4" gate="G$1" x="147.32" y="2.54" rot="R180"/>
-<instance part="R8" gate="G$1" x="139.7" y="-2.54" rot="R180"/>
 <instance part="R5" gate="G$1" x="337.82" y="213.36" rot="R180"/>
 <instance part="R6" gate="G$1" x="332.74" y="208.28" rot="R180"/>
 <instance part="R11" gate="G$1" x="292.1" y="213.36" rot="R180"/>
@@ -14800,16 +14796,6 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="170.18" y1="-2.54" x2="182.88" y2="-2.54" width="0.1524" layer="91"/>
 <label x="182.88" y="-3.175" size="1.778" layer="95"/>
 <pinref part="X2" gate="G$1" pin="12"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="2.54" x2="132.08" y2="2.54" width="0.1524" layer="91"/>
-<label x="132.08" y="3.175" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="-2.54" x2="132.08" y2="-2.54" width="0.1524" layer="91"/>
-<label x="132.08" y="-1.905" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <wire x1="154.94" y1="0" x2="116.84" y2="0" width="0.1524" layer="91"/>
@@ -15759,12 +15745,9 @@ or will meet your specific requirements.&lt;p&gt;
 </segment>
 <segment>
 <label x="162.56" y="12.065" size="1.778" layer="95"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="-2.54" x2="144.78" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="-2.54" x2="147.32" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="12.7" x2="162.56" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-2.54" x2="147.32" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="147.32" y="-2.54"/>
 <pinref part="X2" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -15776,7 +15759,6 @@ or will meet your specific requirements.&lt;p&gt;
 </segment>
 <segment>
 <label x="162.56" y="9.525" size="1.778" layer="95"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="2.54" x2="152.4" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="10.16" x2="162.56" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="1"/>
