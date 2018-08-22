@@ -5035,39 +5035,18 @@ design rules under a new name.</description>
 <via x="71.2" y="26" extent="1-16" drill="0.3302" shape="octagon"/>
 </signal>
 <signal name="N$33">
-<wire x1="72" y1="25.6" x2="72" y2="25.4" width="0.2032" layer="1"/>
-<wire x1="72" y1="25.4" x2="69.6" y2="23" width="0.2032" layer="1"/>
-<wire x1="69.6" y1="23" x2="69.6" y2="20.4" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$34">
-<wire x1="72.8" y1="25.6" x2="72.8" y2="25.4" width="0.2032" layer="1"/>
-<wire x1="72.8" y1="25.4" x2="70" y2="22.6" width="0.2032" layer="1"/>
-<wire x1="70" y1="22.6" x2="70" y2="20.4" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$37">
-<wire x1="73.6" y1="25.6" x2="73.6" y2="25.4" width="0.2032" layer="1"/>
-<wire x1="73.6" y1="25.4" x2="70.4" y2="22.2" width="0.2032" layer="1"/>
-<wire x1="70.4" y1="22.2" x2="70.4" y2="20.4" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$38">
-<wire x1="74.4" y1="25.6" x2="74.4" y2="25.4" width="0.2032" layer="1"/>
-<wire x1="74.4" y1="25.4" x2="70.8" y2="21.8" width="0.2032" layer="1"/>
-<wire x1="70.8" y1="21.8" x2="70.8" y2="20.4" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$41">
-<wire x1="75.2" y1="25.6" x2="75.2" y2="25.4" width="0.2032" layer="1"/>
-<wire x1="75.2" y1="25.4" x2="71.2" y2="21.4" width="0.2032" layer="1"/>
-<wire x1="71.2" y1="21.4" x2="71.2" y2="20.4" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$42">
-<wire x1="76" y1="25.6" x2="76" y2="25.4" width="0.2032" layer="1"/>
-<wire x1="76" y1="25.4" x2="71.6" y2="21" width="0.2032" layer="1"/>
-<wire x1="71.6" y1="21" x2="71.6" y2="20.4" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$43">
-<wire x1="76.8" y1="25.6" x2="76.8" y2="25.4" width="0.2032" layer="1"/>
-<wire x1="76.8" y1="25.4" x2="72" y2="20.6" width="0.2032" layer="1"/>
-<wire x1="72" y1="20.6" x2="72" y2="20.4" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$103">
 <wire x1="9.8" y1="66" x2="10.2" y2="65.6" width="0.2032" layer="1"/>

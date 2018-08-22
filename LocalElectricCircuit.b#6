@@ -3759,7 +3759,7 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="" x="147.6" y="-94.4" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$1" library="SparkfunVenusGPSBreakout" package="SPARKFUN_BOARD" value="SPARKFUN_VENUS_GPS_BREAKOUT" x="19.12" y="-33.762" rot="R90"/>
-<element name="C7" library="resistor" package="C1206" value="0.1uF" x="62.5" y="16.6" smashed="yes" rot="MR0"/>
+<element name="C7" library="resistor" package="C1206" value="0.1uF" x="62.5" y="16.4" smashed="yes" rot="MR0"/>
 <element name="R3" library="rcl" package="M1206" value="10k" x="123.938" y="-31.652" smashed="yes" rot="R180">
 <attribute name="NAME" x="125.208" y="-32.922" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="122.507121875" y="-32.966365625" size="1.27" layer="27" rot="R180"/>
@@ -4071,7 +4071,7 @@ design rules under a new name.</description>
 <wire x1="62.4" y1="16.8" x2="64.8" y2="14.4" width="0.2032" layer="1"/>
 <via x="64.8" y="14.4" extent="1-16" drill="0.3302" shape="octagon"/>
 <wire x1="64.8" y1="14.4" x2="63.2" y2="14.4" width="0.2032" layer="16"/>
-<wire x1="61.1" y1="16.6" x2="61.1" y2="14.5" width="0.2032" layer="16"/>
+<wire x1="61.1" y1="16.4" x2="61.1" y2="14.5" width="0.2032" layer="16"/>
 <wire x1="61.1" y1="14.5" x2="61" y2="14.4" width="0.2032" layer="16"/>
 <wire x1="66.4" y1="19.5" x2="66.4" y2="18" width="0.2032" layer="1"/>
 <wire x1="67.9492" y1="16.8332" x2="67.916" y2="16.8" width="0.2032" layer="16"/>
@@ -4372,7 +4372,7 @@ design rules under a new name.</description>
 <wire x1="65.2" y1="13.6" x2="66" y2="14.4" width="0.2032" layer="1"/>
 <wire x1="66" y1="14.4" x2="66" y2="16.4" width="0.2032" layer="1"/>
 <via x="66" y="16.4" extent="1-16" drill="0.3302" shape="octagon"/>
-<wire x1="66" y1="16.4" x2="63.9" y2="16.6" width="0.2032" layer="16"/>
+<wire x1="66" y1="16.4" x2="63.9" y2="16.4" width="0.2032" layer="16"/>
 <wire x1="64" y1="14" x2="60.5" y2="14" width="0.2032" layer="1"/>
 <wire x1="54.6" y1="15.2" x2="55.8" y2="14" width="0.2032" layer="1"/>
 <wire x1="55.8" y1="14" x2="60.5" y2="14" width="0.2032" layer="1"/>
@@ -5892,7 +5892,6 @@ design rules under a new name.</description>
 </signals>
 <errors>
 <approved hash="3,1,73d5be15be3573f5"/>
-<approved hash="3,16,6aea8b2a8b0c6acc"/>
 <approved hash="3,1,01a919611f09185f"/>
 <approved hash="3,1,e2f42f342c35e1f5"/>
 <approved hash="3,1,f82ed9eed961f8a1"/>
@@ -5929,7 +5928,6 @@ design rules under a new name.</description>
 <approved hash="3,16,e700517fc2445179"/>
 <approved hash="3,1,c02fe1efe161c0a1"/>
 <approved hash="3,1,b7a416641525b4e5"/>
-<approved hash="3,16,ce542c942334c1f4"/>
 <approved hash="3,16,9e959cf17f33b65c"/>
 <approved hash="3,16,b7b4d674d535b4f5"/>
 <approved hash="3,16,227b215ac39af3eb"/>
@@ -5966,10 +5964,8 @@ design rules under a new name.</description>
 <approved hash="3,1,d0bf117f1173d0b3"/>
 <approved hash="3,1,939ae07b020b025a"/>
 <approved hash="3,16,ffd73e173d16fcd6"/>
-<approved hash="3,16,d81d57dd5799d859"/>
 <approved hash="3,16,439e489cc85cc860"/>
 <approved hash="3,1,c61b47db4776c6b6"/>
-<approved hash="3,16,25bb27459a7bd5f1"/>
 <approved hash="3,16,d50668c66803d5c3"/>
 <approved hash="3,16,28226800a9f3a9e2"/>
 <approved hash="3,1,c07ae1bae198c058"/>
