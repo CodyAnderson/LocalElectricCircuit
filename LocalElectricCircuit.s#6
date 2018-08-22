@@ -14384,8 +14384,6 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="C15" library="resistor" deviceset="C-US" device="C1206" value="0.01uF"/>
 <part name="C16" library="resistor" deviceset="C-US" device="C1206" value="0.01uF"/>
 <part name="C17" library="resistor" deviceset="C-US" device="C1206" value="0.01uF"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
-<part name="R8" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="M1206" value="50"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="M1206" value="50"/>
 <part name="R11" library="rcl" deviceset="R-US_" device="M1206" value="50"/>
@@ -14393,7 +14391,6 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="R13" library="rcl" deviceset="R-US_" device="M1206" value="50"/>
 <part name="R14" library="rcl" deviceset="R-US_" device="M1206" value="50"/>
 <part name="PIC16_POWER_EN" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="R15" library="rcl" deviceset="R-US_" device="0309/12" value="1k"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="X2" library="MALE_VGA" deviceset="MALE_VGA" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X6" device=""/>
@@ -14442,8 +14439,6 @@ or will meet your specific requirements.&lt;p&gt;
 <instance part="C15" gate="G$1" x="63.5" y="210.82"/>
 <instance part="C16" gate="G$1" x="91.44" y="210.82"/>
 <instance part="C17" gate="G$1" x="121.92" y="210.82"/>
-<instance part="R4" gate="G$1" x="147.32" y="2.54" rot="R180"/>
-<instance part="R8" gate="G$1" x="139.7" y="-2.54" rot="R180"/>
 <instance part="R5" gate="G$1" x="337.82" y="213.36" rot="R180"/>
 <instance part="R6" gate="G$1" x="332.74" y="208.28" rot="R180"/>
 <instance part="R11" gate="G$1" x="292.1" y="213.36" rot="R180"/>
@@ -14451,7 +14446,6 @@ or will meet your specific requirements.&lt;p&gt;
 <instance part="R13" gate="G$1" x="332.74" y="109.22" rot="R180"/>
 <instance part="R14" gate="G$1" x="292.1" y="114.3" rot="R180"/>
 <instance part="PIC16_POWER_EN" gate="G$1" x="289.56" y="30.48"/>
-<instance part="R15" gate="G$1" x="231.14" y="-73.66" rot="R180"/>
 <instance part="JP1" gate="A" x="292.1" y="2.54"/>
 <instance part="X2" gate="G$1" x="162.56" y="-7.62"/>
 <instance part="JP2" gate="A" x="27.94" y="129.54"/>
@@ -14647,12 +14641,6 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="76.2" y1="114.3" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
 <label x="76.835" y="116.84" size="1.778" layer="95" rot="R90"/>
 </segment>
-<segment>
-<label x="241.935" y="-63.5" size="1.778" layer="95" rot="R90"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="-73.66" x2="241.3" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="-73.66" x2="241.3" y2="-63.5" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="GND_3V3" class="1">
 <segment>
@@ -14808,16 +14796,6 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="170.18" y1="-2.54" x2="182.88" y2="-2.54" width="0.1524" layer="91"/>
 <label x="182.88" y="-3.175" size="1.778" layer="95"/>
 <pinref part="X2" gate="G$1" pin="12"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="2.54" x2="132.08" y2="2.54" width="0.1524" layer="91"/>
-<label x="132.08" y="3.175" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="-2.54" x2="132.08" y2="-2.54" width="0.1524" layer="91"/>
-<label x="132.08" y="-1.905" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <wire x1="154.94" y1="0" x2="116.84" y2="0" width="0.1524" layer="91"/>
@@ -15026,16 +15004,6 @@ or will meet your specific requirements.&lt;p&gt;
 <label x="370.84" y="104.775" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="V2" gate="/4" pin="A"/>
-<wire x1="378.46" y1="99.06" x2="370.84" y2="99.06" width="0.1524" layer="91"/>
-<label x="370.84" y="99.695" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="V2" gate="/4" pin="Y"/>
-<wire x1="398.78" y1="101.6" x2="406.4" y2="101.6" width="0.1524" layer="91"/>
-<label x="406.4" y="100.965" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="431.8" y1="228.6" x2="431.8" y2="231.14" width="0.1524" layer="91"/>
 <label x="432.435" y="231.14" size="1.778" layer="95" rot="R90"/>
@@ -15044,11 +15012,6 @@ or will meet your specific requirements.&lt;p&gt;
 <pinref part="V1" gate="/4" pin="!G"/>
 <wire x1="381" y1="203.2" x2="373.38" y2="203.2" width="0.1524" layer="91"/>
 <label x="373.38" y="203.835" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="V1" gate="/4" pin="A"/>
-<wire x1="381" y1="198.12" x2="373.38" y2="198.12" width="0.1524" layer="91"/>
-<label x="373.38" y="198.755" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="V1" gate="/4" pin="Y"/>
@@ -15782,12 +15745,9 @@ or will meet your specific requirements.&lt;p&gt;
 </segment>
 <segment>
 <label x="162.56" y="12.065" size="1.778" layer="95"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="-2.54" x2="144.78" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="-2.54" x2="147.32" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="12.7" x2="162.56" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-2.54" x2="147.32" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="147.32" y="-2.54"/>
 <pinref part="X2" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -15799,7 +15759,6 @@ or will meet your specific requirements.&lt;p&gt;
 </segment>
 <segment>
 <label x="162.56" y="9.525" size="1.778" layer="95"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="2.54" x2="152.4" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="10.16" x2="162.56" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="1"/>
@@ -15936,23 +15895,14 @@ or will meet your specific requirements.&lt;p&gt;
 </net>
 <net name="CONDUCTIVITY_ENABLE" class="0">
 <segment>
-<label x="220.98" y="-73.025" size="1.778" layer="95" rot="R180"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="220.98" y1="-73.66" x2="226.06" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="-73.66" x2="226.06" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="-83.82" x2="248.92" y2="-83.82" width="0.1524" layer="91"/>
-<junction x="226.06" y="-73.66"/>
-<label x="248.92" y="-84.455" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="RC3"/>
-<wire x1="17.78" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
-<label x="12.7" y="74.295" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <pinref part="J2" gate="G$1" pin="C14"/>
 <wire x1="-45.72" y1="71.12" x2="-55.88" y2="71.12" width="0.1524" layer="91"/>
 <label x="-55.88" y="71.755" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="V2" gate="/4" pin="Y"/>
+<wire x1="398.78" y1="101.6" x2="406.4" y2="101.6" width="0.1524" layer="91"/>
+<label x="406.4" y="100.965" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -16121,6 +16071,18 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="431.8" y1="215.9" x2="401.32" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="V1" gate="/3" pin="A"/>
 <label x="408.94" y="215.265" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PIC_COND_EN" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="RC3"/>
+<wire x1="17.78" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<label x="12.7" y="74.295" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="V2" gate="/4" pin="A"/>
+<wire x1="378.46" y1="99.06" x2="370.84" y2="99.06" width="0.1524" layer="91"/>
+<label x="370.84" y="99.695" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>

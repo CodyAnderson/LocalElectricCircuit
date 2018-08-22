@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14404,6 +14404,8 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="JP4" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="JP6" library="pinhead" deviceset="PINHD-1X5" device=""/>
+<part name="R4" library="resistor" deviceset="R-US_" device="0414/15" value="1k"/>
+<part name="R8" library="resistor" deviceset="R-US_" device="0414/15" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -14469,6 +14471,8 @@ or will meet your specific requirements.&lt;p&gt;
 <instance part="JP4" gate="A" x="226.06" y="195.58" rot="MR0"/>
 <instance part="JP5" gate="A" x="297.18" y="96.52" rot="MR180"/>
 <instance part="JP6" gate="A" x="226.06" y="96.52" rot="MR0"/>
+<instance part="R4" gate="G$1" x="139.7" y="12.7" rot="R180"/>
+<instance part="R8" gate="G$1" x="144.78" y="5.08" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14533,11 +14537,6 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="170.18" y1="-17.78" x2="182.88" y2="-17.78" width="0.1524" layer="91"/>
 <label x="182.88" y="-18.415" size="1.778" layer="95"/>
 <pinref part="X2" gate="G$1" pin="15"/>
-</segment>
-<segment>
-<wire x1="154.94" y1="-10.16" x2="147.32" y2="-10.16" width="0.1524" layer="91"/>
-<label x="147.32" y="-9.525" size="1.778" layer="95" rot="R180"/>
-<pinref part="X2" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <wire x1="154.94" y1="-15.24" x2="147.32" y2="-15.24" width="0.1524" layer="91"/>
@@ -14640,6 +14639,11 @@ or will meet your specific requirements.&lt;p&gt;
 <pinref part="IC1" gate="G$1" pin="VREG"/>
 <wire x1="76.2" y1="114.3" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
 <label x="76.835" y="116.84" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="5.08" x2="127" y2="5.08" width="0.1524" layer="91"/>
+<label x="127" y="5.588" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="GND_3V3" class="1">
@@ -14801,6 +14805,16 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="154.94" y1="0" x2="116.84" y2="0" width="0.1524" layer="91"/>
 <label x="116.84" y="0.635" size="1.778" layer="95" rot="R180"/>
 <pinref part="X2" gate="G$1" pin="6"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="12.7" x2="132.08" y2="12.7" width="0.1524" layer="91"/>
+<label x="132.08" y="13.208" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<wire x1="154.94" y1="-10.16" x2="147.32" y2="-10.16" width="0.1524" layer="91"/>
+<label x="147.32" y="-9.525" size="1.778" layer="95" rot="R180"/>
+<pinref part="X2" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="+3V3_PIC_ANALOG" class="0">
@@ -15052,6 +15066,11 @@ or will meet your specific requirements.&lt;p&gt;
 <pinref part="JP6" gate="A" pin="3"/>
 <wire x1="228.6" y1="96.52" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
 <label x="236.22" y="95.885" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="V1" gate="/4" pin="A"/>
+<wire x1="325.12" y1="162.56" x2="317.5" y2="162.56" width="0.1524" layer="91"/>
+<label x="317.754" y="163.068" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="+5V" class="1">
@@ -15749,6 +15768,9 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="147.32" y1="12.7" x2="162.56" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-2.54" x2="147.32" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="12.7" x2="147.32" y2="12.7" width="0.1524" layer="91"/>
+<junction x="147.32" y="12.7"/>
 </segment>
 </net>
 <net name="RB_TEMP" class="0">
@@ -15759,10 +15781,14 @@ or will meet your specific requirements.&lt;p&gt;
 </segment>
 <segment>
 <label x="162.56" y="9.525" size="1.778" layer="95"/>
-<wire x1="152.4" y1="2.54" x2="152.4" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="2.54" x2="152.4" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="5.08" x2="152.4" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="10.16" x2="162.56" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="2.54" x2="154.94" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="5.08" x2="152.4" y2="5.08" width="0.1524" layer="91"/>
+<junction x="152.4" y="5.08"/>
 </segment>
 </net>
 <net name="BALLS2" class="0">
