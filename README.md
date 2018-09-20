@@ -1,6 +1,7 @@
 # LocalElectricCircuit
 
 This is the repository containing the Circuit board files for the Global Electric Circuit project.
+
 Other Global Electric Circuit project repositories can be found at:
 
 | Repository                                                                  | Description         |
