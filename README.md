@@ -1,2 +1,12 @@
 # LocalElectricCircuit
-A Local Electric Circuit to measure the Global Electric Circuit
+
+This is the repository containing the Circuit board files for the Global Electric Circuit project.
+
+Other Global Electric Circuit project repositories can be found at:
+
+| Repository                                                                  | Description         |
+|:--------------------------------------------------------------------------- |:------------------  |
+| [GlobalCircuit](https://github.com/keleuk/GlobalCircuit)                    | PIC32 code          |
+| [GECaux](https://github.com/keleuk/GECaux)                                  | PIC16 code          |
+| [GECutils](https://github.com/keleuk/GECutils)                              | Python scripts      |
+| [LocalElectricCircuit](https://github.com/CodyAnderson/LocalElectricCircuit)| Circuit board files |
