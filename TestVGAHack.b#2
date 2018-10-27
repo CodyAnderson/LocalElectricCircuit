@@ -288,7 +288,9 @@ design rules under a new name.</description>
 <signal name="C15">
 <via x="0" y="-3.96" extent="1-16" drill="1.35"/>
 <via x="0" y="12.07" extent="1-16" drill="1.35"/>
-<wire x1="0" y1="-3.96" x2="0" y2="12.07" width="0" layer="19" extent="1-1"/>
+<wire x1="0" y1="-3.96" x2="-3.435" y2="-3.96" width="0.4064" layer="1"/>
+<wire x1="-3.435" y1="-3.96" x2="-3.435" y2="2.29" width="0.4064" layer="1"/>
+<wire x1="-3.435" y1="2.29" x2="0" y2="12.07" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="C4">
 <via x="2.29" y="0" extent="1-16" drill="1.35"/>
@@ -413,6 +415,8 @@ design rules under a new name.</description>
 <via x="0" y="8.325" extent="1-16" drill="1.35"/>
 <wire x1="0" y1="8.325" x2="1.145" y2="6.035" width="0.4064" layer="16"/>
 <wire x1="1.145" y1="6.035" x2="0" y2="3.745" width="0.4064" layer="16"/>
+<wire x1="1.145" y1="6.035" x2="0" y2="3.745" width="0.4064" layer="1"/>
+<wire x1="0" y1="8.325" x2="1.145" y2="6.035" width="0.4064" layer="1"/>
 </signal>
 <signal name="C27">
 <via x="3.435" y="6.035" extent="1-16" drill="1.35"/>
@@ -420,6 +424,8 @@ design rules under a new name.</description>
 <via x="2.29" y="8.325" extent="1-16" drill="1.35"/>
 <wire x1="2.29" y1="3.745" x2="3.435" y2="6.035" width="0.4064" layer="16"/>
 <wire x1="3.435" y1="6.035" x2="2.29" y2="8.325" width="0.4064" layer="16"/>
+<wire x1="3.435" y1="6.035" x2="2.29" y2="8.325" width="0.4064" layer="1"/>
+<wire x1="2.29" y1="3.745" x2="3.435" y2="6.035" width="0.4064" layer="1"/>
 </signal>
 <signal name="C28">
 <via x="5.725" y="6.035" extent="1-16" drill="1.35"/>
@@ -427,6 +433,8 @@ design rules under a new name.</description>
 <via x="4.58" y="8.325" extent="1-16" drill="1.35"/>
 <wire x1="5.725" y1="6.035" x2="4.58" y2="3.745" width="0.4064" layer="16"/>
 <wire x1="5.725" y1="6.035" x2="4.58" y2="8.325" width="0.4064" layer="16"/>
+<wire x1="5.725" y1="6.035" x2="4.58" y2="8.325" width="0.4064" layer="1"/>
+<wire x1="5.725" y1="6.035" x2="4.58" y2="3.745" width="0.4064" layer="1"/>
 </signal>
 <signal name="C29">
 <via x="8.015" y="6.035" extent="1-16" drill="1.35"/>
@@ -434,6 +442,8 @@ design rules under a new name.</description>
 <via x="6.87" y="8.325" extent="1-16" drill="1.35"/>
 <wire x1="8.015" y1="6.035" x2="6.87" y2="8.325" width="0.4064" layer="16"/>
 <wire x1="8.015" y1="6.035" x2="6.87" y2="3.745" width="0.4064" layer="16"/>
+<wire x1="8.015" y1="6.035" x2="6.87" y2="8.325" width="0.4064" layer="1"/>
+<wire x1="8.015" y1="6.035" x2="6.87" y2="3.745" width="0.4064" layer="1"/>
 </signal>
 <signal name="C30">
 <via x="10.305" y="6.035" extent="1-16" drill="1.35"/>
@@ -441,41 +451,53 @@ design rules under a new name.</description>
 <via x="9.16" y="8.325" extent="1-16" drill="1.35"/>
 <wire x1="10.305" y1="6.035" x2="9.16" y2="3.745" width="0.4064" layer="16"/>
 <wire x1="10.305" y1="6.035" x2="9.16" y2="8.325" width="0.4064" layer="16"/>
+<wire x1="10.305" y1="6.035" x2="9.16" y2="8.325" width="0.4064" layer="1"/>
+<wire x1="10.305" y1="6.035" x2="9.16" y2="3.745" width="0.4064" layer="1"/>
 </signal>
 <signal name="C2_17">
 <via x="41.465" y="6.035" extent="1-16" drill="1.35"/>
-<via x="40.32" y="3.745" extent="1-16" drill="1.35"/>
-<via x="40.32" y="8.325" extent="1-16" drill="1.35"/>
-<wire x1="41.465" y1="6.035" x2="40.32" y2="8.325" width="0.4064" layer="16"/>
-<wire x1="41.465" y1="6.035" x2="40.32" y2="3.745" width="0.4064" layer="16"/>
+<via x="42.61" y="3.745" extent="1-16" drill="1.35"/>
+<via x="42.61" y="8.325" extent="1-16" drill="1.35"/>
+<wire x1="41.465" y1="6.035" x2="42.61" y2="8.325" width="0.4064" layer="16"/>
+<wire x1="41.465" y1="6.035" x2="42.61" y2="3.745" width="0.4064" layer="16"/>
+<wire x1="41.465" y1="6.035" x2="42.61" y2="8.325" width="0.4064" layer="1"/>
+<wire x1="41.465" y1="6.035" x2="42.61" y2="3.745" width="0.4064" layer="1"/>
 </signal>
 <signal name="C2_27">
 <via x="39.175" y="6.035" extent="1-16" drill="1.35"/>
-<via x="38.03" y="3.745" extent="1-16" drill="1.35"/>
-<via x="38.03" y="8.325" extent="1-16" drill="1.35"/>
-<wire x1="39.175" y1="6.035" x2="38.03" y2="3.745" width="0.4064" layer="16"/>
-<wire x1="39.175" y1="6.035" x2="38.03" y2="8.325" width="0.4064" layer="16"/>
+<via x="40.32" y="3.745" extent="1-16" drill="1.35"/>
+<via x="40.32" y="8.325" extent="1-16" drill="1.35"/>
+<wire x1="39.175" y1="6.035" x2="40.32" y2="3.745" width="0.4064" layer="16"/>
+<wire x1="39.175" y1="6.035" x2="40.32" y2="8.325" width="0.4064" layer="16"/>
+<wire x1="39.175" y1="6.035" x2="40.32" y2="8.325" width="0.4064" layer="1"/>
+<wire x1="39.175" y1="6.035" x2="40.32" y2="3.745" width="0.4064" layer="1"/>
 </signal>
 <signal name="C2_28">
 <via x="36.885" y="6.035" extent="1-16" drill="1.35"/>
-<via x="35.74" y="3.745" extent="1-16" drill="1.35"/>
-<via x="35.74" y="8.325" extent="1-16" drill="1.35"/>
-<wire x1="36.885" y1="6.035" x2="35.74" y2="8.325" width="0.4064" layer="16"/>
-<wire x1="36.885" y1="6.035" x2="35.74" y2="3.745" width="0.4064" layer="16"/>
+<via x="38.03" y="3.745" extent="1-16" drill="1.35"/>
+<via x="38.03" y="8.325" extent="1-16" drill="1.35"/>
+<wire x1="36.885" y1="6.035" x2="38.03" y2="8.325" width="0.4064" layer="16"/>
+<wire x1="36.885" y1="6.035" x2="38.03" y2="3.745" width="0.4064" layer="16"/>
+<wire x1="36.885" y1="6.035" x2="38.03" y2="8.325" width="0.4064" layer="1"/>
+<wire x1="36.885" y1="6.035" x2="38.03" y2="3.745" width="0.4064" layer="1"/>
 </signal>
 <signal name="C2_29">
 <via x="34.595" y="6.035" extent="1-16" drill="1.35"/>
-<via x="33.45" y="3.745" extent="1-16" drill="1.35"/>
-<via x="33.45" y="8.325" extent="1-16" drill="1.35"/>
-<wire x1="34.595" y1="6.035" x2="33.45" y2="8.325" width="0.4064" layer="16"/>
-<wire x1="34.595" y1="6.035" x2="33.45" y2="3.745" width="0.4064" layer="16"/>
+<via x="35.74" y="3.745" extent="1-16" drill="1.35"/>
+<via x="35.74" y="8.325" extent="1-16" drill="1.35"/>
+<wire x1="34.595" y1="6.035" x2="35.74" y2="8.325" width="0.4064" layer="16"/>
+<wire x1="34.595" y1="6.035" x2="35.74" y2="3.745" width="0.4064" layer="16"/>
+<wire x1="34.595" y1="6.035" x2="35.74" y2="8.325" width="0.4064" layer="1"/>
+<wire x1="34.595" y1="6.035" x2="35.74" y2="3.745" width="0.4064" layer="1"/>
 </signal>
 <signal name="C2_30">
 <via x="32.305" y="6.035" extent="1-16" drill="1.35"/>
-<via x="31.16" y="3.745" extent="1-16" drill="1.35"/>
-<via x="31.16" y="8.325" extent="1-16" drill="1.35"/>
-<wire x1="32.305" y1="6.035" x2="31.16" y2="3.745" width="0.4064" layer="16"/>
-<wire x1="32.305" y1="6.035" x2="31.16" y2="8.325" width="0.4064" layer="16"/>
+<via x="33.45" y="3.745" extent="1-16" drill="1.35"/>
+<via x="33.45" y="8.325" extent="1-16" drill="1.35"/>
+<wire x1="32.305" y1="6.035" x2="33.45" y2="3.745" width="0.4064" layer="16"/>
+<wire x1="32.305" y1="6.035" x2="33.45" y2="8.325" width="0.4064" layer="16"/>
+<wire x1="32.305" y1="6.035" x2="33.45" y2="8.325" width="0.4064" layer="1"/>
+<wire x1="32.305" y1="6.035" x2="33.45" y2="3.745" width="0.4064" layer="1"/>
 </signal>
 <signal name="C32">
 <via x="1.145" y="14.05" extent="1-16" drill="1.35"/>
