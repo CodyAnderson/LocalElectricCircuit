@@ -15711,12 +15711,6 @@ Source: &lt;a href="http://www.mouser.com/ds/2/137/G-636PCE_en-1003252.pdf"&gt; 
 <label x="149.86" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="PIC16" gate="G$1" pin="11"/>
-<wire x1="241.3" y1="-5.08" x2="243.84" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PIC16_3V3" class="1">
 <segment>
 <pinref part="PIC16" gate="G$1" pin="1"/>
@@ -16110,6 +16104,19 @@ Source: &lt;a href="http://www.mouser.com/ds/2/137/G-636PCE_en-1003252.pdf"&gt; 
 <pinref part="IC1" gate="G$1" pin="RD14"/>
 <wire x1="93.98" y1="7.62" x2="93.98" y2="-7.62" width="0.1524" layer="91"/>
 <label x="93.218" y="-8.382" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="PIC16_XBEE_SLEEP" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="14"/>
+<wire x1="146.05" y1="-44.45" x2="146.05" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="146.05" y1="-45.72" x2="149.86" y2="-45.72" width="0.1524" layer="91"/>
+<label x="149.86" y="-45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PIC16" gate="G$1" pin="11"/>
+<wire x1="241.3" y1="-5.08" x2="243.84" y2="-5.08" width="0.1524" layer="91"/>
+<label x="246.38" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
