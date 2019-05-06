@@ -15861,7 +15861,7 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <segment>
 <pinref part="IC1" gate="G$1" pin="RE8"/>
 <wire x1="17.78" y1="48.26" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
-<label x="5.08" y="48.26" size="1.778" layer="95"/>
+<label x="14.986" y="49.276" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PBUS0" class="0">
@@ -16358,10 +16358,11 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <label x="157.48" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="RE9" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="RE9"/>
 <wire x1="17.78" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
+<label x="15.24" y="46.99" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="!SS1_5V" class="0">
@@ -16410,21 +16411,21 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <label x="342.9" y="100.076" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N/A1" class="0">
+<net name="RC1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="RC1"/>
 <wire x1="17.78" y1="78.74" x2="12.7" y2="78.74" width="0.1524" layer="91"/>
 <label x="12.7" y="79.375" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N/A2" class="0">
+<net name="RC2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="RC2"/>
 <wire x1="17.78" y1="76.2" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
 <label x="12.7" y="76.835" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N/A3" class="0">
+<net name="RC3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="RC3"/>
 <wire x1="17.78" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
@@ -16481,6 +16482,27 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <pinref part="V2" gate="/2" pin="Y"/>
 <wire x1="391.16" y1="101.6" x2="370.84" y2="101.6" width="0.1524" layer="91"/>
 <label x="370.84" y="101.6" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RG15" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="RG15"/>
+<wire x1="17.78" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+<label x="10.16" y="91.44" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="RC4" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="RC4"/>
+<wire x1="17.78" y1="71.12" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
+<label x="12.7" y="72.136" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="TMS" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="TMS"/>
+<wire x1="17.78" y1="50.8" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
+<label x="10.16" y="51.816" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
