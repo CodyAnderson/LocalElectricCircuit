@@ -16117,8 +16117,8 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="50.8" x2="175.26" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="48.26" x2="182.88" y2="48.26" width="0.1524" layer="91"/>
-<label x="182.88" y="48.26" size="1.778" layer="95"/>
+<wire x1="175.26" y1="48.26" x2="177.8" y2="48.26" width="0.1524" layer="91"/>
+<label x="177.8" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
@@ -16135,8 +16135,8 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="50.8" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="45.72" x2="182.88" y2="45.72" width="0.1524" layer="91"/>
-<label x="182.88" y="45.72" size="1.778" layer="95"/>
+<wire x1="165.1" y1="45.72" x2="177.8" y2="45.72" width="0.1524" layer="91"/>
+<label x="177.8" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CONDUCTIVITY_ENABLE" class="0">
