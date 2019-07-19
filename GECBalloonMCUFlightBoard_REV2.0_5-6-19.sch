@@ -14646,6 +14646,8 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <part name="R17" library="resistor" deviceset="R-US_" device="R1206" value="510"/>
 <part name="R18" library="resistor" deviceset="R-US_" device="R1206" value="680"/>
 <part name="R19" library="resistor" deviceset="R-US_" device="R1206" value="510"/>
+<part name="R20" library="rcl" deviceset="R-US_" device="M1206" value="10k"/>
+<part name="R21" library="rcl" deviceset="R-US_" device="M1206" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -14719,6 +14721,8 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <instance part="R17" gate="G$1" x="396.24" y="119.38"/>
 <instance part="R18" gate="G$1" x="406.4" y="109.22" rot="MR0"/>
 <instance part="R19" gate="G$1" x="396.24" y="101.6"/>
+<instance part="R20" gate="G$1" x="165.1" y="55.88" rot="R90"/>
+<instance part="R21" gate="G$1" x="175.26" y="55.88" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -14901,6 +14905,14 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="12.7" x2="127" y2="12.7" width="0.1524" layer="91"/>
 <label x="127" y="13.208" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="2"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="60.96" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="60.96" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="60.96" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
+<label x="170.18" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND_3V3" class="1">
@@ -16102,6 +16114,12 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <wire x1="124.46" y1="45.72" x2="134.62" y2="45.72" width="0.1524" layer="91"/>
 <label x="134.62" y="45.085" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="50.8" x2="175.26" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="48.26" x2="182.88" y2="48.26" width="0.1524" layer="91"/>
+<label x="182.88" y="48.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
@@ -16113,6 +16131,12 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <pinref part="IC1" gate="G$1" pin="RG3"/>
 <wire x1="124.46" y1="43.18" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
 <label x="134.62" y="42.545" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="50.8" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="45.72" x2="182.88" y2="45.72" width="0.1524" layer="91"/>
+<label x="182.88" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CONDUCTIVITY_ENABLE" class="0">

@@ -3838,6 +3838,8 @@ design rules under a new name.</description>
 <element name="R17" library="resistor" package="R1206" value="510" x="100.711" y="53.34" rot="MR90"/>
 <element name="R18" library="resistor" package="R1206" value="680" x="94.996" y="59.563" rot="MR90"/>
 <element name="R19" library="resistor" package="R1206" value="510" x="100.584" y="59.563" rot="MR90"/>
+<element name="R20" library="rcl" package="M1206" value="10k" x="39.497" y="73.914" rot="R270"/>
+<element name="R21" library="rcl" package="M1206" value="10k" x="45.339" y="73.914" rot="R270"/>
 </elements>
 <signals>
 <signal name="OSC1">
@@ -4077,6 +4079,8 @@ design rules under a new name.</description>
 <via x="138.43" y="94.45" extent="1-16" drill="0.9144" diameter="1.6002" shape="octagon"/>
 <via x="143.51" y="94.45" extent="1-16" drill="0.9144" diameter="1.6002" shape="octagon"/>
 <contactref element="R4" pad="2"/>
+<contactref element="R20" pad="2"/>
+<contactref element="R21" pad="2"/>
 </signal>
 <signal name="GND_3V3" class="1">
 <contactref element="IC1" pad="75"/>
@@ -5898,6 +5902,9 @@ design rules under a new name.</description>
 <wire x1="8.9789" y1="45.2883" x2="8.96" y2="45.257" width="0.2032" layer="1"/>
 <wire x1="55.6514" y1="67.9578" x2="55.6" y2="68" width="0.2032" layer="16"/>
 <via x="30.9372" y="69.6469" extent="1-16" drill="0.3302"/>
+<contactref element="R21" pad="1"/>
+<wire x1="55.6" y1="68" x2="48.286" y2="75.314" width="0.2032" layer="1"/>
+<wire x1="48.286" y1="75.314" x2="45.339" y2="75.314" width="0.2032" layer="1"/>
 </signal>
 <signal name="I2C_SDA">
 <contactref element="IC1" pad="56"/>
@@ -5913,10 +5920,14 @@ design rules under a new name.</description>
 <wire x1="12.9794" y1="81.2039" x2="12.9794" y2="72.9362" width="0.2032" layer="1"/>
 <wire x1="13.5128" y1="81.7373" x2="12.9794" y2="81.2039" width="0.2032" layer="1"/>
 <wire x1="42.7609" y1="81.7373" x2="13.5128" y2="81.7373" width="0.2032" layer="1"/>
-<wire x1="56.3626" y1="68.1356" x2="42.7609" y2="81.7373" width="0.2032" layer="1"/>
+<wire x1="56.3626" y1="68.1356" x2="47.1361" y2="77.3621" width="0.2032" layer="1"/>
+<wire x1="47.1361" y1="77.3621" x2="42.7609" y2="81.7373" width="0.2032" layer="1"/>
 <wire x1="56.3626" y1="67.2466" x2="56.3626" y2="68.1356" width="0.2032" layer="1"/>
 <wire x1="8.89" y1="42.9769" x2="8.96" y2="42.971" width="0.2032" layer="1"/>
 <wire x1="56.3626" y1="67.2466" x2="56.4" y2="67.2" width="0.2032" layer="1"/>
+<contactref element="R20" pad="1"/>
+<wire x1="39.497" y1="75.314" x2="41.5451" y2="77.3621" width="0.2032" layer="1"/>
+<wire x1="41.5451" y1="77.3621" x2="47.1361" y2="77.3621" width="0.2032" layer="1"/>
 </signal>
 <signal name="CONDUCTIVITY_ENABLE">
 <contactref element="J2" pad="C14"/>
