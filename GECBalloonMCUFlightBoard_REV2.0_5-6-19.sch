@@ -14897,6 +14897,11 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <label x="68.58" y="154.94" size="1.778" layer="95"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
 </segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="12.7" x2="127" y2="12.7" width="0.1524" layer="91"/>
+<label x="127" y="13.208" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="GND_3V3" class="1">
 <segment>
@@ -15053,11 +15058,6 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <pinref part="X2" gate="G$1" pin="6"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="12.7" x2="132.08" y2="12.7" width="0.1524" layer="91"/>
-<label x="132.08" y="13.208" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <wire x1="154.94" y1="-10.16" x2="147.32" y2="-10.16" width="0.1524" layer="91"/>
 <label x="147.32" y="-9.525" size="1.778" layer="95" rot="R180"/>
 <pinref part="X2" gate="G$1" pin="8"/>
@@ -15070,6 +15070,11 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <wire x1="175.26" y1="124.46" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="116.84" x2="187.96" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="7"/>
+<wire x1="154.94" y1="-5.08" x2="116.84" y2="-5.08" width="0.1524" layer="91"/>
+<label x="116.84" y="-4.318" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="+3V3_PIC_ANALOG" class="0">
