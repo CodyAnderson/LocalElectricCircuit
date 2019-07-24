@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -154,13 +154,13 @@
 </layers>
 <board>
 <plain>
-<rectangle x1="0" y1="0" x2="160" y2="3" layer="43"/>
-<rectangle x1="0" y1="97" x2="160" y2="100" layer="43"/>
-<rectangle x1="0" y1="97" x2="160" y2="100" layer="39"/>
-<rectangle x1="0" y1="0" x2="160" y2="3" layer="39"/>
-<rectangle x1="0" y1="0" x2="160" y2="3" layer="40"/>
-<rectangle x1="0" y1="97" x2="160" y2="100" layer="40"/>
-<text x="36.06899375" y="77.083496875" size="1.27" layer="21" font="vector" align="top-left">GLOBAL ELECTRIC CIRCUIT
+<rectangle x1="-0.254" y1="-0.47" x2="159.746" y2="2.53" layer="43"/>
+<rectangle x1="-0.254" y1="96.53" x2="159.746" y2="99.53" layer="43"/>
+<rectangle x1="-0.254" y1="96.53" x2="159.746" y2="99.53" layer="39"/>
+<rectangle x1="-0.254" y1="-0.47" x2="159.746" y2="2.53" layer="39"/>
+<rectangle x1="-0.254" y1="-0.47" x2="159.746" y2="2.53" layer="40"/>
+<rectangle x1="-0.254" y1="96.53" x2="159.746" y2="99.53" layer="40"/>
+<text x="35.81499375" y="76.613496875" size="1.27" layer="21" font="vector" align="top-left">GLOBAL ELECTRIC CIRCUIT
 DEBUG POWER SUPPLY BOARD REV 1.0
 C. ANDERSON
 7/22/19
@@ -1746,6 +1746,388 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 </package>
 </packages>
 </library>
+<library name="CustomEuroCard">
+<packages>
+<package name="VG96KB">
+<description>&lt;b&gt;EUROCARD&lt;/b&gt; Female</description>
+<wire x1="-1.651" y1="-46.99" x2="-1.651" y2="-44.45" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="-44.45" x2="-7.366" y2="-44.45" width="0.1524" layer="21"/>
+<wire x1="-7.366" y1="-44.45" x2="-7.366" y2="44.45" width="0.1524" layer="21"/>
+<wire x1="-7.366" y1="44.45" x2="-1.651" y2="44.45" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="44.45" x2="-1.651" y2="46.99" width="0.1524" layer="21"/>
+<wire x1="5.334" y1="46.99" x2="5.334" y2="41.91" width="0.1524" layer="21"/>
+<wire x1="5.334" y1="41.91" x2="4.064" y2="41.91" width="0.1524" layer="21"/>
+<wire x1="4.064" y1="41.91" x2="1.1938" y2="41.91" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="46.99" x2="-0.0762" y2="46.99" width="0.1524" layer="21"/>
+<wire x1="-0.0762" y1="46.99" x2="5.334" y2="46.99" width="0.1524" layer="21"/>
+<wire x1="1.1938" y1="41.91" x2="-0.0762" y2="43.18" width="0.1524" layer="21"/>
+<wire x1="-0.0762" y1="43.18" x2="-0.0762" y2="46.99" width="0.1524" layer="21"/>
+<wire x1="5.334" y1="-46.99" x2="-0.0762" y2="-46.99" width="0.1524" layer="21"/>
+<wire x1="-0.0762" y1="-46.99" x2="-1.651" y2="-46.99" width="0.1524" layer="21"/>
+<wire x1="-0.0762" y1="-43.5102" x2="1.524" y2="-41.91" width="0.1524" layer="21"/>
+<wire x1="-0.0762" y1="-43.5102" x2="-0.0762" y2="-46.99" width="0.1524" layer="21"/>
+<wire x1="5.334" y1="-41.91" x2="5.334" y2="-46.99" width="0.1524" layer="21"/>
+<wire x1="5.334" y1="-41.91" x2="4.064" y2="-41.91" width="0.1524" layer="21"/>
+<wire x1="4.064" y1="-41.91" x2="1.524" y2="-41.91" width="0.1524" layer="21"/>
+<wire x1="4.064" y1="41.91" x2="4.064" y2="38.735" width="0.1524" layer="21"/>
+<wire x1="0" y1="38.735" x2="0" y2="36.195" width="0.0508" layer="21"/>
+<wire x1="0" y1="38.735" x2="4.064" y2="38.735" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="38.735" x2="4.064" y2="36.195" width="0.1524" layer="21"/>
+<wire x1="0" y1="36.195" x2="4.064" y2="36.195" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="36.195" x2="4.064" y2="34.925" width="0.1524" layer="21"/>
+<wire x1="0" y1="34.925" x2="4.064" y2="34.925" width="0.0508" layer="21"/>
+<wire x1="0" y1="34.925" x2="0" y2="31.115" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="34.925" x2="4.064" y2="31.115" width="0.1524" layer="21"/>
+<wire x1="0" y1="31.115" x2="4.064" y2="31.115" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="31.115" x2="4.064" y2="29.845" width="0.1524" layer="21"/>
+<wire x1="0" y1="29.845" x2="4.064" y2="29.845" width="0.0508" layer="21"/>
+<wire x1="0" y1="29.845" x2="0" y2="20.955" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="29.845" x2="4.064" y2="20.955" width="0.1524" layer="21"/>
+<wire x1="0" y1="20.955" x2="4.064" y2="20.955" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="20.955" x2="4.064" y2="19.685" width="0.1524" layer="21"/>
+<wire x1="0" y1="19.685" x2="4.064" y2="19.685" width="0.0508" layer="21"/>
+<wire x1="0" y1="19.685" x2="0" y2="10.795" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="19.685" x2="4.064" y2="10.795" width="0.1524" layer="21"/>
+<wire x1="0" y1="10.795" x2="4.064" y2="10.795" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="10.795" x2="4.064" y2="9.525" width="0.1524" layer="21"/>
+<wire x1="0" y1="9.525" x2="4.064" y2="9.525" width="0.0508" layer="21"/>
+<wire x1="0" y1="9.525" x2="0" y2="0.635" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="9.525" x2="4.064" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="4.064" y2="0.635" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="0.635" x2="4.064" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="4.064" y2="-0.635" width="0.0508" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0" y2="-9.525" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="-0.635" x2="4.064" y2="-9.525" width="0.1524" layer="21"/>
+<wire x1="0" y1="-9.525" x2="4.064" y2="-9.525" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="-9.525" x2="4.064" y2="-10.795" width="0.1524" layer="21"/>
+<wire x1="0" y1="-10.795" x2="4.064" y2="-10.795" width="0.0508" layer="21"/>
+<wire x1="0" y1="-10.795" x2="0" y2="-19.685" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="-10.795" x2="4.064" y2="-19.685" width="0.1524" layer="21"/>
+<wire x1="0" y1="-19.685" x2="4.064" y2="-19.685" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="-19.685" x2="4.064" y2="-20.955" width="0.1524" layer="21"/>
+<wire x1="0" y1="-20.955" x2="4.064" y2="-20.955" width="0.0508" layer="21"/>
+<wire x1="0" y1="-20.955" x2="0" y2="-29.845" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="-20.955" x2="4.064" y2="-29.845" width="0.1524" layer="21"/>
+<wire x1="0" y1="-29.845" x2="4.064" y2="-29.845" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="-29.845" x2="4.064" y2="-31.115" width="0.1524" layer="21"/>
+<wire x1="0" y1="-31.115" x2="4.064" y2="-31.115" width="0.0508" layer="21"/>
+<wire x1="0" y1="-31.115" x2="0" y2="-34.925" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="-31.115" x2="4.064" y2="-34.925" width="0.1524" layer="21"/>
+<wire x1="0" y1="-34.925" x2="4.064" y2="-34.925" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="-34.925" x2="4.064" y2="-36.195" width="0.1524" layer="21"/>
+<wire x1="0" y1="-36.195" x2="4.064" y2="-36.195" width="0.0508" layer="21"/>
+<wire x1="0" y1="-36.195" x2="0" y2="-38.735" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="-36.195" x2="4.064" y2="-38.735" width="0.1524" layer="21"/>
+<wire x1="0" y1="-38.735" x2="4.064" y2="-38.735" width="0.0508" layer="21"/>
+<wire x1="4.064" y1="-38.735" x2="4.064" y2="-41.91" width="0.1524" layer="21"/>
+<circle x="2.794" y="44.45" radius="1.27" width="0.1524" layer="21"/>
+<circle x="2.794" y="-44.45" radius="1.27" width="0.1524" layer="21"/>
+<circle x="2.794" y="-44.45" radius="2.286" width="0" layer="41"/>
+<circle x="2.794" y="-44.45" radius="2.286" width="0" layer="43"/>
+<circle x="2.794" y="44.45" radius="2.286" width="0" layer="41"/>
+<circle x="2.794" y="44.45" radius="2.286" width="0" layer="43"/>
+<pad name="A1" x="5.334" y="39.37" drill="0.9144" diameter="1.6002" shape="square" rot="R180"/>
+<pad name="A2" x="5.334" y="36.83" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A3" x="5.334" y="34.29" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A4" x="5.334" y="31.75" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A5" x="5.334" y="29.21" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A6" x="5.334" y="26.67" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A7" x="5.334" y="24.13" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A8" x="5.334" y="21.59" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A9" x="5.334" y="19.05" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A10" x="5.334" y="16.51" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A11" x="5.334" y="13.97" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A12" x="5.334" y="11.43" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A13" x="5.334" y="8.89" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A14" x="5.334" y="6.35" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A15" x="5.334" y="3.81" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A16" x="5.334" y="1.27" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A17" x="5.334" y="-1.27" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A18" x="5.334" y="-3.81" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A19" x="5.334" y="-6.35" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A20" x="5.334" y="-8.89" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A21" x="5.334" y="-11.43" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A22" x="5.334" y="-13.97" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A23" x="5.334" y="-16.51" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A24" x="5.334" y="-19.05" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A25" x="5.334" y="-21.59" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A26" x="5.334" y="-24.13" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A27" x="5.334" y="-26.67" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A28" x="5.334" y="-29.21" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A29" x="5.334" y="-31.75" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A30" x="5.334" y="-34.29" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A31" x="5.334" y="-36.83" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="A32" x="5.334" y="-39.37" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C1" x="10.414" y="39.37" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C2" x="10.414" y="36.83" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C3" x="10.414" y="34.29" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C4" x="10.414" y="31.75" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C5" x="10.414" y="29.21" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C6" x="10.414" y="26.67" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C7" x="10.414" y="24.13" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C8" x="10.414" y="21.59" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C9" x="10.414" y="19.05" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C10" x="10.414" y="16.51" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C11" x="10.414" y="13.97" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C12" x="10.414" y="11.43" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C13" x="10.414" y="8.89" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C14" x="10.414" y="6.35" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C15" x="10.414" y="3.81" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C16" x="10.414" y="1.27" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C17" x="10.414" y="-1.27" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C18" x="10.414" y="-3.81" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C19" x="10.414" y="-6.35" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C20" x="10.414" y="-8.89" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C21" x="10.414" y="-11.43" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C22" x="10.414" y="-13.97" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C23" x="10.414" y="-16.51" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C24" x="10.414" y="-19.05" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C25" x="10.414" y="-21.59" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C26" x="10.414" y="-24.13" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C27" x="10.414" y="-26.67" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C28" x="10.414" y="-29.21" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C29" x="10.414" y="-31.75" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C30" x="10.414" y="-34.29" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C31" x="10.414" y="-36.83" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="C32" x="10.414" y="-39.37" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B1" x="7.874" y="39.37" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B2" x="7.874" y="36.83" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B3" x="7.874" y="34.29" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B4" x="7.874" y="31.75" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B5" x="7.874" y="29.21" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B6" x="7.874" y="26.67" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B7" x="7.874" y="24.13" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B8" x="7.874" y="21.59" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B9" x="7.874" y="19.05" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B10" x="7.874" y="16.51" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B11" x="7.874" y="13.97" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B12" x="7.874" y="11.43" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B13" x="7.874" y="8.89" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B14" x="7.874" y="6.35" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B15" x="7.874" y="3.81" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B16" x="7.874" y="1.27" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B17" x="7.874" y="-1.27" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B18" x="7.874" y="-3.81" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B19" x="7.874" y="-6.35" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B20" x="7.874" y="-8.89" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B21" x="7.874" y="-11.43" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B22" x="7.874" y="-13.97" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B23" x="7.874" y="-16.51" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B24" x="7.874" y="-19.05" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B25" x="7.874" y="-21.59" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B26" x="7.874" y="-24.13" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B27" x="7.874" y="-26.67" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B28" x="7.874" y="-29.21" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B29" x="7.874" y="-31.75" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B30" x="7.874" y="-34.29" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B31" x="7.874" y="-36.83" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<pad name="B32" x="7.874" y="-39.37" drill="0.9144" diameter="1.6002" shape="octagon" rot="R180"/>
+<text x="10.414" y="40.64" size="1.27" layer="21" ratio="12" align="bottom-right">C</text>
+<text x="6.604" y="40.64" size="1.27" layer="21" ratio="12" align="bottom-right">A</text>
+<text x="2.794" y="39.37" size="1.27" layer="21" ratio="12" align="bottom-right">1</text>
+<text x="-4.826" y="-41.91" size="2.54" layer="25" ratio="10" rot="R90" align="top-left">&gt;NAME</text>
+<text x="-4.826" y="-11.4554" size="2.54" layer="27" ratio="10" rot="R90" align="top-left">&gt;VALUE</text>
+<text x="-2.921" y="26.67" size="1.778" layer="21" ratio="10" rot="R90" align="top-left">DIN 41612</text>
+<text x="-5.461" y="26.67" size="1.778" layer="21" ratio="10" rot="R90" align="top-left">Bauform C</text>
+<text x="2.794" y="-40.64" size="1.27" layer="21" ratio="12" align="bottom-right">32</text>
+<text x="8.509" y="40.64" size="1.27" layer="21" ratio="12" align="bottom-right">B</text>
+<rectangle x1="4.064" y1="39.116" x2="4.445" y2="39.624" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="39.116" x2="6.223" y2="39.624" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="39.116" x2="10.668" y2="39.624" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="36.576" x2="4.445" y2="37.084" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="36.576" x2="6.223" y2="37.084" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="36.576" x2="10.668" y2="37.084" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="34.036" x2="10.668" y2="34.544" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="34.036" x2="4.445" y2="34.544" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="34.036" x2="6.223" y2="34.544" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="31.496" x2="4.445" y2="32.004" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="31.496" x2="6.223" y2="32.004" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="31.496" x2="10.668" y2="32.004" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="28.956" x2="4.445" y2="29.464" layer="21" rot="R180"/>
+<rectangle x1="4.064" y1="26.416" x2="4.445" y2="26.924" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="28.956" x2="6.223" y2="29.464" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="26.416" x2="6.223" y2="26.924" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="28.956" x2="10.668" y2="29.464" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="26.416" x2="10.668" y2="26.924" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="23.876" x2="10.668" y2="24.384" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="23.876" x2="4.445" y2="24.384" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="23.876" x2="6.223" y2="24.384" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="21.336" x2="6.223" y2="21.844" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="21.336" x2="4.445" y2="21.844" layer="21" rot="R180"/>
+<rectangle x1="9.525" y1="21.336" x2="10.668" y2="21.844" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="18.796" x2="6.223" y2="19.304" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="18.796" x2="4.445" y2="19.304" layer="21" rot="R180"/>
+<rectangle x1="9.525" y1="18.796" x2="10.668" y2="19.304" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="16.256" x2="4.445" y2="16.764" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="16.256" x2="6.223" y2="16.764" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="16.256" x2="10.668" y2="16.764" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="13.716" x2="10.668" y2="14.224" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="13.716" x2="6.223" y2="14.224" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="13.716" x2="4.445" y2="14.224" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="11.176" x2="6.223" y2="11.684" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="8.636" x2="6.223" y2="9.144" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="11.176" x2="4.445" y2="11.684" layer="21" rot="R180"/>
+<rectangle x1="4.064" y1="8.636" x2="4.445" y2="9.144" layer="21" rot="R180"/>
+<rectangle x1="9.525" y1="11.176" x2="10.668" y2="11.684" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="8.636" x2="10.668" y2="9.144" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="6.096" x2="10.668" y2="6.604" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="6.096" x2="6.223" y2="6.604" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="3.556" x2="6.223" y2="4.064" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="6.096" x2="4.445" y2="6.604" layer="21" rot="R180"/>
+<rectangle x1="4.064" y1="3.556" x2="4.445" y2="4.064" layer="21" rot="R180"/>
+<rectangle x1="9.525" y1="3.556" x2="10.668" y2="4.064" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="1.016" x2="10.668" y2="1.524" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="1.016" x2="6.223" y2="1.524" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="1.016" x2="4.445" y2="1.524" layer="21" rot="R180"/>
+<rectangle x1="4.064" y1="-1.524" x2="4.445" y2="-1.016" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="-1.524" x2="6.223" y2="-1.016" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="-1.524" x2="10.668" y2="-1.016" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-4.064" x2="4.445" y2="-3.556" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="-4.064" x2="6.223" y2="-3.556" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="-4.064" x2="10.668" y2="-3.556" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="-6.604" x2="6.223" y2="-6.096" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-6.604" x2="4.445" y2="-6.096" layer="21" rot="R180"/>
+<rectangle x1="9.525" y1="-6.604" x2="10.668" y2="-6.096" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="-9.144" x2="10.668" y2="-8.636" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="-9.144" x2="6.223" y2="-8.636" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-9.144" x2="4.445" y2="-8.636" layer="21" rot="R180"/>
+<rectangle x1="4.064" y1="-11.684" x2="4.445" y2="-11.176" layer="21" rot="R180"/>
+<rectangle x1="4.064" y1="-14.224" x2="4.445" y2="-13.716" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="-11.684" x2="6.223" y2="-11.176" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="-11.684" x2="10.668" y2="-11.176" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="-16.764" x2="6.223" y2="-16.256" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-16.764" x2="4.445" y2="-16.256" layer="21" rot="R180"/>
+<rectangle x1="9.525" y1="-16.764" x2="10.668" y2="-16.256" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="-14.224" x2="6.223" y2="-13.716" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="-14.224" x2="10.668" y2="-13.716" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="-19.304" x2="6.223" y2="-18.796" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-19.304" x2="4.445" y2="-18.796" layer="21" rot="R180"/>
+<rectangle x1="9.525" y1="-19.304" x2="10.668" y2="-18.796" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="-21.844" x2="10.668" y2="-21.336" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="-21.844" x2="6.223" y2="-21.336" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-21.844" x2="4.445" y2="-21.336" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="-24.384" x2="6.223" y2="-23.876" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-24.384" x2="4.445" y2="-23.876" layer="21" rot="R180"/>
+<rectangle x1="9.525" y1="-24.384" x2="10.668" y2="-23.876" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="-26.924" x2="6.223" y2="-26.416" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-26.924" x2="4.445" y2="-26.416" layer="21" rot="R180"/>
+<rectangle x1="9.525" y1="-26.924" x2="10.668" y2="-26.416" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="-29.464" x2="6.223" y2="-28.956" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-29.464" x2="4.445" y2="-28.956" layer="21" rot="R180"/>
+<rectangle x1="9.525" y1="-29.464" x2="10.668" y2="-28.956" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="-32.004" x2="10.668" y2="-31.496" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="-32.004" x2="6.223" y2="-31.496" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-32.004" x2="4.445" y2="-31.496" layer="21" rot="R180"/>
+<rectangle x1="4.064" y1="-34.544" x2="4.445" y2="-34.036" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="-34.544" x2="6.223" y2="-34.036" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="-34.544" x2="10.668" y2="-34.036" layer="51" rot="R180"/>
+<rectangle x1="9.525" y1="-37.084" x2="10.668" y2="-36.576" layer="51" rot="R180"/>
+<rectangle x1="4.445" y1="-37.084" x2="6.223" y2="-36.576" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-37.084" x2="4.445" y2="-36.576" layer="21" rot="R180"/>
+<rectangle x1="4.445" y1="-39.624" x2="6.223" y2="-39.116" layer="51" rot="R180"/>
+<rectangle x1="4.064" y1="-39.624" x2="4.445" y2="-39.116" layer="21" rot="R180"/>
+<rectangle x1="9.525" y1="-39.624" x2="10.668" y2="-39.116" layer="51" rot="R180"/>
+<rectangle x1="8.763" y1="-19.304" x2="9.525" y2="-18.796" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-19.304" x2="6.985" y2="-18.796" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-21.844" x2="6.985" y2="-21.336" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-21.844" x2="9.525" y2="-21.336" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-24.384" x2="9.525" y2="-23.876" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-24.384" x2="6.985" y2="-23.876" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-26.924" x2="6.985" y2="-26.416" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-26.924" x2="9.525" y2="-26.416" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-29.464" x2="9.525" y2="-28.956" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-29.464" x2="6.985" y2="-28.956" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-32.004" x2="6.985" y2="-31.496" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-32.004" x2="9.525" y2="-31.496" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-34.544" x2="9.525" y2="-34.036" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-34.544" x2="6.985" y2="-34.036" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-37.084" x2="6.985" y2="-36.576" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-37.084" x2="9.525" y2="-36.576" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-39.624" x2="9.525" y2="-39.116" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-39.624" x2="6.985" y2="-39.116" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="3.556" x2="9.525" y2="4.064" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="3.556" x2="6.985" y2="4.064" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="1.016" x2="6.985" y2="1.524" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="1.016" x2="9.525" y2="1.524" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-1.524" x2="9.525" y2="-1.016" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-1.524" x2="6.985" y2="-1.016" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-4.064" x2="6.985" y2="-3.556" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-4.064" x2="9.525" y2="-3.556" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-6.604" x2="9.525" y2="-6.096" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-6.604" x2="6.985" y2="-6.096" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-9.144" x2="6.985" y2="-8.636" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-9.144" x2="9.525" y2="-8.636" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-11.684" x2="9.525" y2="-11.176" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-11.684" x2="6.985" y2="-11.176" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-14.224" x2="6.985" y2="-13.716" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-14.224" x2="9.525" y2="-13.716" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="-16.764" x2="9.525" y2="-16.256" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="-16.764" x2="6.985" y2="-16.256" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="26.416" x2="9.525" y2="26.924" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="26.416" x2="6.985" y2="26.924" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="23.876" x2="6.985" y2="24.384" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="23.876" x2="9.525" y2="24.384" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="21.336" x2="9.525" y2="21.844" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="21.336" x2="6.985" y2="21.844" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="18.796" x2="6.985" y2="19.304" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="18.796" x2="9.525" y2="19.304" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="16.256" x2="9.525" y2="16.764" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="16.256" x2="6.985" y2="16.764" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="13.716" x2="6.985" y2="14.224" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="13.716" x2="9.525" y2="14.224" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="11.176" x2="9.525" y2="11.684" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="11.176" x2="6.985" y2="11.684" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="8.636" x2="6.985" y2="9.144" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="8.636" x2="9.525" y2="9.144" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="6.096" x2="9.525" y2="6.604" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="6.096" x2="6.985" y2="6.604" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="39.116" x2="9.525" y2="39.624" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="39.116" x2="6.985" y2="39.624" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="36.576" x2="6.985" y2="37.084" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="36.576" x2="9.525" y2="37.084" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="34.036" x2="9.525" y2="34.544" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="34.036" x2="6.985" y2="34.544" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="31.496" x2="6.985" y2="32.004" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="31.496" x2="9.525" y2="32.004" layer="21" rot="R180"/>
+<rectangle x1="8.763" y1="28.956" x2="9.525" y2="29.464" layer="21" rot="R180"/>
+<rectangle x1="6.223" y1="28.956" x2="6.985" y2="29.464" layer="21" rot="R180"/>
+<rectangle x1="6.985" y1="-39.624" x2="8.763" y2="-39.116" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-37.084" x2="8.763" y2="-36.576" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-34.544" x2="8.763" y2="-34.036" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-32.004" x2="8.763" y2="-31.496" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-29.464" x2="8.763" y2="-28.956" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-26.924" x2="8.763" y2="-26.416" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-24.384" x2="8.763" y2="-23.876" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-21.844" x2="8.763" y2="-21.336" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-19.304" x2="8.763" y2="-18.796" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-16.764" x2="8.763" y2="-16.256" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-14.224" x2="8.763" y2="-13.716" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-11.684" x2="8.763" y2="-11.176" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-9.144" x2="8.763" y2="-8.636" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-6.604" x2="8.763" y2="-6.096" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-4.064" x2="8.763" y2="-3.556" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="-1.524" x2="8.763" y2="-1.016" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="1.016" x2="8.763" y2="1.524" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="3.556" x2="8.763" y2="4.064" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="6.096" x2="8.763" y2="6.604" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="8.636" x2="8.763" y2="9.144" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="11.176" x2="8.763" y2="11.684" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="13.716" x2="8.763" y2="14.224" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="16.256" x2="8.763" y2="16.764" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="18.796" x2="8.763" y2="19.304" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="21.336" x2="8.763" y2="21.844" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="23.876" x2="8.763" y2="24.384" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="26.416" x2="8.763" y2="26.924" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="28.956" x2="8.763" y2="29.464" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="31.496" x2="8.763" y2="32.004" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="34.036" x2="8.763" y2="34.544" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="36.576" x2="8.763" y2="37.084" layer="51" rot="R180"/>
+<rectangle x1="6.985" y1="39.116" x2="8.763" y2="39.624" layer="51" rot="R180"/>
+<hole x="2.794" y="44.45" drill="2.794"/>
+<hole x="2.794" y="-44.45" drill="2.794"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1939,283 +2321,284 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J2" library="19inch_VG96KB" package="VG96KB" value="" x="0" y="50"/>
-<element name="IC1" library="v-reg" package="TO220L1" value="LD117AV33" x="118.11" y="86.741" rot="R90"/>
-<element name="C1" library="rcl" package="C050-025X075" value="0.1uF" x="131.445" y="86.741" rot="R270"/>
-<element name="C2" library="rcl" package="C050-025X075" value="10uF" x="140.716" y="86.741" rot="R270"/>
-<element name="IC2" library="linear" package="TO220H" value="7805T" x="111.76" y="68.58" rot="R90"/>
-<element name="C3" library="rcl" package="C050-025X075" value="0.33uF" x="132.08" y="66.04" rot="R90"/>
-<element name="C4" library="rcl" package="C050-025X075" value="0.1uF" x="142.24" y="66.04" rot="R270"/>
-<element name="U$1" library="Logos" package="BALLOON" value="" x="48.26" y="91.44"/>
-<element name="U$2" library="Logos" package="BALLOON" value="" x="50.8" y="91.44"/>
-<element name="U$3" library="Logos" package="BALLOON" value="" x="53.34" y="91.44"/>
-<element name="U$4" library="Logos" package="BALLOON" value="" x="48.26" y="88.9"/>
-<element name="U$5" library="Logos" package="BALLOON" value="" x="45.72" y="88.9"/>
-<element name="U$7" library="Logos" package="BALLOON" value="" x="43.18" y="88.9"/>
-<element name="U$8" library="Logos" package="BALLOON" value="" x="40.64" y="88.9"/>
-<element name="U$9" library="Logos" package="BALLOON" value="" x="50.8" y="88.9"/>
-<element name="U$10" library="Logos" package="BALLOON" value="" x="53.34" y="88.9"/>
-<element name="U$11" library="Logos" package="BALLOON" value="" x="55.88" y="88.9"/>
-<element name="U$12" library="Logos" package="BALLOON" value="" x="58.42" y="88.9"/>
-<element name="U$13" library="Logos" package="BALLOON" value="" x="60.96" y="88.9"/>
-<element name="U$14" library="Logos" package="BALLOON" value="" x="45.72" y="86.36"/>
-<element name="U$15" library="Logos" package="BALLOON" value="" x="43.18" y="86.36"/>
-<element name="U$16" library="Logos" package="BALLOON" value="" x="40.64" y="86.36"/>
-<element name="U$17" library="Logos" package="BALLOON" value="" x="38.1" y="86.36"/>
-<element name="U$18" library="Logos" package="BALLOON" value="" x="35.56" y="86.36"/>
-<element name="U$19" library="Logos" package="BALLOON" value="" x="60.96" y="86.36"/>
-<element name="U$20" library="Logos" package="BALLOON" value="" x="63.5" y="86.36"/>
-<element name="U$22" library="Logos" package="BALLOON" value="" x="66.04" y="86.36"/>
-<element name="U$23" library="Logos" package="BALLOON" value="" x="58.42" y="86.36"/>
-<element name="U$24" library="Logos" package="BALLOON" value="" x="55.88" y="86.36"/>
-<element name="U$25" library="Logos" package="BALLOON" value="" x="68.58" y="86.36"/>
-<element name="U$26" library="Logos" package="BALLOON" value="" x="63.5" y="88.9"/>
-<element name="U$27" library="Logos" package="BALLOON" value="" x="68.58" y="83.82"/>
-<element name="U$30" library="Logos" package="BALLOON" value="" x="66.04" y="83.82"/>
-<element name="U$34" library="Logos" package="BALLOON" value="" x="33.02" y="83.82"/>
-<element name="U$35" library="Logos" package="BALLOON" value="" x="30.48" y="81.28"/>
-<element name="U$36" library="Logos" package="BALLOON" value="" x="35.56" y="83.82"/>
-<element name="U$37" library="Logos" package="BALLOON" value="" x="38.1" y="83.82"/>
-<element name="U$38" library="Logos" package="BALLOON" value="" x="33.02" y="81.28"/>
-<element name="U$39" library="Logos" package="BALLOON" value="" x="27.94" y="78.74"/>
-<element name="U$40" library="Logos" package="BALLOON" value="" x="30.48" y="78.74"/>
-<element name="U$41" library="Logos" package="BALLOON" value="" x="25.4" y="76.2"/>
-<element name="U$42" library="Logos" package="BALLOON" value="" x="25.4" y="73.66"/>
-<element name="U$43" library="Logos" package="BALLOON" value="" x="27.94" y="76.2"/>
-<element name="U$44" library="Logos" package="BALLOON" value="" x="27.94" y="73.66"/>
-<element name="U$45" library="Logos" package="BALLOON" value="" x="22.86" y="71.12"/>
-<element name="U$46" library="Logos" package="BALLOON" value="" x="22.86" y="68.58"/>
-<element name="U$47" library="Logos" package="BALLOON" value="" x="22.86" y="66.04"/>
-<element name="U$48" library="Logos" package="BALLOON" value="" x="25.4" y="66.04"/>
-<element name="U$49" library="Logos" package="BALLOON" value="" x="25.4" y="68.58"/>
-<element name="U$50" library="Logos" package="BALLOON" value="" x="25.4" y="71.12"/>
-<element name="U$51" library="Logos" package="BALLOON" value="" x="22.86" y="63.5"/>
-<element name="U$52" library="Logos" package="BALLOON" value="" x="22.86" y="60.96"/>
-<element name="U$53" library="Logos" package="BALLOON" value="" x="20.32" y="60.96"/>
-<element name="U$54" library="Logos" package="BALLOON" value="" x="20.32" y="58.42"/>
-<element name="U$55" library="Logos" package="BALLOON" value="" x="22.86" y="58.42"/>
-<element name="U$56" library="Logos" package="BALLOON" value="" x="22.86" y="55.88"/>
-<element name="U$58" library="Logos" package="BALLOON" value="" x="35.56" y="60.96"/>
-<element name="U$59" library="Logos" package="BALLOON" value="" x="35.56" y="58.42"/>
-<element name="U$60" library="Logos" package="BALLOON" value="" x="38.1" y="58.42"/>
-<element name="U$61" library="Logos" package="BALLOON" value="" x="35.56" y="55.88"/>
-<element name="U$62" library="Logos" package="BALLOON" value="" x="35.56" y="53.34"/>
-<element name="U$64" library="Logos" package="BALLOON" value="" x="38.1" y="55.88"/>
-<element name="U$63" library="Logos" package="BALLOON" value="" x="38.1" y="53.34"/>
-<element name="U$65" library="Logos" package="BALLOON" value="" x="38.1" y="50.8"/>
-<element name="U$67" library="Logos" package="BALLOON" value="" x="40.64" y="50.8"/>
-<element name="U$66" library="Logos" package="BALLOON" value="" x="40.64" y="48.26"/>
-<element name="U$68" library="Logos" package="BALLOON" value="" x="43.18" y="48.26"/>
-<element name="U$69" library="Logos" package="BALLOON" value="" x="45.72" y="48.26"/>
-<element name="U$70" library="Logos" package="BALLOON" value="" x="43.18" y="45.72"/>
-<element name="U$71" library="Logos" package="BALLOON" value="" x="45.72" y="45.72"/>
-<element name="U$72" library="Logos" package="BALLOON" value="" x="48.26" y="45.72"/>
-<element name="U$73" library="Logos" package="BALLOON" value="" x="50.8" y="45.72"/>
-<element name="U$74" library="Logos" package="BALLOON" value="" x="53.34" y="45.72"/>
-<element name="U$75" library="Logos" package="BALLOON" value="" x="53.34" y="43.18"/>
-<element name="U$76" library="Logos" package="BALLOON" value="" x="50.8" y="43.18"/>
-<element name="U$77" library="Logos" package="BALLOON" value="" x="48.26" y="43.18"/>
-<element name="U$78" library="Logos" package="BALLOON" value="" x="22.86" y="53.34"/>
-<element name="U$79" library="Logos" package="BALLOON" value="" x="25.4" y="53.34"/>
-<element name="U$80" library="Logos" package="BALLOON" value="" x="25.4" y="50.8"/>
-<element name="U$81" library="Logos" package="BALLOON" value="" x="25.4" y="48.26"/>
-<element name="U$82" library="Logos" package="BALLOON" value="" x="22.86" y="48.26"/>
-<element name="U$83" library="Logos" package="BALLOON" value="" x="22.86" y="50.8"/>
-<element name="U$84" library="Logos" package="BALLOON" value="" x="25.4" y="45.72"/>
-<element name="U$85" library="Logos" package="BALLOON" value="" x="25.4" y="43.18"/>
-<element name="U$86" library="Logos" package="BALLOON" value="" x="27.94" y="45.72"/>
-<element name="U$87" library="Logos" package="BALLOON" value="" x="27.94" y="43.18"/>
-<element name="U$88" library="Logos" package="BALLOON" value="" x="27.94" y="40.64"/>
-<element name="U$89" library="Logos" package="BALLOON" value="" x="30.48" y="38.1"/>
-<element name="U$90" library="Logos" package="BALLOON" value="" x="33.02" y="35.56"/>
-<element name="U$91" library="Logos" package="BALLOON" value="" x="35.56" y="33.02"/>
-<element name="U$92" library="Logos" package="BALLOON" value="" x="38.1" y="33.02"/>
-<element name="U$93" library="Logos" package="BALLOON" value="" x="35.56" y="35.56"/>
-<element name="U$94" library="Logos" package="BALLOON" value="" x="33.02" y="38.1"/>
-<element name="U$95" library="Logos" package="BALLOON" value="" x="30.48" y="40.64"/>
-<element name="U$96" library="Logos" package="BALLOON" value="" x="30.48" y="43.18"/>
-<element name="U$97" library="Logos" package="BALLOON" value="" x="33.02" y="40.64"/>
-<element name="U$98" library="Logos" package="BALLOON" value="" x="35.56" y="38.1"/>
-<element name="U$99" library="Logos" package="BALLOON" value="" x="38.1" y="35.56"/>
-<element name="U$100" library="Logos" package="BALLOON" value="" x="40.64" y="33.02"/>
-<element name="U$101" library="Logos" package="BALLOON" value="" x="40.64" y="35.56"/>
-<element name="U$102" library="Logos" package="BALLOON" value="" x="40.64" y="30.48"/>
-<element name="U$103" library="Logos" package="BALLOON" value="" x="43.18" y="33.02"/>
-<element name="U$104" library="Logos" package="BALLOON" value="" x="43.18" y="30.48"/>
-<element name="U$105" library="Logos" package="BALLOON" value="" x="45.72" y="33.02"/>
-<element name="U$106" library="Logos" package="BALLOON" value="" x="48.26" y="33.02"/>
-<element name="U$107" library="Logos" package="BALLOON" value="" x="50.8" y="33.02"/>
-<element name="U$108" library="Logos" package="BALLOON" value="" x="53.34" y="33.02"/>
-<element name="U$109" library="Logos" package="BALLOON" value="" x="50.8" y="33.02"/>
-<element name="U$110" library="Logos" package="BALLOON" value="" x="55.88" y="33.02"/>
-<element name="U$111" library="Logos" package="BALLOON" value="" x="58.42" y="33.02"/>
-<element name="U$112" library="Logos" package="BALLOON" value="" x="60.96" y="33.02"/>
-<element name="U$113" library="Logos" package="BALLOON" value="" x="45.72" y="30.48"/>
-<element name="U$114" library="Logos" package="BALLOON" value="" x="48.26" y="30.48"/>
-<element name="U$115" library="Logos" package="BALLOON" value="" x="50.8" y="30.48"/>
-<element name="U$116" library="Logos" package="BALLOON" value="" x="53.34" y="30.48"/>
-<element name="U$117" library="Logos" package="BALLOON" value="" x="55.88" y="30.48"/>
-<element name="U$118" library="Logos" package="BALLOON" value="" x="58.42" y="30.48"/>
-<element name="U$119" library="Logos" package="BALLOON" value="" x="60.96" y="30.48"/>
-<element name="U$120" library="Logos" package="BALLOON" value="" x="63.5" y="33.02"/>
-<element name="U$121" library="Logos" package="BALLOON" value="" x="63.5" y="35.56"/>
-<element name="U$122" library="Logos" package="BALLOON" value="" x="66.04" y="35.56"/>
-<element name="U$123" library="Logos" package="BALLOON" value="" x="68.58" y="35.56"/>
-<element name="U$124" library="Logos" package="BALLOON" value="" x="68.58" y="33.02"/>
-<element name="U$125" library="Logos" package="BALLOON" value="" x="66.04" y="33.02"/>
-<element name="U$126" library="Logos" package="BALLOON" value="" x="68.58" y="38.1"/>
-<element name="U$127" library="Logos" package="BALLOON" value="" x="71.12" y="38.1"/>
-<element name="U$128" library="Logos" package="BALLOON" value="" x="71.12" y="35.56"/>
-<element name="U$129" library="Logos" package="BALLOON" value="" x="73.66" y="38.1"/>
-<element name="U$130" library="Logos" package="BALLOON" value="" x="73.66" y="40.64"/>
-<element name="U$131" library="Logos" package="BALLOON" value="" x="76.2" y="40.64"/>
-<element name="U$132" library="Logos" package="BALLOON" value="" x="76.2" y="43.18"/>
-<element name="U$133" library="Logos" package="BALLOON" value="" x="76.2" y="45.72"/>
-<element name="U$134" library="Logos" package="BALLOON" value="" x="78.74" y="43.18"/>
-<element name="U$135" library="Logos" package="BALLOON" value="" x="78.74" y="45.72"/>
-<element name="U$136" library="Logos" package="BALLOON" value="" x="78.74" y="48.26"/>
-<element name="U$137" library="Logos" package="BALLOON" value="" x="81.28" y="45.72"/>
-<element name="U$138" library="Logos" package="BALLOON" value="" x="81.28" y="48.26"/>
-<element name="U$139" library="Logos" package="BALLOON" value="" x="81.28" y="50.8"/>
-<element name="U$140" library="Logos" package="BALLOON" value="" x="81.28" y="53.34"/>
-<element name="U$141" library="Logos" package="BALLOON" value="" x="83.82" y="55.88"/>
-<element name="U$142" library="Logos" package="BALLOON" value="" x="83.82" y="53.34"/>
-<element name="U$143" library="Logos" package="BALLOON" value="" x="83.82" y="50.8"/>
-<element name="U$144" library="Logos" package="BALLOON" value="" x="86.36" y="53.34"/>
-<element name="U$145" library="Logos" package="BALLOON" value="" x="88.9" y="53.34"/>
-<element name="U$146" library="Logos" package="BALLOON" value="" x="91.44" y="53.34"/>
-<element name="U$147" library="Logos" package="BALLOON" value="" x="93.98" y="53.34"/>
-<element name="U$148" library="Logos" package="BALLOON" value="" x="96.52" y="53.34"/>
-<element name="U$149" library="Logos" package="BALLOON" value="" x="96.52" y="50.8"/>
-<element name="U$150" library="Logos" package="BALLOON" value="" x="93.98" y="50.8"/>
-<element name="U$151" library="Logos" package="BALLOON" value="" x="91.44" y="50.8"/>
-<element name="U$152" library="Logos" package="BALLOON" value="" x="88.9" y="50.8"/>
-<element name="U$153" library="Logos" package="BALLOON" value="" x="86.36" y="50.8"/>
-<element name="U$154" library="Logos" package="BALLOON" value="" x="99.06" y="50.8"/>
-<element name="U$155" library="Logos" package="BALLOON" value="" x="99.06" y="48.26"/>
-<element name="U$156" library="Logos" package="BALLOON" value="" x="99.06" y="45.72"/>
-<element name="U$157" library="Logos" package="BALLOON" value="" x="99.06" y="43.18"/>
-<element name="U$158" library="Logos" package="BALLOON" value="" x="99.06" y="40.64"/>
-<element name="U$159" library="Logos" package="BALLOON" value="" x="99.06" y="38.1"/>
-<element name="U$160" library="Logos" package="BALLOON" value="" x="99.06" y="35.56"/>
-<element name="U$161" library="Logos" package="BALLOON" value="" x="99.06" y="33.02"/>
-<element name="U$162" library="Logos" package="BALLOON" value="" x="99.06" y="30.48"/>
-<element name="U$163" library="Logos" package="BALLOON" value="" x="99.06" y="27.94"/>
-<element name="U$164" library="Logos" package="BALLOON" value="" x="99.06" y="25.4"/>
-<element name="U$165" library="Logos" package="BALLOON" value="" x="99.06" y="22.86"/>
-<element name="U$166" library="Logos" package="BALLOON" value="" x="96.52" y="22.86"/>
-<element name="U$167" library="Logos" package="BALLOON" value="" x="96.52" y="25.4"/>
-<element name="U$168" library="Logos" package="BALLOON" value="" x="96.52" y="27.94"/>
-<element name="U$169" library="Logos" package="BALLOON" value="" x="96.52" y="27.94"/>
-<element name="U$170" library="Logos" package="BALLOON" value="" x="96.52" y="30.48"/>
-<element name="U$171" library="Logos" package="BALLOON" value="" x="96.52" y="33.02"/>
-<element name="U$172" library="Logos" package="BALLOON" value="" x="96.52" y="35.56"/>
-<element name="U$173" library="Logos" package="BALLOON" value="" x="96.52" y="38.1"/>
-<element name="U$174" library="Logos" package="BALLOON" value="" x="96.52" y="40.64"/>
-<element name="U$175" library="Logos" package="BALLOON" value="" x="96.52" y="43.18"/>
-<element name="U$176" library="Logos" package="BALLOON" value="" x="96.52" y="45.72"/>
-<element name="U$177" library="Logos" package="BALLOON" value="" x="96.52" y="48.26"/>
-<element name="U$179" library="Logos" package="BALLOON" value="" x="76.2" y="78.74"/>
-<element name="U$180" library="Logos" package="BALLOON" value="" x="76.2" y="76.2"/>
-<element name="U$181" library="Logos" package="BALLOON" value="" x="78.74" y="76.2"/>
-<element name="U$182" library="Logos" package="BALLOON" value="" x="78.74" y="73.66"/>
-<element name="U$183" library="Logos" package="BALLOON" value="" x="81.28" y="73.66"/>
-<element name="U$184" library="Logos" package="BALLOON" value="" x="81.28" y="71.12"/>
-<element name="U$185" library="Logos" package="BALLOON" value="" x="78.74" y="71.12"/>
-<element name="U$186" library="Logos" package="BALLOON" value="" x="83.82" y="68.58"/>
-<element name="U$187" library="Logos" package="BALLOON" value="" x="83.82" y="71.12"/>
-<element name="U$188" library="Logos" package="BALLOON" value="" x="81.28" y="68.58"/>
-<element name="U$189" library="Logos" package="BALLOON" value="" x="86.36" y="66.04"/>
-<element name="U$190" library="Logos" package="BALLOON" value="" x="86.36" y="68.58"/>
-<element name="U$191" library="Logos" package="BALLOON" value="" x="83.82" y="66.04"/>
-<element name="U$192" library="Logos" package="BALLOON" value="" x="88.9" y="68.58"/>
-<element name="U$193" library="Logos" package="BALLOON" value="" x="91.44" y="68.58"/>
-<element name="U$194" library="Logos" package="BALLOON" value="" x="93.98" y="68.58"/>
-<element name="U$195" library="Logos" package="BALLOON" value="" x="93.98" y="66.04"/>
-<element name="U$196" library="Logos" package="BALLOON" value="" x="91.44" y="66.04"/>
-<element name="U$197" library="Logos" package="BALLOON" value="" x="88.9" y="66.04"/>
-<element name="U$29" library="Logos" package="BALLOON" value="" x="63.5" y="83.82"/>
-<element name="U$28" library="Logos" package="BALLOON" value="" x="71.12" y="81.28"/>
-<element name="U$31" library="Logos" package="BALLOON" value="" x="71.12" y="83.82"/>
-<element name="U$32" library="Logos" package="BALLOON" value="" x="68.58" y="81.28"/>
-<element name="U$33" library="Logos" package="BALLOON" value="" x="73.66" y="81.28"/>
-<element name="U$178" library="Logos" package="BALLOON" value="" x="73.66" y="78.74"/>
-<element name="U$57" library="Logos" package="BALLOON" value="" x="96.52" y="66.04"/>
-<element name="U$198" library="Logos" package="BALLOON" value="" x="96.52" y="63.5"/>
-<element name="U$199" library="Logos" package="BALLOON" value="" x="93.98" y="63.5"/>
-<element name="U$200" library="Logos" package="BALLOON" value="" x="99.06" y="63.5"/>
-<element name="U$201" library="Logos" package="BALLOON" value="" x="99.06" y="60.96"/>
-<element name="U$202" library="Logos" package="BALLOON" value="" x="101.6" y="60.96"/>
-<element name="U$203" library="Logos" package="BALLOON" value="" x="101.6" y="63.5"/>
-<element name="U$204" library="Logos" package="BALLOON" value="" x="104.14" y="58.42"/>
-<element name="U$205" library="Logos" package="BALLOON" value="" x="104.14" y="60.96"/>
-<element name="U$206" library="Logos" package="BALLOON" value="" x="101.6" y="58.42"/>
-<element name="U$207" library="Logos" package="BALLOON" value="" x="106.68" y="58.42"/>
-<element name="U$208" library="Logos" package="BALLOON" value="" x="106.68" y="55.88"/>
-<element name="U$209" library="Logos" package="BALLOON" value="" x="104.14" y="55.88"/>
-<element name="U$210" library="Logos" package="BALLOON" value="" x="106.68" y="53.34"/>
-<element name="U$211" library="Logos" package="BALLOON" value="" x="109.22" y="53.34"/>
-<element name="U$212" library="Logos" package="BALLOON" value="" x="106.68" y="50.8"/>
-<element name="U$213" library="Logos" package="BALLOON" value="" x="106.68" y="48.26"/>
-<element name="U$214" library="Logos" package="BALLOON" value="" x="106.68" y="45.72"/>
-<element name="U$215" library="Logos" package="BALLOON" value="" x="106.68" y="43.18"/>
-<element name="U$216" library="Logos" package="BALLOON" value="" x="106.68" y="40.64"/>
-<element name="U$217" library="Logos" package="BALLOON" value="" x="106.68" y="38.1"/>
-<element name="U$218" library="Logos" package="BALLOON" value="" x="106.68" y="35.56"/>
-<element name="U$219" library="Logos" package="BALLOON" value="" x="106.68" y="33.02"/>
-<element name="U$220" library="Logos" package="BALLOON" value="" x="106.68" y="30.48"/>
-<element name="U$221" library="Logos" package="BALLOON" value="" x="106.68" y="27.94"/>
-<element name="U$222" library="Logos" package="BALLOON" value="" x="106.68" y="25.4"/>
-<element name="U$223" library="Logos" package="BALLOON" value="" x="109.22" y="25.4"/>
-<element name="U$224" library="Logos" package="BALLOON" value="" x="109.22" y="27.94"/>
-<element name="U$225" library="Logos" package="BALLOON" value="" x="109.22" y="30.48"/>
-<element name="U$226" library="Logos" package="BALLOON" value="" x="109.22" y="33.02"/>
-<element name="U$227" library="Logos" package="BALLOON" value="" x="109.22" y="35.56"/>
-<element name="U$228" library="Logos" package="BALLOON" value="" x="109.22" y="38.1"/>
-<element name="U$229" library="Logos" package="BALLOON" value="" x="109.22" y="40.64"/>
-<element name="U$230" library="Logos" package="BALLOON" value="" x="109.22" y="43.18"/>
-<element name="U$231" library="Logos" package="BALLOON" value="" x="109.22" y="45.72"/>
-<element name="U$232" library="Logos" package="BALLOON" value="" x="109.22" y="50.8"/>
-<element name="U$233" library="Logos" package="BALLOON" value="" x="109.22" y="48.26"/>
-<element name="U$234" library="Logos" package="BALLOON" value="" x="109.22" y="22.86"/>
-<element name="U$235" library="Logos" package="BALLOON" value="" x="111.76" y="22.86"/>
-<element name="U$236" library="Logos" package="BALLOON" value="" x="111.76" y="25.4"/>
-<element name="U$237" library="Logos" package="BALLOON" value="" x="111.76" y="20.32"/>
-<element name="U$238" library="Logos" package="BALLOON" value="" x="114.3" y="22.86"/>
-<element name="U$239" library="Logos" package="BALLOON" value="" x="116.84" y="22.86"/>
-<element name="U$240" library="Logos" package="BALLOON" value="" x="119.38" y="22.86"/>
-<element name="U$241" library="Logos" package="BALLOON" value="" x="119.38" y="20.32"/>
-<element name="U$242" library="Logos" package="BALLOON" value="" x="116.84" y="20.32"/>
-<element name="U$243" library="Logos" package="BALLOON" value="" x="114.3" y="20.32"/>
-<element name="U$244" library="Logos" package="BALLOON" value="" x="121.92" y="20.32"/>
-<element name="U$245" library="Logos" package="BALLOON" value="" x="121.92" y="17.78"/>
-<element name="U$246" library="Logos" package="BALLOON" value="" x="124.46" y="17.78"/>
-<element name="U$247" library="Logos" package="BALLOON" value="" x="124.46" y="20.32"/>
-<element name="U$248" library="Logos" package="BALLOON" value="" x="124.46" y="15.24"/>
-<element name="U$249" library="Logos" package="BALLOON" value="" x="127" y="15.24"/>
-<element name="U$250" library="Logos" package="BALLOON" value="" x="124.46" y="12.7"/>
-<element name="U$251" library="Logos" package="BALLOON" value="" x="121.92" y="12.7"/>
-<element name="U$252" library="Logos" package="BALLOON" value="" x="119.38" y="12.7"/>
-<element name="U$253" library="Logos" package="BALLOON" value="" x="119.38" y="10.16"/>
-<element name="U$254" library="Logos" package="BALLOON" value="" x="121.92" y="10.16"/>
-<element name="U$255" library="Logos" package="BALLOON" value="" x="124.46" y="10.16"/>
-<element name="U$256" library="Logos" package="BALLOON" value="" x="116.84" y="10.16"/>
-<element name="U$257" library="Logos" package="BALLOON" value="" x="114.3" y="10.16"/>
-<element name="U$258" library="Logos" package="BALLOON" value="" x="114.3" y="12.7"/>
-<element name="U$259" library="Logos" package="BALLOON" value="" x="111.76" y="12.7"/>
-<element name="U$260" library="Logos" package="BALLOON" value="" x="109.22" y="12.7"/>
-<element name="U$261" library="Logos" package="BALLOON" value="" x="109.22" y="10.16"/>
-<element name="U$262" library="Logos" package="BALLOON" value="" x="111.76" y="10.16"/>
-<element name="U$263" library="Logos" package="BALLOON" value="" x="109.22" y="15.24"/>
-<element name="U$264" library="Logos" package="BALLOON" value="" x="106.68" y="15.24"/>
-<element name="U$265" library="Logos" package="BALLOON" value="" x="106.68" y="12.7"/>
-<element name="U$266" library="Logos" package="BALLOON" value="" x="101.6" y="20.32"/>
-<element name="U$267" library="Logos" package="BALLOON" value="" x="101.6" y="22.86"/>
-<element name="U$268" library="Logos" package="BALLOON" value="" x="99.06" y="20.32"/>
-<element name="U$269" library="Logos" package="BALLOON" value="" x="104.14" y="17.78"/>
-<element name="U$270" library="Logos" package="BALLOON" value="" x="104.14" y="15.24"/>
-<element name="U$271" library="Logos" package="BALLOON" value="" x="101.6" y="15.24"/>
-<element name="U$272" library="Logos" package="BALLOON" value="" x="101.6" y="17.78"/>
+<element name="J2" library="19inch_VG96KB" package="VG96KB" value="" x="0.274" y="49.53"/>
+<element name="IC1" library="v-reg" package="TO220L1" value="LD117AV33" x="952.5" y="261.62" rot="R90"/>
+<element name="C1" library="rcl" package="C050-025X075" value="0.1uF" x="960.12" y="261.62" rot="R270"/>
+<element name="C2" library="rcl" package="C050-025X075" value="10uF" x="963.93" y="261.62" rot="R270"/>
+<element name="IC2" library="linear" package="TO220H" value="7805T" x="946.15" y="243.37" rot="R90"/>
+<element name="C3" library="rcl" package="C050-025X075" value="0.33uF" x="966.216" y="240.83" rot="R90"/>
+<element name="C4" library="rcl" package="C050-025X075" value="0.1uF" x="976.376" y="240.83" rot="R270"/>
+<element name="U$1" library="Logos" package="BALLOON" value="" x="-78.74" y="91.44" rot="MR0"/>
+<element name="U$2" library="Logos" package="BALLOON" value="" x="-81.28" y="91.44" rot="MR0"/>
+<element name="U$3" library="Logos" package="BALLOON" value="" x="-83.82" y="91.44" rot="MR0"/>
+<element name="U$4" library="Logos" package="BALLOON" value="" x="-78.74" y="88.9" rot="MR0"/>
+<element name="U$5" library="Logos" package="BALLOON" value="" x="-76.2" y="88.9" rot="MR0"/>
+<element name="U$7" library="Logos" package="BALLOON" value="" x="-73.66" y="88.9" rot="MR0"/>
+<element name="U$8" library="Logos" package="BALLOON" value="" x="-71.12" y="88.9" rot="MR0"/>
+<element name="U$9" library="Logos" package="BALLOON" value="" x="-81.28" y="88.9" rot="MR0"/>
+<element name="U$10" library="Logos" package="BALLOON" value="" x="-83.82" y="88.9" rot="MR0"/>
+<element name="U$11" library="Logos" package="BALLOON" value="" x="-86.36" y="88.9" rot="MR0"/>
+<element name="U$12" library="Logos" package="BALLOON" value="" x="-88.9" y="88.9" rot="MR0"/>
+<element name="U$13" library="Logos" package="BALLOON" value="" x="-91.44" y="88.9" rot="MR0"/>
+<element name="U$14" library="Logos" package="BALLOON" value="" x="-76.2" y="86.36" rot="MR0"/>
+<element name="U$15" library="Logos" package="BALLOON" value="" x="-73.66" y="86.36" rot="MR0"/>
+<element name="U$16" library="Logos" package="BALLOON" value="" x="-71.12" y="86.36" rot="MR0"/>
+<element name="U$17" library="Logos" package="BALLOON" value="" x="-68.58" y="86.36" rot="MR0"/>
+<element name="U$18" library="Logos" package="BALLOON" value="" x="-66.04" y="86.36" rot="MR0"/>
+<element name="U$19" library="Logos" package="BALLOON" value="" x="-91.44" y="86.36" rot="MR0"/>
+<element name="U$20" library="Logos" package="BALLOON" value="" x="-93.98" y="86.36" rot="MR0"/>
+<element name="U$22" library="Logos" package="BALLOON" value="" x="-96.52" y="86.36" rot="MR0"/>
+<element name="U$23" library="Logos" package="BALLOON" value="" x="-88.9" y="86.36" rot="MR0"/>
+<element name="U$24" library="Logos" package="BALLOON" value="" x="-86.36" y="86.36" rot="MR0"/>
+<element name="U$25" library="Logos" package="BALLOON" value="" x="-99.06" y="86.36" rot="MR0"/>
+<element name="U$26" library="Logos" package="BALLOON" value="" x="-93.98" y="88.9" rot="MR0"/>
+<element name="U$27" library="Logos" package="BALLOON" value="" x="-99.06" y="83.82" rot="MR0"/>
+<element name="U$30" library="Logos" package="BALLOON" value="" x="-96.52" y="83.82" rot="MR0"/>
+<element name="U$34" library="Logos" package="BALLOON" value="" x="-63.5" y="83.82" rot="MR0"/>
+<element name="U$35" library="Logos" package="BALLOON" value="" x="-60.96" y="81.28" rot="MR0"/>
+<element name="U$36" library="Logos" package="BALLOON" value="" x="-66.04" y="83.82" rot="MR0"/>
+<element name="U$37" library="Logos" package="BALLOON" value="" x="-68.58" y="83.82" rot="MR0"/>
+<element name="U$38" library="Logos" package="BALLOON" value="" x="-63.5" y="81.28" rot="MR0"/>
+<element name="U$39" library="Logos" package="BALLOON" value="" x="-58.42" y="78.74" rot="MR0"/>
+<element name="U$40" library="Logos" package="BALLOON" value="" x="-60.96" y="78.74" rot="MR0"/>
+<element name="U$41" library="Logos" package="BALLOON" value="" x="-55.88" y="76.2" rot="MR0"/>
+<element name="U$42" library="Logos" package="BALLOON" value="" x="-55.88" y="73.66" rot="MR0"/>
+<element name="U$43" library="Logos" package="BALLOON" value="" x="-58.42" y="76.2" rot="MR0"/>
+<element name="U$44" library="Logos" package="BALLOON" value="" x="-58.42" y="73.66" rot="MR0"/>
+<element name="U$45" library="Logos" package="BALLOON" value="" x="-53.34" y="71.12" rot="MR0"/>
+<element name="U$46" library="Logos" package="BALLOON" value="" x="-53.34" y="68.58" rot="MR0"/>
+<element name="U$47" library="Logos" package="BALLOON" value="" x="-53.34" y="66.04" rot="MR0"/>
+<element name="U$48" library="Logos" package="BALLOON" value="" x="-55.88" y="66.04" rot="MR0"/>
+<element name="U$49" library="Logos" package="BALLOON" value="" x="-55.88" y="68.58" rot="MR0"/>
+<element name="U$50" library="Logos" package="BALLOON" value="" x="-55.88" y="71.12" rot="MR0"/>
+<element name="U$51" library="Logos" package="BALLOON" value="" x="-53.34" y="63.5" rot="MR0"/>
+<element name="U$52" library="Logos" package="BALLOON" value="" x="-53.34" y="60.96" rot="MR0"/>
+<element name="U$53" library="Logos" package="BALLOON" value="" x="-50.8" y="60.96" rot="MR0"/>
+<element name="U$54" library="Logos" package="BALLOON" value="" x="-50.8" y="58.42" rot="MR0"/>
+<element name="U$55" library="Logos" package="BALLOON" value="" x="-53.34" y="58.42" rot="MR0"/>
+<element name="U$56" library="Logos" package="BALLOON" value="" x="-53.34" y="55.88" rot="MR0"/>
+<element name="U$58" library="Logos" package="BALLOON" value="" x="-66.04" y="60.96" rot="MR0"/>
+<element name="U$59" library="Logos" package="BALLOON" value="" x="-66.04" y="58.42" rot="MR0"/>
+<element name="U$60" library="Logos" package="BALLOON" value="" x="-68.58" y="58.42" rot="MR0"/>
+<element name="U$61" library="Logos" package="BALLOON" value="" x="-66.04" y="55.88" rot="MR0"/>
+<element name="U$62" library="Logos" package="BALLOON" value="" x="-66.04" y="53.34" rot="MR0"/>
+<element name="U$64" library="Logos" package="BALLOON" value="" x="-68.58" y="55.88" rot="MR0"/>
+<element name="U$63" library="Logos" package="BALLOON" value="" x="-68.58" y="53.34" rot="MR0"/>
+<element name="U$65" library="Logos" package="BALLOON" value="" x="-68.58" y="50.8" rot="MR0"/>
+<element name="U$67" library="Logos" package="BALLOON" value="" x="-71.12" y="50.8" rot="MR0"/>
+<element name="U$66" library="Logos" package="BALLOON" value="" x="-71.12" y="48.26" rot="MR0"/>
+<element name="U$68" library="Logos" package="BALLOON" value="" x="-73.66" y="48.26" rot="MR0"/>
+<element name="U$69" library="Logos" package="BALLOON" value="" x="-76.2" y="48.26" rot="MR0"/>
+<element name="U$70" library="Logos" package="BALLOON" value="" x="-73.66" y="45.72" rot="MR0"/>
+<element name="U$71" library="Logos" package="BALLOON" value="" x="-76.2" y="45.72" rot="MR0"/>
+<element name="U$72" library="Logos" package="BALLOON" value="" x="-78.74" y="45.72" rot="MR0"/>
+<element name="U$73" library="Logos" package="BALLOON" value="" x="-81.28" y="45.72" rot="MR0"/>
+<element name="U$74" library="Logos" package="BALLOON" value="" x="-83.82" y="45.72" rot="MR0"/>
+<element name="U$75" library="Logos" package="BALLOON" value="" x="-83.82" y="43.18" rot="MR0"/>
+<element name="U$76" library="Logos" package="BALLOON" value="" x="-81.28" y="43.18" rot="MR0"/>
+<element name="U$77" library="Logos" package="BALLOON" value="" x="-78.74" y="43.18" rot="MR0"/>
+<element name="U$78" library="Logos" package="BALLOON" value="" x="-53.34" y="53.34" rot="MR0"/>
+<element name="U$79" library="Logos" package="BALLOON" value="" x="-55.88" y="53.34" rot="MR0"/>
+<element name="U$80" library="Logos" package="BALLOON" value="" x="-55.88" y="50.8" rot="MR0"/>
+<element name="U$81" library="Logos" package="BALLOON" value="" x="-55.88" y="48.26" rot="MR0"/>
+<element name="U$82" library="Logos" package="BALLOON" value="" x="-53.34" y="48.26" rot="MR0"/>
+<element name="U$83" library="Logos" package="BALLOON" value="" x="-53.34" y="50.8" rot="MR0"/>
+<element name="U$84" library="Logos" package="BALLOON" value="" x="-55.88" y="45.72" rot="MR0"/>
+<element name="U$85" library="Logos" package="BALLOON" value="" x="-55.88" y="43.18" rot="MR0"/>
+<element name="U$86" library="Logos" package="BALLOON" value="" x="-58.42" y="45.72" rot="MR0"/>
+<element name="U$87" library="Logos" package="BALLOON" value="" x="-58.42" y="43.18" rot="MR0"/>
+<element name="U$88" library="Logos" package="BALLOON" value="" x="-58.42" y="40.64" rot="MR0"/>
+<element name="U$89" library="Logos" package="BALLOON" value="" x="-60.96" y="38.1" rot="MR0"/>
+<element name="U$90" library="Logos" package="BALLOON" value="" x="-63.5" y="35.56" rot="MR0"/>
+<element name="U$91" library="Logos" package="BALLOON" value="" x="-66.04" y="33.02" rot="MR0"/>
+<element name="U$92" library="Logos" package="BALLOON" value="" x="-68.58" y="33.02" rot="MR0"/>
+<element name="U$93" library="Logos" package="BALLOON" value="" x="-66.04" y="35.56" rot="MR0"/>
+<element name="U$94" library="Logos" package="BALLOON" value="" x="-63.5" y="38.1" rot="MR0"/>
+<element name="U$95" library="Logos" package="BALLOON" value="" x="-60.96" y="40.64" rot="MR0"/>
+<element name="U$96" library="Logos" package="BALLOON" value="" x="-60.96" y="43.18" rot="MR0"/>
+<element name="U$97" library="Logos" package="BALLOON" value="" x="-63.5" y="40.64" rot="MR0"/>
+<element name="U$98" library="Logos" package="BALLOON" value="" x="-66.04" y="38.1" rot="MR0"/>
+<element name="U$99" library="Logos" package="BALLOON" value="" x="-68.58" y="35.56" rot="MR0"/>
+<element name="U$100" library="Logos" package="BALLOON" value="" x="-71.12" y="33.02" rot="MR0"/>
+<element name="U$101" library="Logos" package="BALLOON" value="" x="-71.12" y="35.56" rot="MR0"/>
+<element name="U$102" library="Logos" package="BALLOON" value="" x="-71.12" y="30.48" rot="MR0"/>
+<element name="U$103" library="Logos" package="BALLOON" value="" x="-73.66" y="33.02" rot="MR0"/>
+<element name="U$104" library="Logos" package="BALLOON" value="" x="-73.66" y="30.48" rot="MR0"/>
+<element name="U$105" library="Logos" package="BALLOON" value="" x="-76.2" y="33.02" rot="MR0"/>
+<element name="U$106" library="Logos" package="BALLOON" value="" x="-78.74" y="33.02" rot="MR0"/>
+<element name="U$107" library="Logos" package="BALLOON" value="" x="-81.28" y="33.02" rot="MR0"/>
+<element name="U$108" library="Logos" package="BALLOON" value="" x="-83.82" y="33.02" rot="MR0"/>
+<element name="U$109" library="Logos" package="BALLOON" value="" x="-81.28" y="33.02" rot="MR0"/>
+<element name="U$110" library="Logos" package="BALLOON" value="" x="-86.36" y="33.02" rot="MR0"/>
+<element name="U$111" library="Logos" package="BALLOON" value="" x="-88.9" y="33.02" rot="MR0"/>
+<element name="U$112" library="Logos" package="BALLOON" value="" x="-91.44" y="33.02" rot="MR0"/>
+<element name="U$113" library="Logos" package="BALLOON" value="" x="-76.2" y="30.48" rot="MR0"/>
+<element name="U$114" library="Logos" package="BALLOON" value="" x="-78.74" y="30.48" rot="MR0"/>
+<element name="U$115" library="Logos" package="BALLOON" value="" x="-81.28" y="30.48" rot="MR0"/>
+<element name="U$116" library="Logos" package="BALLOON" value="" x="-83.82" y="30.48" rot="MR0"/>
+<element name="U$117" library="Logos" package="BALLOON" value="" x="-86.36" y="30.48" rot="MR0"/>
+<element name="U$118" library="Logos" package="BALLOON" value="" x="-88.9" y="30.48" rot="MR0"/>
+<element name="U$119" library="Logos" package="BALLOON" value="" x="-91.44" y="30.48" rot="MR0"/>
+<element name="U$120" library="Logos" package="BALLOON" value="" x="-93.98" y="33.02" rot="MR0"/>
+<element name="U$121" library="Logos" package="BALLOON" value="" x="-93.98" y="35.56" rot="MR0"/>
+<element name="U$122" library="Logos" package="BALLOON" value="" x="-96.52" y="35.56" rot="MR0"/>
+<element name="U$123" library="Logos" package="BALLOON" value="" x="-99.06" y="35.56" rot="MR0"/>
+<element name="U$124" library="Logos" package="BALLOON" value="" x="-99.06" y="33.02" rot="MR0"/>
+<element name="U$125" library="Logos" package="BALLOON" value="" x="-96.52" y="33.02" rot="MR0"/>
+<element name="U$126" library="Logos" package="BALLOON" value="" x="-99.06" y="38.1" rot="MR0"/>
+<element name="U$127" library="Logos" package="BALLOON" value="" x="-101.6" y="38.1" rot="MR0"/>
+<element name="U$128" library="Logos" package="BALLOON" value="" x="-101.6" y="35.56" rot="MR0"/>
+<element name="U$129" library="Logos" package="BALLOON" value="" x="-104.14" y="38.1" rot="MR0"/>
+<element name="U$130" library="Logos" package="BALLOON" value="" x="-104.14" y="40.64" rot="MR0"/>
+<element name="U$131" library="Logos" package="BALLOON" value="" x="-106.68" y="40.64" rot="MR0"/>
+<element name="U$132" library="Logos" package="BALLOON" value="" x="-106.68" y="43.18" rot="MR0"/>
+<element name="U$133" library="Logos" package="BALLOON" value="" x="-106.68" y="45.72" rot="MR0"/>
+<element name="U$134" library="Logos" package="BALLOON" value="" x="-109.22" y="43.18" rot="MR0"/>
+<element name="U$135" library="Logos" package="BALLOON" value="" x="-109.22" y="45.72" rot="MR0"/>
+<element name="U$136" library="Logos" package="BALLOON" value="" x="-109.22" y="48.26" rot="MR0"/>
+<element name="U$137" library="Logos" package="BALLOON" value="" x="-111.76" y="45.72" rot="MR0"/>
+<element name="U$138" library="Logos" package="BALLOON" value="" x="-111.76" y="48.26" rot="MR0"/>
+<element name="U$139" library="Logos" package="BALLOON" value="" x="-111.76" y="50.8" rot="MR0"/>
+<element name="U$140" library="Logos" package="BALLOON" value="" x="-111.76" y="53.34" rot="MR0"/>
+<element name="U$141" library="Logos" package="BALLOON" value="" x="-114.3" y="55.88" rot="MR0"/>
+<element name="U$142" library="Logos" package="BALLOON" value="" x="-114.3" y="53.34" rot="MR0"/>
+<element name="U$143" library="Logos" package="BALLOON" value="" x="-114.3" y="50.8" rot="MR0"/>
+<element name="U$144" library="Logos" package="BALLOON" value="" x="-116.84" y="53.34" rot="MR0"/>
+<element name="U$145" library="Logos" package="BALLOON" value="" x="-119.38" y="53.34" rot="MR0"/>
+<element name="U$146" library="Logos" package="BALLOON" value="" x="-121.92" y="53.34" rot="MR0"/>
+<element name="U$147" library="Logos" package="BALLOON" value="" x="-124.46" y="53.34" rot="MR0"/>
+<element name="U$148" library="Logos" package="BALLOON" value="" x="-127" y="53.34" rot="MR0"/>
+<element name="U$149" library="Logos" package="BALLOON" value="" x="-127" y="50.8" rot="MR0"/>
+<element name="U$150" library="Logos" package="BALLOON" value="" x="-124.46" y="50.8" rot="MR0"/>
+<element name="U$151" library="Logos" package="BALLOON" value="" x="-121.92" y="50.8" rot="MR0"/>
+<element name="U$152" library="Logos" package="BALLOON" value="" x="-119.38" y="50.8" rot="MR0"/>
+<element name="U$153" library="Logos" package="BALLOON" value="" x="-116.84" y="50.8" rot="MR0"/>
+<element name="U$154" library="Logos" package="BALLOON" value="" x="-129.54" y="50.8" rot="MR0"/>
+<element name="U$155" library="Logos" package="BALLOON" value="" x="-129.54" y="48.26" rot="MR0"/>
+<element name="U$156" library="Logos" package="BALLOON" value="" x="-129.54" y="45.72" rot="MR0"/>
+<element name="U$157" library="Logos" package="BALLOON" value="" x="-129.54" y="43.18" rot="MR0"/>
+<element name="U$158" library="Logos" package="BALLOON" value="" x="-129.54" y="40.64" rot="MR0"/>
+<element name="U$159" library="Logos" package="BALLOON" value="" x="-129.54" y="38.1" rot="MR0"/>
+<element name="U$160" library="Logos" package="BALLOON" value="" x="-129.54" y="35.56" rot="MR0"/>
+<element name="U$161" library="Logos" package="BALLOON" value="" x="-129.54" y="33.02" rot="MR0"/>
+<element name="U$162" library="Logos" package="BALLOON" value="" x="-129.54" y="30.48" rot="MR0"/>
+<element name="U$163" library="Logos" package="BALLOON" value="" x="-129.54" y="27.94" rot="MR0"/>
+<element name="U$164" library="Logos" package="BALLOON" value="" x="-129.54" y="25.4" rot="MR0"/>
+<element name="U$165" library="Logos" package="BALLOON" value="" x="-129.54" y="22.86" rot="MR0"/>
+<element name="U$166" library="Logos" package="BALLOON" value="" x="-127" y="22.86" rot="MR0"/>
+<element name="U$167" library="Logos" package="BALLOON" value="" x="-127" y="25.4" rot="MR0"/>
+<element name="U$168" library="Logos" package="BALLOON" value="" x="-127" y="27.94" rot="MR0"/>
+<element name="U$169" library="Logos" package="BALLOON" value="" x="-127" y="27.94" rot="MR0"/>
+<element name="U$170" library="Logos" package="BALLOON" value="" x="-127" y="30.48" rot="MR0"/>
+<element name="U$171" library="Logos" package="BALLOON" value="" x="-127" y="33.02" rot="MR0"/>
+<element name="U$172" library="Logos" package="BALLOON" value="" x="-127" y="35.56" rot="MR0"/>
+<element name="U$173" library="Logos" package="BALLOON" value="" x="-127" y="38.1" rot="MR0"/>
+<element name="U$174" library="Logos" package="BALLOON" value="" x="-127" y="40.64" rot="MR0"/>
+<element name="U$175" library="Logos" package="BALLOON" value="" x="-127" y="43.18" rot="MR0"/>
+<element name="U$176" library="Logos" package="BALLOON" value="" x="-127" y="45.72" rot="MR0"/>
+<element name="U$177" library="Logos" package="BALLOON" value="" x="-127" y="48.26" rot="MR0"/>
+<element name="U$179" library="Logos" package="BALLOON" value="" x="-106.68" y="78.74" rot="MR0"/>
+<element name="U$180" library="Logos" package="BALLOON" value="" x="-106.68" y="76.2" rot="MR0"/>
+<element name="U$181" library="Logos" package="BALLOON" value="" x="-109.22" y="76.2" rot="MR0"/>
+<element name="U$182" library="Logos" package="BALLOON" value="" x="-109.22" y="73.66" rot="MR0"/>
+<element name="U$183" library="Logos" package="BALLOON" value="" x="-111.76" y="73.66" rot="MR0"/>
+<element name="U$184" library="Logos" package="BALLOON" value="" x="-111.76" y="71.12" rot="MR0"/>
+<element name="U$185" library="Logos" package="BALLOON" value="" x="-109.22" y="71.12" rot="MR0"/>
+<element name="U$186" library="Logos" package="BALLOON" value="" x="-114.3" y="68.58" rot="MR0"/>
+<element name="U$187" library="Logos" package="BALLOON" value="" x="-114.3" y="71.12" rot="MR0"/>
+<element name="U$188" library="Logos" package="BALLOON" value="" x="-111.76" y="68.58" rot="MR0"/>
+<element name="U$189" library="Logos" package="BALLOON" value="" x="-116.84" y="66.04" rot="MR0"/>
+<element name="U$190" library="Logos" package="BALLOON" value="" x="-116.84" y="68.58" rot="MR0"/>
+<element name="U$191" library="Logos" package="BALLOON" value="" x="-114.3" y="66.04" rot="MR0"/>
+<element name="U$192" library="Logos" package="BALLOON" value="" x="-119.38" y="68.58" rot="MR0"/>
+<element name="U$193" library="Logos" package="BALLOON" value="" x="-121.92" y="68.58" rot="MR0"/>
+<element name="U$194" library="Logos" package="BALLOON" value="" x="-124.46" y="68.58" rot="MR0"/>
+<element name="U$195" library="Logos" package="BALLOON" value="" x="-124.46" y="66.04" rot="MR0"/>
+<element name="U$196" library="Logos" package="BALLOON" value="" x="-121.92" y="66.04" rot="MR0"/>
+<element name="U$197" library="Logos" package="BALLOON" value="" x="-119.38" y="66.04" rot="MR0"/>
+<element name="U$29" library="Logos" package="BALLOON" value="" x="-93.98" y="83.82" rot="MR0"/>
+<element name="U$28" library="Logos" package="BALLOON" value="" x="-101.6" y="81.28" rot="MR0"/>
+<element name="U$31" library="Logos" package="BALLOON" value="" x="-101.6" y="83.82" rot="MR0"/>
+<element name="U$32" library="Logos" package="BALLOON" value="" x="-99.06" y="81.28" rot="MR0"/>
+<element name="U$33" library="Logos" package="BALLOON" value="" x="-104.14" y="81.28" rot="MR0"/>
+<element name="U$178" library="Logos" package="BALLOON" value="" x="-104.14" y="78.74" rot="MR0"/>
+<element name="U$57" library="Logos" package="BALLOON" value="" x="-127" y="66.04" rot="MR0"/>
+<element name="U$198" library="Logos" package="BALLOON" value="" x="-127" y="63.5" rot="MR0"/>
+<element name="U$199" library="Logos" package="BALLOON" value="" x="-124.46" y="63.5" rot="MR0"/>
+<element name="U$200" library="Logos" package="BALLOON" value="" x="-129.54" y="63.5" rot="MR0"/>
+<element name="U$201" library="Logos" package="BALLOON" value="" x="-129.54" y="60.96" rot="MR0"/>
+<element name="U$202" library="Logos" package="BALLOON" value="" x="-132.08" y="60.96" rot="MR0"/>
+<element name="U$203" library="Logos" package="BALLOON" value="" x="-132.08" y="63.5" rot="MR0"/>
+<element name="U$204" library="Logos" package="BALLOON" value="" x="-134.62" y="58.42" rot="MR0"/>
+<element name="U$205" library="Logos" package="BALLOON" value="" x="-134.62" y="60.96" rot="MR0"/>
+<element name="U$206" library="Logos" package="BALLOON" value="" x="-132.08" y="58.42" rot="MR0"/>
+<element name="U$207" library="Logos" package="BALLOON" value="" x="-137.16" y="58.42" rot="MR0"/>
+<element name="U$208" library="Logos" package="BALLOON" value="" x="-137.16" y="55.88" rot="MR0"/>
+<element name="U$209" library="Logos" package="BALLOON" value="" x="-134.62" y="55.88" rot="MR0"/>
+<element name="U$210" library="Logos" package="BALLOON" value="" x="-137.16" y="53.34" rot="MR0"/>
+<element name="U$211" library="Logos" package="BALLOON" value="" x="-139.7" y="53.34" rot="MR0"/>
+<element name="U$212" library="Logos" package="BALLOON" value="" x="-137.16" y="50.8" rot="MR0"/>
+<element name="U$213" library="Logos" package="BALLOON" value="" x="-137.16" y="48.26" rot="MR0"/>
+<element name="U$214" library="Logos" package="BALLOON" value="" x="-137.16" y="45.72" rot="MR0"/>
+<element name="U$215" library="Logos" package="BALLOON" value="" x="-137.16" y="43.18" rot="MR0"/>
+<element name="U$216" library="Logos" package="BALLOON" value="" x="-137.16" y="40.64" rot="MR0"/>
+<element name="U$217" library="Logos" package="BALLOON" value="" x="-137.16" y="38.1" rot="MR0"/>
+<element name="U$218" library="Logos" package="BALLOON" value="" x="-137.16" y="35.56" rot="MR0"/>
+<element name="U$219" library="Logos" package="BALLOON" value="" x="-137.16" y="33.02" rot="MR0"/>
+<element name="U$220" library="Logos" package="BALLOON" value="" x="-137.16" y="30.48" rot="MR0"/>
+<element name="U$221" library="Logos" package="BALLOON" value="" x="-137.16" y="27.94" rot="MR0"/>
+<element name="U$222" library="Logos" package="BALLOON" value="" x="-137.16" y="25.4" rot="MR0"/>
+<element name="U$223" library="Logos" package="BALLOON" value="" x="-139.7" y="25.4" rot="MR0"/>
+<element name="U$224" library="Logos" package="BALLOON" value="" x="-139.7" y="27.94" rot="MR0"/>
+<element name="U$225" library="Logos" package="BALLOON" value="" x="-139.7" y="30.48" rot="MR0"/>
+<element name="U$226" library="Logos" package="BALLOON" value="" x="-139.7" y="33.02" rot="MR0"/>
+<element name="U$227" library="Logos" package="BALLOON" value="" x="-139.7" y="35.56" rot="MR0"/>
+<element name="U$228" library="Logos" package="BALLOON" value="" x="-139.7" y="38.1" rot="MR0"/>
+<element name="U$229" library="Logos" package="BALLOON" value="" x="-139.7" y="40.64" rot="MR0"/>
+<element name="U$230" library="Logos" package="BALLOON" value="" x="-139.7" y="43.18" rot="MR0"/>
+<element name="U$231" library="Logos" package="BALLOON" value="" x="-139.7" y="45.72" rot="MR0"/>
+<element name="U$232" library="Logos" package="BALLOON" value="" x="-139.7" y="50.8" rot="MR0"/>
+<element name="U$233" library="Logos" package="BALLOON" value="" x="-139.7" y="48.26" rot="MR0"/>
+<element name="U$234" library="Logos" package="BALLOON" value="" x="-139.7" y="22.86" rot="MR0"/>
+<element name="U$235" library="Logos" package="BALLOON" value="" x="-142.24" y="22.86" rot="MR0"/>
+<element name="U$236" library="Logos" package="BALLOON" value="" x="-142.24" y="25.4" rot="MR0"/>
+<element name="U$237" library="Logos" package="BALLOON" value="" x="-142.24" y="20.32" rot="MR0"/>
+<element name="U$238" library="Logos" package="BALLOON" value="" x="-144.78" y="22.86" rot="MR0"/>
+<element name="U$239" library="Logos" package="BALLOON" value="" x="-147.32" y="22.86" rot="MR0"/>
+<element name="U$240" library="Logos" package="BALLOON" value="" x="-149.86" y="22.86" rot="MR0"/>
+<element name="U$241" library="Logos" package="BALLOON" value="" x="-149.86" y="20.32" rot="MR0"/>
+<element name="U$242" library="Logos" package="BALLOON" value="" x="-147.32" y="20.32" rot="MR0"/>
+<element name="U$243" library="Logos" package="BALLOON" value="" x="-144.78" y="20.32" rot="MR0"/>
+<element name="U$244" library="Logos" package="BALLOON" value="" x="-152.4" y="20.32" rot="MR0"/>
+<element name="U$245" library="Logos" package="BALLOON" value="" x="-152.4" y="17.78" rot="MR0"/>
+<element name="U$246" library="Logos" package="BALLOON" value="" x="-154.94" y="17.78" rot="MR0"/>
+<element name="U$247" library="Logos" package="BALLOON" value="" x="-154.94" y="20.32" rot="MR0"/>
+<element name="U$248" library="Logos" package="BALLOON" value="" x="-154.94" y="15.24" rot="MR0"/>
+<element name="U$249" library="Logos" package="BALLOON" value="" x="-157.48" y="15.24" rot="MR0"/>
+<element name="U$250" library="Logos" package="BALLOON" value="" x="-154.94" y="12.7" rot="MR0"/>
+<element name="U$251" library="Logos" package="BALLOON" value="" x="-152.4" y="12.7" rot="MR0"/>
+<element name="U$252" library="Logos" package="BALLOON" value="" x="-149.86" y="12.7" rot="MR0"/>
+<element name="U$253" library="Logos" package="BALLOON" value="" x="-149.86" y="10.16" rot="MR0"/>
+<element name="U$254" library="Logos" package="BALLOON" value="" x="-152.4" y="10.16" rot="MR0"/>
+<element name="U$255" library="Logos" package="BALLOON" value="" x="-154.94" y="10.16" rot="MR0"/>
+<element name="U$256" library="Logos" package="BALLOON" value="" x="-147.32" y="10.16" rot="MR0"/>
+<element name="U$257" library="Logos" package="BALLOON" value="" x="-144.78" y="10.16" rot="MR0"/>
+<element name="U$258" library="Logos" package="BALLOON" value="" x="-144.78" y="12.7" rot="MR0"/>
+<element name="U$259" library="Logos" package="BALLOON" value="" x="-142.24" y="12.7" rot="MR0"/>
+<element name="U$260" library="Logos" package="BALLOON" value="" x="-139.7" y="12.7" rot="MR0"/>
+<element name="U$261" library="Logos" package="BALLOON" value="" x="-139.7" y="10.16" rot="MR0"/>
+<element name="U$262" library="Logos" package="BALLOON" value="" x="-142.24" y="10.16" rot="MR0"/>
+<element name="U$263" library="Logos" package="BALLOON" value="" x="-139.7" y="15.24" rot="MR0"/>
+<element name="U$264" library="Logos" package="BALLOON" value="" x="-137.16" y="15.24" rot="MR0"/>
+<element name="U$265" library="Logos" package="BALLOON" value="" x="-137.16" y="12.7" rot="MR0"/>
+<element name="U$266" library="Logos" package="BALLOON" value="" x="-132.08" y="20.32" rot="MR0"/>
+<element name="U$267" library="Logos" package="BALLOON" value="" x="-132.08" y="22.86" rot="MR0"/>
+<element name="U$268" library="Logos" package="BALLOON" value="" x="-129.54" y="20.32" rot="MR0"/>
+<element name="U$269" library="Logos" package="BALLOON" value="" x="-134.62" y="17.78" rot="MR0"/>
+<element name="U$270" library="Logos" package="BALLOON" value="" x="-134.62" y="15.24" rot="MR0"/>
+<element name="U$271" library="Logos" package="BALLOON" value="" x="-132.08" y="15.24" rot="MR0"/>
+<element name="U$272" library="Logos" package="BALLOON" value="" x="-132.08" y="17.78" rot="MR0"/>
+<element name="J1" library="CustomEuroCard" package="VG96KB" value="" x="-0.254" y="49.53"/>
 </elements>
 <signals>
 <signal name="GND_5V" class="1">
@@ -2223,93 +2606,180 @@ design rules under a new name.</description>
 <contactref element="C3" pad="2"/>
 <contactref element="IC2" pad="2"/>
 <contactref element="C4" pad="2"/>
-<wire x1="121.92" y1="68.58" x2="132.08" y2="68.58" width="0.4064" layer="1"/>
-<wire x1="132.08" y1="68.58" x2="134.62" y2="68.58" width="0.4064" layer="1"/>
-<wire x1="134.62" y1="68.58" x2="139.7" y2="63.5" width="0.4064" layer="1"/>
-<wire x1="139.7" y1="63.5" x2="142.24" y2="63.5" width="0.4064" layer="1"/>
-<wire x1="121.92" y1="68.58" x2="119.38" y2="68.58" width="0.4064" layer="1"/>
-<wire x1="119.38" y1="68.58" x2="116.84" y2="71.12" width="0.4064" layer="1"/>
-<wire x1="116.84" y1="71.12" x2="116.84" y2="73.66" width="0.4064" layer="1"/>
-<wire x1="116.84" y1="73.66" x2="119.38" y2="76.2" width="0.4064" layer="1"/>
-<wire x1="119.38" y1="76.2" x2="137.16" y2="76.2" width="0.4064" layer="1"/>
-<wire x1="137.16" y1="76.2" x2="145.25" y2="84.29" width="0.4064" layer="1"/>
-<wire x1="149.586" y1="84.29" x2="145.25" y2="84.29" width="0.4064" layer="1"/>
+<wire x1="956.31" y1="243.37" x2="966.216" y2="243.37" width="0.4064" layer="1"/>
+<wire x1="966.216" y1="243.37" x2="968.756" y2="243.37" width="0.4064" layer="1"/>
+<wire x1="968.756" y1="243.37" x2="973.836" y2="238.29" width="0.4064" layer="1"/>
+<wire x1="973.836" y1="238.29" x2="976.376" y2="238.29" width="0.4064" layer="1"/>
+<wire x1="956.31" y1="243.37" x2="953.516" y2="243.37" width="0.4064" layer="1"/>
+<wire x1="953.516" y1="243.37" x2="950.976" y2="245.91" width="0.4064" layer="1"/>
+<wire x1="950.976" y1="245.91" x2="950.976" y2="248.45" width="0.4064" layer="1"/>
+<wire x1="950.976" y1="248.45" x2="953.516" y2="250.99" width="0.4064" layer="1"/>
+<wire x1="953.516" y1="250.99" x2="971.296" y2="250.99" width="0.4064" layer="1"/>
+<wire x1="971.296" y1="250.99" x2="979.386" y2="259.08" width="0.4064" layer="1"/>
+<contactref element="J1" pad="C3"/>
+<wire x1="950.976" y1="245.91" x2="149.86" y2="83.82" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="83.82" x2="11.43" y2="85.09" width="0.4064" layer="1"/>
+<wire x1="11.43" y1="85.09" x2="11.43" y2="88.9" width="0.4064" layer="1"/>
+<wire x1="11.43" y1="88.9" x2="12.7" y2="90.17" width="0.4064" layer="1"/>
+<wire x1="12.7" y1="90.17" x2="147.32" y2="90.17" width="0.4064" layer="1"/>
+<wire x1="147.32" y1="90.17" x2="148.59" y2="88.9" width="0.4064" layer="1"/>
+<wire x1="148.59" y1="88.9" x2="148.59" y2="85.09" width="0.4064" layer="1"/>
+<wire x1="148.59" y1="85.09" x2="149.86" y2="83.82" width="0.4064" layer="1"/>
 </signal>
 <signal name="+5V" class="1">
 <contactref element="J2" pad="C4"/>
 <contactref element="IC2" pad="3"/>
 <contactref element="C4" pad="1"/>
-<wire x1="134.62" y1="71.12" x2="145.25" y2="81.75" width="0.4064" layer="1"/>
-<wire x1="145.25" y1="81.75" x2="149.586" y2="81.75" width="0.4064" layer="1"/>
-<wire x1="121.92" y1="71.12" x2="134.62" y2="71.12" width="0.4064" layer="1"/>
-<wire x1="134.62" y1="71.12" x2="137.16" y2="68.58" width="0.4064" layer="1"/>
-<wire x1="137.16" y1="68.58" x2="142.24" y2="68.58" width="0.4064" layer="1"/>
+<wire x1="968.756" y1="245.91" x2="979.386" y2="256.54" width="0.4064" layer="1"/>
+<wire x1="956.31" y1="245.91" x2="968.756" y2="245.91" width="0.4064" layer="1"/>
+<wire x1="968.756" y1="245.91" x2="971.296" y2="243.37" width="0.4064" layer="1"/>
+<wire x1="971.296" y1="243.37" x2="976.376" y2="243.37" width="0.4064" layer="1"/>
+<contactref element="J1" pad="C4"/>
+<wire x1="956.31" y1="245.91" x2="149.86" y2="81.28" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="81.28" x2="12.7" y2="81.28" width="0.4064" layer="16"/>
+<wire x1="12.7" y1="81.28" x2="13.97" y2="82.55" width="0.4064" layer="16"/>
+<wire x1="13.97" y1="82.55" x2="13.97" y2="87.63" width="0.4064" layer="16"/>
+<wire x1="13.97" y1="87.63" x2="15.24" y2="88.9" width="0.4064" layer="16"/>
+<wire x1="15.24" y1="88.9" x2="17.78" y2="88.9" width="0.4064" layer="16"/>
+<wire x1="17.78" y1="88.9" x2="149.86" y2="81.28" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="GND_5V_DIFF">
 <contactref element="J2" pad="B8"/>
+<contactref element="J1" pad="B8"/>
+<wire x1="7.62" y1="71.12" x2="152.4" y2="71.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="-5V_DIFF">
 <contactref element="J2" pad="C8"/>
+<contactref element="J1" pad="C8"/>
+<wire x1="10.16" y1="71.12" x2="149.86" y2="71.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V_DIFF">
 <contactref element="J2" pad="A8"/>
+<contactref element="J1" pad="A8"/>
+<wire x1="5.08" y1="71.12" x2="154.94" y2="71.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+7V_DIFF">
 <contactref element="J2" pad="A9"/>
+<contactref element="J1" pad="A9"/>
+<wire x1="5.08" y1="68.58" x2="154.94" y2="68.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND_7V_DIFF">
 <contactref element="J2" pad="B9"/>
+<contactref element="J1" pad="B9"/>
+<wire x1="7.62" y1="68.58" x2="152.4" y2="68.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="-7V_DIFF">
 <contactref element="J2" pad="C9"/>
+<contactref element="J1" pad="C9"/>
+<wire x1="10.16" y1="68.58" x2="149.86" y2="68.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PROBE_HOR_1_RIGHT">
 <contactref element="J2" pad="A11"/>
+<contactref element="J1" pad="A11"/>
+<wire x1="5.08" y1="63.5" x2="154.94" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PROBE_VERT_1_UP">
 <contactref element="J2" pad="C11"/>
+<contactref element="J1" pad="C11"/>
+<wire x1="10.16" y1="63.5" x2="149.86" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PROBE_HOR_2_LEFT">
 <contactref element="J2" pad="A12"/>
+<contactref element="J1" pad="A12"/>
+<wire x1="5.08" y1="60.96" x2="154.94" y2="60.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PROBE_VERT_2_DOWN">
 <contactref element="J2" pad="C12"/>
+<contactref element="J1" pad="C12"/>
+<wire x1="10.16" y1="60.96" x2="149.86" y2="60.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PROBE_DIFF_HOR">
 <contactref element="J2" pad="A13"/>
+<contactref element="J1" pad="A13"/>
+<wire x1="5.08" y1="58.42" x2="154.94" y2="58.42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PROBE_DIFF_VERT">
 <contactref element="J2" pad="C13"/>
+<contactref element="J1" pad="C13"/>
+<wire x1="10.16" y1="58.42" x2="149.86" y2="58.42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TEMP_3">
 <contactref element="J2" pad="A3"/>
+<contactref element="J1" pad="A3"/>
+<wire x1="5.08" y1="83.82" x2="6.35" y2="85.09" width="0.4064" layer="1"/>
+<wire x1="6.35" y1="85.09" x2="6.35" y2="90.17" width="0.4064" layer="1"/>
+<wire x1="6.35" y1="90.17" x2="7.62" y2="91.44" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="91.44" x2="7.62" y2="92.71" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="92.71" x2="8.89" y2="93.98" width="0.4064" layer="1"/>
+<wire x1="154.94" y1="83.82" x2="153.67" y2="85.09" width="0.4064" layer="1"/>
+<wire x1="153.67" y1="85.09" x2="153.67" y2="90.17" width="0.4064" layer="1"/>
+<wire x1="153.67" y1="90.17" x2="152.4" y2="91.44" width="0.4064" layer="1"/>
+<wire x1="152.4" y1="91.44" x2="152.4" y2="92.71" width="0.4064" layer="1"/>
+<wire x1="152.4" y1="92.71" x2="151.13" y2="93.98" width="0.4064" layer="1"/>
+<wire x1="151.13" y1="93.98" x2="8.89" y2="93.98" width="0.4064" layer="1"/>
 </signal>
 <signal name="GND_TEMP">
 <contactref element="J2" pad="B3"/>
+<contactref element="J1" pad="B3"/>
+<wire x1="7.62" y1="83.82" x2="8.89" y2="85.09" width="0.4064" layer="16"/>
+<wire x1="8.89" y1="85.09" x2="8.89" y2="91.44" width="0.4064" layer="16"/>
+<wire x1="8.89" y1="91.44" x2="10.16" y2="92.71" width="0.4064" layer="16"/>
+<wire x1="10.16" y1="92.71" x2="149.86" y2="92.71" width="0.4064" layer="16"/>
+<wire x1="149.86" y1="92.71" x2="151.13" y2="91.44" width="0.4064" layer="16"/>
+<wire x1="151.13" y1="91.44" x2="151.13" y2="85.09" width="0.4064" layer="16"/>
+<wire x1="151.13" y1="85.09" x2="152.4" y2="83.82" width="0.4064" layer="16"/>
 </signal>
 <signal name="TEMP_2">
 <contactref element="J2" pad="A4"/>
+<contactref element="J1" pad="A4"/>
+<wire x1="5.08" y1="81.28" x2="6.35" y2="82.55" width="0.4064" layer="16"/>
+<wire x1="6.35" y1="82.55" x2="11.43" y2="82.55" width="0.4064" layer="16"/>
+<wire x1="11.43" y1="82.55" x2="12.7" y2="83.82" width="0.4064" layer="16"/>
+<wire x1="12.7" y1="83.82" x2="12.7" y2="88.9" width="0.4064" layer="16"/>
+<wire x1="12.7" y1="88.9" x2="13.97" y2="90.17" width="0.4064" layer="16"/>
+<wire x1="13.97" y1="90.17" x2="17.78" y2="90.17" width="0.4064" layer="16"/>
+<wire x1="17.78" y1="90.17" x2="154.94" y2="81.28" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="TEMP_1">
 <contactref element="J2" pad="B4"/>
+<contactref element="J1" pad="B4"/>
+<wire x1="7.62" y1="81.28" x2="152.4" y2="81.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_1_L">
 <contactref element="J2" pad="B5"/>
+<contactref element="J1" pad="B5"/>
+<wire x1="7.62" y1="78.74" x2="8.89" y2="80.01" width="0.4064" layer="16"/>
+<wire x1="8.89" y1="80.01" x2="13.97" y2="80.01" width="0.4064" layer="16"/>
+<wire x1="13.97" y1="80.01" x2="15.24" y2="81.28" width="0.4064" layer="16"/>
+<wire x1="15.24" y1="81.28" x2="15.24" y2="86.36" width="0.4064" layer="16"/>
+<wire x1="15.24" y1="86.36" x2="16.51" y2="87.63" width="0.4064" layer="16"/>
+<wire x1="16.51" y1="87.63" x2="17.78" y2="87.63" width="0.4064" layer="16"/>
+<wire x1="17.78" y1="87.63" x2="152.4" y2="78.74" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="I_1_H">
 <contactref element="J2" pad="C5"/>
+<contactref element="J1" pad="C5"/>
+<wire x1="10.16" y1="78.74" x2="149.86" y2="78.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_2_L">
 <contactref element="J2" pad="B6"/>
+<contactref element="J1" pad="B6"/>
+<wire x1="7.62" y1="76.2" x2="152.4" y2="76.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_2_H">
 <contactref element="J2" pad="C6"/>
+<contactref element="J1" pad="C6"/>
+<wire x1="10.16" y1="76.2" x2="149.86" y2="76.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_3_L">
 <contactref element="J2" pad="B7"/>
+<contactref element="J1" pad="B7"/>
+<wire x1="7.62" y1="73.66" x2="152.4" y2="73.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_3_H">
 <contactref element="J2" pad="C7"/>
+<contactref element="J1" pad="C7"/>
+<wire x1="10.16" y1="73.66" x2="149.86" y2="73.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND" class="1">
 <contactref element="J2" pad="B11"/>
@@ -2318,14 +2788,28 @@ design rules under a new name.</description>
 <contactref element="J2" pad="A5"/>
 <contactref element="J2" pad="A6"/>
 <contactref element="J2" pad="A7"/>
-<wire x1="154.666" y1="76.67" x2="154.666" y2="79.21" width="0" layer="19" extent="1-1"/>
-<wire x1="154.666" y1="74.13" x2="154.666" y2="76.67" width="0" layer="19" extent="1-1"/>
-<wire x1="152.126" y1="63.97" x2="154.666" y2="74.13" width="0" layer="19" extent="1-1"/>
-<wire x1="152.126" y1="61.43" x2="152.126" y2="63.97" width="0" layer="19" extent="1-1"/>
-<wire x1="152.126" y1="58.89" x2="152.126" y2="61.43" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="A5"/>
+<contactref element="J1" pad="A6"/>
+<contactref element="J1" pad="A7"/>
+<contactref element="J1" pad="B11"/>
+<contactref element="J1" pad="B12"/>
+<contactref element="J1" pad="B13"/>
+<wire x1="154.94" y1="76.2" x2="154.94" y2="78.74" width="0" layer="19" extent="1-1"/>
+<wire x1="154.94" y1="73.66" x2="154.94" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="152.4" y1="63.5" x2="154.94" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="152.4" y1="60.96" x2="152.4" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="152.4" y1="58.42" x2="152.4" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="63.5" x2="152.4" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="60.96" x2="7.62" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="58.42" x2="7.62" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="73.66" x2="7.62" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="76.2" x2="5.08" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="78.74" x2="5.08" y2="76.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CONDUCTIVITY_ENABLE">
 <contactref element="J2" pad="C14"/>
+<contactref element="J1" pad="C14"/>
+<wire x1="10.16" y1="55.88" x2="149.86" y2="55.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 </signal>
@@ -2549,32 +3033,48 @@ design rules under a new name.</description>
 </signal>
 <signal name="CHARGE_PROBE_0">
 <contactref element="J2" pad="A14"/>
+<contactref element="J1" pad="A14"/>
+<wire x1="5.08" y1="55.88" x2="154.94" y2="55.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CHARGE_PROBE_1">
 <contactref element="J2" pad="B14"/>
+<contactref element="J1" pad="B14"/>
+<wire x1="7.62" y1="55.88" x2="152.4" y2="55.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="J2" pad="B1"/>
 <contactref element="J2" pad="C1"/>
 <contactref element="IC1" pad="2"/>
 <contactref element="C2" pad="1"/>
-<wire x1="152.126" y1="89.37" x2="149.586" y2="89.37" width="0.4064" layer="1"/>
-<wire x1="140.716" y1="89.281" x2="149.497" y2="89.281" width="0.4064" layer="1"/>
-<wire x1="149.497" y1="89.281" x2="149.586" y2="89.37" width="0.4064" layer="1"/>
-<wire x1="121.92" y1="86.741" x2="135.001" y2="86.741" width="0.4064" layer="1"/>
-<wire x1="135.001" y1="86.741" x2="137.541" y2="89.281" width="0.4064" layer="1"/>
-<wire x1="140.716" y1="89.281" x2="137.541" y2="89.281" width="0.4064" layer="1"/>
+<contactref element="J1" pad="B1"/>
+<contactref element="J1" pad="C1"/>
+<wire x1="963.93" y1="264.16" x2="962.66" y2="264.16" width="0.4064" layer="1"/>
+<wire x1="962.66" y1="264.16" x2="960.12" y2="261.62" width="0.4064" layer="1"/>
+<wire x1="960.12" y1="261.62" x2="956.31" y2="261.62" width="0.4064" layer="1"/>
+<wire x1="963.93" y1="264.16" x2="967.74" y2="264.16" width="0.4064" layer="1"/>
+<wire x1="10.16" y1="88.9" x2="10.16" y2="90.17" width="0.4064" layer="1"/>
+<wire x1="10.16" y1="90.17" x2="11.43" y2="91.44" width="0.4064" layer="1"/>
+<wire x1="149.86" y1="88.9" x2="149.86" y2="90.17" width="0.4064" layer="1"/>
+<wire x1="149.86" y1="90.17" x2="148.59" y2="91.44" width="0.4064" layer="1"/>
+<wire x1="148.59" y1="91.44" x2="11.43" y2="91.44" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="88.9" x2="7.62" y2="92.71" width="0.4064" layer="16"/>
+<wire x1="7.62" y1="92.71" x2="8.89" y2="93.98" width="0.4064" layer="16"/>
+<wire x1="8.89" y1="93.98" x2="151.13" y2="93.98" width="0.4064" layer="16"/>
+<wire x1="151.13" y1="93.98" x2="152.4" y2="92.71" width="0.4064" layer="16"/>
+<wire x1="152.4" y1="92.71" x2="152.4" y2="88.9" width="0.4064" layer="16"/>
+<wire x1="152.4" y1="92.71" x2="956.31" y2="261.62" width="0" layer="19" extent="16-16"/>
+<wire x1="149.86" y1="88.9" x2="152.4" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
 <contactref element="IC1" pad="3"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C3" pad="1"/>
 <contactref element="IC2" pad="1"/>
-<wire x1="121.92" y1="66.04" x2="127" y2="66.04" width="0.4064" layer="1"/>
-<wire x1="127" y1="66.04" x2="129.54" y2="63.5" width="0.4064" layer="1"/>
-<wire x1="129.54" y1="63.5" x2="132.08" y2="63.5" width="0.4064" layer="1"/>
-<wire x1="121.92" y1="66.04" x2="121.92" y2="89.281" width="0" layer="19" extent="1-1"/>
-<wire x1="121.92" y1="89.281" x2="131.445" y2="89.281" width="0.4064" layer="1"/>
+<wire x1="956.31" y1="240.83" x2="961.136" y2="240.83" width="0.4064" layer="1"/>
+<wire x1="961.136" y1="240.83" x2="963.676" y2="238.29" width="0.4064" layer="1"/>
+<wire x1="963.676" y1="238.29" x2="966.216" y2="238.29" width="0.4064" layer="1"/>
+<wire x1="956.31" y1="264.16" x2="960.12" y2="264.16" width="0.4064" layer="1"/>
+<wire x1="956.31" y1="240.83" x2="956.31" y2="264.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND_3V3">
 <contactref element="J2" pad="B2"/>
@@ -2582,12 +3082,337 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="1"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
-<wire x1="140.716" y1="84.201" x2="142.621" y2="84.201" width="0.4064" layer="1"/>
-<wire x1="142.621" y1="84.201" x2="145.25" y2="86.83" width="0.4064" layer="1"/>
-<wire x1="145.25" y1="86.83" x2="149.586" y2="86.83" width="0.4064" layer="1"/>
-<wire x1="149.586" y1="86.83" x2="152.126" y2="86.83" width="0" layer="19" extent="1-1"/>
-<wire x1="131.445" y1="84.201" x2="140.716" y2="84.201" width="0.4064" layer="1"/>
-<wire x1="131.445" y1="84.201" x2="121.92" y2="84.201" width="0.4064" layer="1"/>
+<contactref element="J1" pad="B2"/>
+<contactref element="J1" pad="C2"/>
+<wire x1="956.31" y1="259.08" x2="960.12" y2="259.08" width="0.4064" layer="1"/>
+<wire x1="960.12" y1="259.08" x2="963.93" y2="259.08" width="0.4064" layer="1"/>
+<wire x1="963.93" y1="259.08" x2="965.2" y2="259.08" width="0.4064" layer="1"/>
+<wire x1="965.2" y1="259.08" x2="967.74" y2="261.62" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="86.36" x2="8.89" y2="87.63" width="0.4064" layer="1"/>
+<wire x1="8.89" y1="87.63" x2="8.89" y2="91.44" width="0.4064" layer="1"/>
+<wire x1="8.89" y1="91.44" x2="10.16" y2="92.71" width="0.4064" layer="1"/>
+<wire x1="152.4" y1="86.36" x2="151.13" y2="87.63" width="0.4064" layer="1"/>
+<wire x1="151.13" y1="87.63" x2="151.13" y2="91.44" width="0.4064" layer="1"/>
+<wire x1="151.13" y1="91.44" x2="149.86" y2="92.71" width="0.4064" layer="1"/>
+<wire x1="149.86" y1="92.71" x2="10.16" y2="92.71" width="0.4064" layer="1"/>
+<wire x1="10.16" y1="86.36" x2="11.43" y2="87.63" width="0.4064" layer="16"/>
+<wire x1="11.43" y1="87.63" x2="11.43" y2="90.17" width="0.4064" layer="16"/>
+<wire x1="11.43" y1="90.17" x2="12.7" y2="91.44" width="0.4064" layer="16"/>
+<wire x1="12.7" y1="91.44" x2="147.32" y2="91.44" width="0.4064" layer="16"/>
+<wire x1="147.32" y1="91.44" x2="148.59" y2="90.17" width="0.4064" layer="16"/>
+<wire x1="148.59" y1="90.17" x2="148.59" y2="87.63" width="0.4064" layer="16"/>
+<wire x1="148.59" y1="87.63" x2="149.86" y2="86.36" width="0.4064" layer="16"/>
+<wire x1="152.4" y1="86.36" x2="956.31" y2="259.08" width="0" layer="19" extent="1-1"/>
+<wire x1="149.86" y1="86.36" x2="151.13" y2="87.63" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="A1">
+<contactref element="J2" pad="A1"/>
+<contactref element="J1" pad="A1"/>
+<wire x1="154.94" y1="88.9" x2="154.94" y2="90.17" width="0.4064" layer="1"/>
+<wire x1="154.94" y1="90.17" x2="153.67" y2="91.44" width="0.4064" layer="1"/>
+<wire x1="153.67" y1="91.44" x2="153.67" y2="93.98" width="0.4064" layer="1"/>
+<wire x1="153.67" y1="93.98" x2="152.4" y2="95.25" width="0.4064" layer="1"/>
+<wire x1="152.4" y1="95.25" x2="7.62" y2="95.25" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="95.25" x2="6.35" y2="93.98" width="0.4064" layer="1"/>
+<wire x1="5.08" y1="88.9" x2="5.08" y2="90.17" width="0.4064" layer="1"/>
+<wire x1="5.08" y1="90.17" x2="6.35" y2="91.44" width="0.4064" layer="1"/>
+<wire x1="6.35" y1="91.44" x2="6.35" y2="93.98" width="0.4064" layer="1"/>
+</signal>
+<signal name="A2">
+<contactref element="J2" pad="A2"/>
+<contactref element="J1" pad="A2"/>
+<wire x1="5.08" y1="86.36" x2="6.35" y2="87.63" width="0.4064" layer="16"/>
+<wire x1="6.35" y1="87.63" x2="6.35" y2="93.98" width="0.4064" layer="16"/>
+<wire x1="6.35" y1="93.98" x2="7.62" y2="95.25" width="0.4064" layer="16"/>
+<wire x1="7.62" y1="95.25" x2="152.4" y2="95.25" width="0.4064" layer="16"/>
+<wire x1="152.4" y1="95.25" x2="153.67" y2="93.98" width="0.4064" layer="16"/>
+<wire x1="153.67" y1="93.98" x2="153.67" y2="87.63" width="0.4064" layer="16"/>
+<wire x1="153.67" y1="87.63" x2="154.94" y2="86.36" width="0.4064" layer="16"/>
+</signal>
+<signal name="A10">
+<contactref element="J2" pad="A10"/>
+<contactref element="J1" pad="A10"/>
+<wire x1="5.08" y1="66.04" x2="154.94" y2="66.04" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="J2" pad="A15"/>
+<contactref element="J1" pad="A15"/>
+<wire x1="5.08" y1="53.34" x2="154.94" y2="53.34" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="J2" pad="B15"/>
+<contactref element="J1" pad="B15"/>
+<wire x1="7.62" y1="53.34" x2="152.4" y2="53.34" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<contactref element="J2" pad="C15"/>
+<contactref element="J1" pad="C15"/>
+<wire x1="10.16" y1="53.34" x2="149.86" y2="53.34" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="J1" pad="A16"/>
+<contactref element="J2" pad="A16"/>
+<wire x1="5.08" y1="50.8" x2="154.94" y2="50.8" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$8">
+<contactref element="J2" pad="B16"/>
+<contactref element="J1" pad="B16"/>
+<wire x1="7.62" y1="50.8" x2="152.4" y2="50.8" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$9">
+<contactref element="J1" pad="C16"/>
+<contactref element="J2" pad="C16"/>
+<wire x1="10.16" y1="50.8" x2="149.86" y2="50.8" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$10">
+<contactref element="J2" pad="A17"/>
+<contactref element="J1" pad="A17"/>
+<wire x1="5.08" y1="48.26" x2="154.94" y2="48.26" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$11">
+<contactref element="J1" pad="B17"/>
+<contactref element="J2" pad="B17"/>
+<wire x1="7.62" y1="48.26" x2="152.4" y2="48.26" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$12">
+<contactref element="J2" pad="C17"/>
+<contactref element="J1" pad="C17"/>
+<wire x1="10.16" y1="48.26" x2="149.86" y2="48.26" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$13">
+<contactref element="J1" pad="A18"/>
+<contactref element="J2" pad="A18"/>
+<wire x1="5.08" y1="45.72" x2="154.94" y2="45.72" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$14">
+<contactref element="J2" pad="B18"/>
+<contactref element="J1" pad="B18"/>
+<wire x1="7.62" y1="45.72" x2="152.4" y2="45.72" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$16">
+<contactref element="J1" pad="C18"/>
+<contactref element="J2" pad="C18"/>
+<wire x1="10.16" y1="45.72" x2="149.86" y2="45.72" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$18">
+<contactref element="J2" pad="A19"/>
+<contactref element="J1" pad="A19"/>
+<wire x1="5.08" y1="43.18" x2="154.94" y2="43.18" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$19">
+<contactref element="J1" pad="B19"/>
+<contactref element="J2" pad="B19"/>
+<wire x1="7.62" y1="43.18" x2="152.4" y2="43.18" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$20">
+<contactref element="J2" pad="C19"/>
+<contactref element="J1" pad="C19"/>
+<wire x1="10.16" y1="43.18" x2="149.86" y2="43.18" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$21">
+<contactref element="J1" pad="A20"/>
+<contactref element="J2" pad="A20"/>
+<wire x1="5.08" y1="40.64" x2="154.94" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$22">
+<contactref element="J2" pad="B20"/>
+<contactref element="J1" pad="B20"/>
+<wire x1="7.62" y1="40.64" x2="152.4" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$23">
+<contactref element="J1" pad="C20"/>
+<contactref element="J2" pad="C20"/>
+<wire x1="10.16" y1="40.64" x2="149.86" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$25">
+<contactref element="J2" pad="A21"/>
+<contactref element="J1" pad="A21"/>
+<wire x1="5.08" y1="38.1" x2="154.94" y2="38.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$39">
+<contactref element="J1" pad="B21"/>
+<contactref element="J2" pad="B21"/>
+<wire x1="7.62" y1="38.1" x2="152.4" y2="38.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$40">
+<contactref element="J2" pad="C21"/>
+<contactref element="J1" pad="C21"/>
+<wire x1="10.16" y1="38.1" x2="149.86" y2="38.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$44">
+<contactref element="J1" pad="A22"/>
+<contactref element="J2" pad="A22"/>
+<wire x1="5.08" y1="35.56" x2="154.94" y2="35.56" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$45">
+<contactref element="J2" pad="B22"/>
+<contactref element="J1" pad="B22"/>
+<wire x1="7.62" y1="35.56" x2="152.4" y2="35.56" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$47">
+<contactref element="J1" pad="C22"/>
+<contactref element="J2" pad="C22"/>
+<wire x1="10.16" y1="35.56" x2="149.86" y2="35.56" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$49">
+<contactref element="J2" pad="A23"/>
+<contactref element="J1" pad="A23"/>
+<wire x1="5.08" y1="33.02" x2="154.94" y2="33.02" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$50">
+<contactref element="J1" pad="B23"/>
+<contactref element="J2" pad="B23"/>
+<wire x1="7.62" y1="33.02" x2="152.4" y2="33.02" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$51">
+<contactref element="J2" pad="C23"/>
+<contactref element="J1" pad="C23"/>
+<wire x1="10.16" y1="33.02" x2="149.86" y2="33.02" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$52">
+<contactref element="J2" pad="A24"/>
+<contactref element="J1" pad="A24"/>
+<wire x1="5.08" y1="30.48" x2="154.94" y2="30.48" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$53">
+<contactref element="J1" pad="B24"/>
+<contactref element="J2" pad="B24"/>
+<wire x1="7.62" y1="30.48" x2="152.4" y2="30.48" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$54">
+<contactref element="J2" pad="C24"/>
+<contactref element="J1" pad="C24"/>
+<wire x1="10.16" y1="30.48" x2="149.86" y2="30.48" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$55">
+<contactref element="J1" pad="A25"/>
+<contactref element="J2" pad="A25"/>
+<wire x1="5.08" y1="27.94" x2="154.94" y2="27.94" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$56">
+<contactref element="J2" pad="B25"/>
+<contactref element="J1" pad="B25"/>
+<wire x1="7.62" y1="27.94" x2="152.4" y2="27.94" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$57">
+<contactref element="J1" pad="C25"/>
+<contactref element="J2" pad="C25"/>
+<wire x1="10.16" y1="27.94" x2="149.86" y2="27.94" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$58">
+<contactref element="J2" pad="A26"/>
+<contactref element="J1" pad="A26"/>
+<wire x1="5.08" y1="25.4" x2="154.94" y2="25.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$67">
+<contactref element="J1" pad="B26"/>
+<contactref element="J2" pad="B26"/>
+<wire x1="7.62" y1="25.4" x2="152.4" y2="25.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$69">
+<contactref element="J2" pad="C26"/>
+<contactref element="J1" pad="C26"/>
+<wire x1="10.16" y1="25.4" x2="149.86" y2="25.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$70">
+<contactref element="J1" pad="A27"/>
+<contactref element="J2" pad="A27"/>
+<wire x1="5.08" y1="22.86" x2="154.94" y2="22.86" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$79">
+<contactref element="J2" pad="B27"/>
+<contactref element="J1" pad="B27"/>
+<wire x1="7.62" y1="22.86" x2="152.4" y2="22.86" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$86">
+<contactref element="J2" pad="C27"/>
+<contactref element="J1" pad="C27"/>
+<wire x1="10.16" y1="22.86" x2="149.86" y2="22.86" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$87">
+<contactref element="J1" pad="A28"/>
+<contactref element="J2" pad="A28"/>
+<wire x1="5.08" y1="20.32" x2="154.94" y2="20.32" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$89">
+<contactref element="J2" pad="B28"/>
+<contactref element="J1" pad="B28"/>
+<wire x1="7.62" y1="20.32" x2="152.4" y2="20.32" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$90">
+<contactref element="J1" pad="C28"/>
+<contactref element="J2" pad="C28"/>
+<wire x1="10.16" y1="20.32" x2="149.86" y2="20.32" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$92">
+<contactref element="J2" pad="A29"/>
+<contactref element="J1" pad="A29"/>
+<wire x1="5.08" y1="17.78" x2="154.94" y2="17.78" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$94">
+<contactref element="J1" pad="B29"/>
+<contactref element="J2" pad="B29"/>
+<wire x1="7.62" y1="17.78" x2="152.4" y2="17.78" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$95">
+<contactref element="J2" pad="C29"/>
+<contactref element="J1" pad="C29"/>
+<wire x1="10.16" y1="17.78" x2="149.86" y2="17.78" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$97">
+<contactref element="J1" pad="A30"/>
+<contactref element="J2" pad="A30"/>
+<wire x1="5.08" y1="15.24" x2="154.94" y2="15.24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$98">
+<contactref element="J2" pad="B30"/>
+<contactref element="J1" pad="B30"/>
+<wire x1="7.62" y1="15.24" x2="152.4" y2="15.24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$99">
+<contactref element="J1" pad="C30"/>
+<contactref element="J2" pad="C30"/>
+<wire x1="10.16" y1="15.24" x2="149.86" y2="15.24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$100">
+<contactref element="J2" pad="A31"/>
+<contactref element="J1" pad="A31"/>
+<wire x1="5.08" y1="12.7" x2="154.94" y2="12.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$101">
+<contactref element="J1" pad="B31"/>
+<contactref element="J2" pad="B31"/>
+<wire x1="7.62" y1="12.7" x2="152.4" y2="12.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$102">
+<contactref element="J2" pad="C31"/>
+<contactref element="J1" pad="C31"/>
+<wire x1="10.16" y1="12.7" x2="149.86" y2="12.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$103">
+<contactref element="J1" pad="A32"/>
+<contactref element="J2" pad="A32"/>
+<wire x1="5.08" y1="10.16" x2="154.94" y2="10.16" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$104">
+<contactref element="J2" pad="B32"/>
+<contactref element="J1" pad="B32"/>
+<wire x1="7.62" y1="10.16" x2="152.4" y2="10.16" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$105">
+<contactref element="J1" pad="C32"/>
+<contactref element="J2" pad="C32"/>
+<wire x1="10.16" y1="10.16" x2="149.86" y2="10.16" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="B10">
+<contactref element="J2" pad="B10"/>
+<contactref element="J1" pad="B10"/>
+<wire x1="7.62" y1="66.04" x2="152.4" y2="66.04" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="C10">
+<contactref element="J1" pad="C10"/>
+<contactref element="J2" pad="C10"/>
+<wire x1="10.16" y1="66.04" x2="149.86" y2="66.04" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>
